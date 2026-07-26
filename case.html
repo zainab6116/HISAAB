@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HISAAB — Case File</title>
+<link rel="icon" type="image/png" href="images/hisaab-logo.png">
+<link rel="stylesheet" href="hisaab.css">
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+<div class="logo" onclick="window.location.href='index.html'"><img src="images/hisaab-logo.png" alt="HISAAB logo">HIS<span>AAB</span></div>
+<ul class="nav-links">
+<li><a href="index.html">Records</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="submit.html">Submit</a></li>
+</ul>
+<div class="nav-icons">
+<button class="nav-icon-btn" id="themeToggle" aria-label="Toggle light and dark mode">&#127769;</button>
+</div>
+</nav>
+
+<div id="case-container">
+<div style="padding:180px 24px 100px;text-align:center;color:var(--text-muted);letter-spacing:1px;">Loading case file…</div>
+</div>
+
+<footer>
+<div class="logo" style="font-size:16px;"><img src="images/hisaab-logo.png" alt="HISAAB logo">HIS<span>AAB</span></div>
+<ul class="footer-links">
+<li><a href="about.html">Methodology</a></li>
+<li><a href="about.html">Sources</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="submit.html">Contribute</a></li>
+</ul>
+<div class="footer-note">A public accountability archive. All entries sourced. Makes no judgment of guilt.</div>
+</footer>
+
+<script>
+(function(){
+    var toggleBtn = document.getElementById("themeToggle");
+    var saved = localStorage.getItem("hisaab-theme");
+    if(saved === "light"){ document.body.classList.add("light-mode"); toggleBtn.innerHTML = "&#9728;&#65039;"; }
+    toggleBtn.addEventListener("click", function(){
+        document.body.classList.toggle("light-mode");
+        var isLight = document.body.classList.contains("light-mode");
+        toggleBtn.innerHTML = isLight ? "&#9728;&#65039;" : "&#127769;";
+        localStorage.setItem("hisaab-theme", isLight ? "light" : "dark");
+    });
+})();
+</script>
+
+<script src="data/people.js"></script>
+<script src="data/cases.js"></script>
+<script src="data/institutions.js"></script>
+<script src="case-render.js"></script>
+
+</body>
+</html>

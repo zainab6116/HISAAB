@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit A Record — HISAAB</title>
+<link rel="icon" type="image/png" href="images/hisaab-logo.png">
+<meta name="description" content="Submit documented, sourced information about a person, case, or institution to the HISAAB public record.">
+<link rel="stylesheet" href="hisaab.css">
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+<div class="logo" onclick="window.location.href='index.html'"><img src="images/hisaab-logo.png" alt="HISAAB logo">HIS<span>AAB</span></div>
+<ul class="nav-links">
+<li><a href="index.html">Records</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="submit.html" class="nav-active">Submit</a></li>
+</ul>
+<div class="nav-icons">
+<button class="nav-icon-btn" id="themeToggle" aria-label="Toggle light and dark mode">&#127769;</button>
+</div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="submit-hero">
+<p class="about-eyebrow">This Is How Accountability Starts</p>
+<h1 class="about-headline">You know something they hoped would <span class="gold-text">disappear.</span></h1>
+</section>
+
+<!-- ================= STAGGER ================= -->
+<div class="stagger-block">
+<p class="stagger-line">A tip.</p>
+<p class="stagger-line">A document.</p>
+<p class="stagger-line">A record somebody tried to bury.</p>
+<p class="stagger-line emphasis">Send it.</p>
+</div>
+
+<!-- ================= RAGE BAND ================= -->
+<section class="rage-band">
+<p class="rage-band-lead reveal">Every cover-up depends on one thing staying true</p>
+<h2 class="reveal">Silence.<small>Yours doesn't have to be part of it.</small></h2>
+</section>
+
+<!-- ================= EXPLANATORY ================= -->
+<div class="about-block reveal">
+<p>HISAAB only publishes what can be verified. That means every submission gets checked against public records, court documents, and credible reporting before it becomes part of the archive — but that verification can't start until someone brings it forward. If you have sourced, documented information, this is where it enters the record.</p>
+</div>
+
+<!-- ================= PROCESS ================= -->
+<div class="section" style="padding-top:0;">
+<div class="process-line">
+<div class="process-step reveal"><div class="process-num">01</div><h4>You Submit</h4><p>Fill out the intake form below with as much detail and sourcing as you can provide.</p></div>
+<div class="process-step reveal"><div class="process-num">02</div><h4>We Verify</h4><p>The claim is cross-checked against independent, publicly available records.</p></div>
+<div class="process-step reveal"><div class="process-num">03</div><h4>It Gets Filed</h4><p>If it holds up, it's written into the record — and it stays there.</p></div>
+</div>
+</div>
+
+<!-- ================= FORM ================= -->
+<div class="section" style="padding-top:0;">
+<div class="dossier reveal">
+
+<div class="dossier-strip">
+<span class="label">Intake Form</span>
+<span class="ref" id="ref-number">REF# —</span>
+</div>
+
+<div class="dossier-body">
+
+<form id="report-form" class="form-state">
+
+<div class="field">
+<label>Record Type <span class="req">*</span></label>
+<select id="f-type" required>
+<option value="" disabled selected>Select one</option>
+<option>Person</option>
+<option>Case / Scandal</option>
+<option>Institution</option>
+</select>
+</div>
+
+<div class="field">
+<label>Name / Title <span class="req">*</span></label>
+<input type="text" id="f-name" placeholder="Name of the person, case, or institution this concerns" required>
+</div>
+
+<div class="field-row">
+<div class="field">
+<label>Category <span class="req">*</span></label>
+<select id="f-category" required>
+<option value="" disabled selected>Select one</option>
+<option>Corruption</option>
+<option>Abuse of Power</option>
+<option>Human Rights</option>
+<option>Governance / Administrative</option>
+<option>Censorship</option>
+<option>Electoral</option>
+<option>Other</option>
+</select>
+</div>
+<div class="field">
+<label>Year / Date Range <span class="req">*</span></label>
+<input type="text" id="f-year" placeholder="e.g. 2019 – 2021" required>
+</div>
+</div>
+
+<div class="field">
+<label>Institution Involved</label>
+<input type="text" id="f-institution" placeholder="e.g. Federal Ministry, Provincial Government, Military, Judiciary">
+</div>
+
+<div class="field">
+<label>What Happened <span class="req">*</span></label>
+<textarea id="f-description" placeholder="Summarize the allegation, investigation, or event. Stick to what can be verified — leave out speculation." required></textarea>
+</div>
+
+<div class="field">
+<label>Sources <span class="req">*</span></label>
+<textarea id="f-sources" placeholder="Paste links to news articles, court documents, official reports, or gazette notifications — one per line." required></textarea>
+<p class="hint">Submissions without at least one verifiable source will not be published.</p>
+</div>
+
+<div class="field">
+<label>Your Contact (Optional)</label>
+<input type="text" id="f-contact" placeholder="Email, if you're open to follow-up questions">
+<p class="hint">Leave this blank to submit anonymously. We never publish reporter identities.</p>
+</div>
+
+<div class="consent">
+<input type="checkbox" id="f-consent" required>
+<label for="f-consent">I confirm this information is submitted in good faith, to the best of my knowledge, and I understand HISAAB will independently verify it before publishing.</label>
+</div>
+
+<button type="submit" class="submit-btn">Submit To The Record</button>
+<p class="submit-note">Your default mail app will open with this report pre-filled — nothing is sent automatically.</p>
+
+</form>
+
+<div id="confirm-state" class="confirm">
+<div class="confirm-mark">&#10003;</div>
+<h3>Submission Ready To Send</h3>
+<p>Your mail app should now be open with this report pre-filled. Once you hit send, our review team will verify it against public records — thank you for helping keep this record honest.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ================= SAFETY NOTICE ================= -->
+<div class="about-block reveal">
+<p class="about-block-label">Before You Submit</p>
+<p>Only submit information that is already public, or that you are legally and safely able to share. If you or someone you know is in immediate danger, contact local authorities or a trusted support organization first — this form is for documentation, not emergency response.</p>
+<p><strong>We do not publish unverified claims, and we do not disclose who submitted a report.</strong> HISAAB makes no judgment of guilt — it documents the public record.</p>
+</div>
+
+<footer>
+<div class="logo" style="font-size:16px;"><img src="images/hisaab-logo.png" alt="HISAAB logo">HIS<span>AAB</span></div>
+<ul class="footer-links">
+<li><a href="about.html">Methodology</a></li>
+<li><a href="about.html">Sources</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="submit.html">Contribute</a></li>
+</ul>
+<div class="footer-note">A public accountability archive. All entries sourced. Makes no judgment of guilt.</div>
+</footer>
+
+<script>
+(function(){
+    var toggleBtn = document.getElementById("themeToggle");
+    var saved = localStorage.getItem("hisaab-theme");
+    if(saved === "light"){ document.body.classList.add("light-mode"); toggleBtn.innerHTML = "&#9728;&#65039;"; }
+    toggleBtn.addEventListener("click", function(){
+        document.body.classList.toggle("light-mode");
+        var isLight = document.body.classList.contains("light-mode");
+        toggleBtn.innerHTML = isLight ? "&#9728;&#65039;" : "&#127769;";
+        localStorage.setItem("hisaab-theme", isLight ? "light" : "dark");
+    });
+})();
+
+(function(){
+    var items = document.querySelectorAll(".reveal");
+    var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+            if(entry.isIntersecting){ entry.target.classList.add("in"); observer.unobserve(entry.target); }
+        });
+    }, { threshold:0.12 });
+    items.forEach(function(el){ observer.observe(el); });
+})();
+
+function staggerReveal(containerSelector, childSelector, gap){
+    document.querySelectorAll(containerSelector).forEach(function(container){
+        var children = container.querySelectorAll(childSelector);
+        var obs = new IntersectionObserver(function(entries){
+            entries.forEach(function(entry){
+                if(entry.isIntersecting){
+                    children.forEach(function(child, i){
+                        setTimeout(function(){ child.classList.add("in"); }, i * (gap || 150));
+                    });
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold:0.3 });
+        obs.observe(container);
+    });
+}
+staggerReveal(".stagger-block", ".stagger-line", 220);
+
+/* reference number */
+(function(){
+    var year = new Date().getFullYear();
+    var rand = Math.floor(1000 + Math.random() * 8999);
+    document.getElementById("ref-number").textContent = "REF# " + year + "-" + rand;
+})();
+
+/* form submit -> mailto handoff */
+document.getElementById("report-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    var type = document.getElementById("f-type").value;
+    var name = document.getElementById("f-name").value.trim();
+    var category = document.getElementById("f-category").value;
+    var year = document.getElementById("f-year").value.trim();
+    var institution = document.getElementById("f-institution").value.trim();
+    var description = document.getElementById("f-description").value.trim();
+    var sources = document.getElementById("f-sources").value.trim();
+    var contact = document.getElementById("f-contact").value.trim();
+
+    var subject = "HISAAB Submission: " + name + " (" + year + ")";
+    var body =
+        "RECORD TYPE: " + type + "\n" +
+        "NAME/TITLE: " + name + "\n" +
+        "CATEGORY: " + category + "\n" +
+        "YEAR/DATE RANGE: " + year + "\n" +
+        "INSTITUTION: " + (institution || "Not specified") + "\n\n" +
+        "WHAT HAPPENED:\n" + description + "\n\n" +
+        "SOURCES:\n" + sources + "\n\n" +
+        "REPORTER CONTACT: " + (contact || "Anonymous");
+
+    var mailto = "mailto:submissions@hisaab.example?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    window.location.href = mailto;
+
+    document.getElementById("report-form").classList.add("hidden");
+    document.getElementById("confirm-state").classList.add("active");
+});
+</script>
+
+</body>
+</html>

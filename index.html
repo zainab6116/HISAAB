@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HISAAB — A Public Record of Accountability</title>
+<link rel="icon" type="image/png" href="images/hisaab-logo.png">
+<meta name="description" content="HISAAB documents allegations of corruption, abuse of authority, and human rights violations by those who hold power in Pakistan — sourced from public records, court documents, and investigative journalism.">
+<link rel="stylesheet" href="hisaab.css">
+</head>
+<body>
+
+<nav id="nav">
+<div class="logo" onclick="window.location.href='index.html'"><img src="images/hisaab-logo.png" alt="HISAAB logo">HIS<span>AAB</span></div>
+<ul class="nav-links" id="site-nav">
+<li><a href="#record-browser" class="nav-active">Records</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="submit.html">Submit</a></li>
+</ul>
+<div class="nav-icons">
+<button class="nav-icon-btn" id="searchToggle" aria-label="Search">&#128269;</button>
+<button class="nav-icon-btn" id="themeToggle" aria-label="Toggle light and dark mode">&#127769;</button>
+<button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div>
+</nav>
+
+<div class="search-drop" id="searchDrop">
+<div class="search-drop-inner">
+<input type="text" id="hero-search-input" placeholder="Search people, cases, institutions…">
+<p class="search-drop-hint">Try "corruption", "military", or "under investigation" — press Enter to search</p>
+</div>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+<div class="hero-eyebrow">A Living Archive Of Accountability</div>
+<h1>HIS<span class="accent">AAB</span></h1>
+<p class="tagline">Power is temporary. Justice is eternal.</p>
+<p class="hero-lede">HISAAB brings together public records, court documents, official reports, and investigative journalism to preserve documented allegations of corruption, abuse of authority, and human rights violations by those who hold power in Pakistan.</p>
+<div class="hero-cta">
+<a href="#record-browser" class="btn btn-primary">Enter The Archive</a>
+<a href="about.html" class="btn btn-outline">Our Methodology</a>
+</div>
+
+<div class="hero-stats-row">
+<div class="hero-stat"><div class="n" id="stat-people">0</div><div class="l">People Tracked</div></div>
+<div class="hero-stat"><div class="n" id="stat-cases">0</div><div class="l">Cases Documented</div></div>
+<div class="hero-stat"><div class="n" id="stat-institutions">0</div><div class="l">Institutions</div></div>
+<div class="hero-stat"><div class="n" id="stat-pending">0</div><div class="l">Ongoing</div></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="scroll-cue"><span>Scroll</span><div class="line"></div></div>
+</section>
+
+<!-- ================= STATS / METHODOLOGY LINE ================= -->
+<section>
+<div class="section-label">The Record So Far</div>
+<h2 class="section-title reveal">Every entry here is sourced.<br>Every claim can be traced.</h2>
+<div class="stats-grid reveal">
+<div class="stat-card"><div class="stat-num" id="stat-people-2">0</div><div class="stat-label">People Documented</div></div>
+<div class="stat-card"><div class="stat-num" id="stat-institutions-2">0</div><div class="stat-label">Institutions Tracked</div></div>
+<div class="stat-card"><div class="stat-num" id="stat-sources">0</div><div class="stat-label">Source Documents</div></div>
+<div class="stat-card"><div class="stat-num" id="stat-cases-2">0</div><div class="stat-label">Cases Documented</div></div>
+</div>
+</section>
+
+<!-- ================= RECENTLY DOCUMENTED STRIP ================= -->
+<section class="timeline-section" id="recent">
+<div class="section-label">Recently Added</div>
+<h2 class="section-title reveal">Newest Entries To The Record</h2>
+<div class="timeline-strip reveal" id="recent-strip"></div>
+</section>
+
+<!-- ================= ENTITY GRID ================= -->
+<section>
+<div class="section-label">Explore The Archive</div>
+<h2 class="section-title reveal">Three Ways In</h2>
+<div class="entity-grid reveal">
+<div class="entity-card" onclick="setTab('people')">
+<div class="entity-icon">&#9679;</div>
+<h3>People</h3>
+<p>Politicians, military leaders, bureaucrats, business and media figures — with career timelines and a Hisaab Score.</p>
+<div class="entity-meta"><span id="meta-people">0 profiles</span><span class="gold">View all →</span></div>
+</div>
+<div class="entity-card" onclick="setTab('cases')">
+<div class="entity-icon">&#9673;</div>
+<h3>Major Cases</h3>
+<p>Scandals, investigations, and constitutional or political crises, each fully sourced and timelined.</p>
+<div class="entity-meta"><span id="meta-cases">0 cases</span><span class="gold">View all →</span></div>
+</div>
+<div class="entity-card" onclick="setTab('institutions')">
+<div class="entity-icon">&#9878;</div>
+<h3>Institutions</h3>
+<p>Ministries, provincial governments, and public authorities — mandate, leadership, and documented controversies.</p>
+<div class="entity-meta"><span id="meta-institutions">0 profiled</span><span class="gold">View all →</span></div>
+</div>
+</div>
+</section>
+
+<!-- ================= RECORD BROWSER ================= -->
+<section id="record-browser">
+<div class="section-label">The Full Record</div>
+<h2 class="section-title reveal">Browse By Type</h2>
+<div class="record-tabs">
+<button class="record-tab active" data-tab="people">People</button>
+<button class="record-tab" data-tab="cases">Cases</button>
+<button class="record-tab" data-tab="institutions">Institutions</button>
+</div>
+<p class="section-label" id="record-label" style="margin-bottom:30px;">Showing All People</p>
+<div class="record-grid" id="record-grid"></div>
+</section>
+
+<!-- ================= HISAAB SCORE ================= -->
+<section>
+<div class="section-label">A HISAAB Original</div>
+<h2 class="section-title reveal">Not A Verdict. A Summary Of The Record.</h2>
+<div class="score-band reveal">
+<div class="score-band-text">
+<h3>What is a Hisaab Score?</h3>
+<p>Every profile carries a Hisaab Score — not a judgment of guilt, but a plain summary of the public record: how many offices someone has held, how many investigations and court cases have been publicly reported, and how those cases were resolved. It's a way to see a pattern at a glance, without HISAAB making the judgment for you.</p>
+</div>
+<div class="score-example">
+<div class="score-example-head"><span>Sample Score — Placeholder Profile</span></div>
+<div class="score-metric-row"><span>Offices Held</span><b>2</b></div>
+<div class="score-metric-row"><span>Investigations Reported</span><b>3</b></div>
+<div class="score-metric-row"><span>Court Cases</span><b>2</b></div>
+<div class="score-metric-row"><span>Convictions</span><b>0</b></div>
+<div class="score-metric-row"><span>Acquittals</span><b>1</b></div>
+<div class="score-metric-row"><span>Ongoing Proceedings</span><b>1</b></div>
+</div>
+</div>
+</section>
+
+<!-- ================= MISSION ================= -->
+<section class="mission">
+<p class="mission-quote reveal">No office should place a person above <span class="gold-text">accountability</span>.<br>No position should silence the <span class="gold-text">truth</span>.</p>
+<div class="gold-rule"></div>
+<p class="mission-sub reveal">We stand for truth, accountability, and the values on which Pakistan was founded. Leaders are entrusted to serve the people — not themselves. Every action leaves a record, and every trust deserves accountability.</p>
+</section>
+
+<!-- ================= CTA ================= -->
+<div class="remember-cta">
+<h2>Have documented evidence of misconduct?</h2>
+<p>If you have sourced, verifiable information about a person, case, or institution that belongs in this record, submit it for review.</p>
+<div class="remember-actions">
+<a href="submit.html" class="btn btn-primary">Submit A Record</a>
+<a href="about.html" class="btn btn-outline">Our Methodology</a>
+</div>
+</div>
+
+<footer>
+<div class="logo" style="font-size:16px;"><img src="images/hisaab-logo.png" alt="HISAAB logo">HIS<span>AAB</span></div>
+<ul class="footer-links">
+<li><a href="about.html">Methodology</a></li>
+<li><a href="about.html">Sources</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="submit.html">Contribute</a></li>
+</ul>
+<div class="footer-note">A public accountability archive. All entries sourced. Makes no judgment of guilt.</div>
+</footer>
+
+<script src="data/people.js"></script>
+<script src="data/cases.js"></script>
+<script src="data/institutions.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
