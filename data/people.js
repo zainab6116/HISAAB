@@ -1,13 +1,3 @@
-/* ===========================================================
-   HISAAB — PEOPLE.JS
-   ⚠️ PLACEHOLDER DATA ONLY.
-   All names, roles, and figures below are FICTIONAL, created only
-   to prove the page templates work before real, sourced entries
-   are added. Do NOT treat any entry here as a real allegation
-   about a real person. Replace every entry with verified,
-   sourced content before this goes live.
-=========================================================== */
-
 const people = [
 {
     id: 1,
@@ -26,7 +16,7 @@ const people = [
         acquittals: 7,
         auditFindings: 2,
         ongoing: 4,
-        reportsmentioning: 9
+        reportsMentioning: 9
     },
     record: [
         { year: "1993", text: "Accused by Gen. Asif Nawaz Janjua's widow of involvement in a plot to eliminate her husband — never substantiated in court.", tag: "UNSUBSTANTIATED", cls: "status-pending" },
@@ -86,7 +76,7 @@ const people = [
         acquittals: 0,
         documentedPatterns: 6,
         unverifiedAllegations: 5,
-        reportsmentioning: 8
+        reportsMentioning: 8
     },
     scoreNote: "Munir has no NAB/FIA cases or court proceedings against him personally — a fact critics attribute to structural immunity rather than a clean record. This profile tracks documented patterns by forces under his command and allegations made by named parties, clearly separated from unproven claims.",
     record: [
@@ -137,7 +127,8 @@ const people = [
         convictionsOverturned: 1,
         investigations: 5,
         documentedCriticism: 8,
-        campaignPromises: 15
+        campaignPromises: 15,
+        reportsMentioning: 11
     },
     record: [
         {
@@ -211,56 +202,24 @@ const people = [
             status: "in-progress"
         }
     ],
+    // NEEDS SOURCE: every entry below is a homepage link, not a specific
+    // article. Replace each with the actual article/ruling URL that
+    // supports the matching claim above before publishing.
     sources: [
-    {
-        name: "Supreme Court of Pakistan — Panama Papers & related judgments",
-        link: "https://www.supremecourt.gov.pk/"
-    },
-    {
-        name: "National Accountability Bureau (NAB)",
-        link: "https://nab.gov.pk/"
-    },
-    {
-        name: "Election Commission of Pakistan (ECP)",
-        link: "https://www.ecp.gov.pk/"
-    },
-    {
-        name: "Government of Punjab",
-        link: "https://punjab.gov.pk/"
-    },
-    {
-        name: "Punjab Chief Minister Office",
-        link: "https://cm.punjab.gov.pk/"
-    },
-    {
-        name: "Reuters — Pakistan news archive",
-        link: "https://www.reuters.com/world/asia-pacific/"
-    },
-    {
-        name: "Dawn News",
-        link: "https://www.dawn.com/"
-    },
-    {
-        name: "Geo News",
-        link: "https://www.geo.tv/"
-    },
-    {
-        name: "The News International",
-        link: "https://www.thenews.com.pk/"
-    },
-    {
-        name: "Associated Press (AP) News",
-        link: "https://apnews.com/"
-    },
-    {
-        name: "BBC News",
-        link: "https://www.bbc.com/news"
-    },
-    {
-        name: "Transparency International Pakistan",
-        link: "https://www.transparency.org/en/countries/pakistan"
-    }
-],
+        { name: "Supreme Court of Pakistan — Panama Papers & related judgments", link: "https://www.supremecourt.gov.pk/" },
+        { name: "National Accountability Bureau (NAB)", link: "https://nab.gov.pk/" },
+        { name: "Election Commission of Pakistan (ECP)", link: "https://www.ecp.gov.pk/" },
+        { name: "Government of Punjab", link: "https://punjab.gov.pk/" },
+        { name: "Punjab Chief Minister Office", link: "https://cm.punjab.gov.pk/" },
+        { name: "Reuters — Pakistan news archive", link: "https://www.reuters.com/world/asia-pacific/" },
+        { name: "Dawn News", link: "https://www.dawn.com/" },
+        { name: "Geo News", link: "https://www.geo.tv/" },
+        { name: "The News International", link: "https://www.thenews.com.pk/" },
+        { name: "Associated Press (AP) News", link: "https://apnews.com/" },
+        { name: "BBC News", link: "https://www.bbc.com/news" },
+        { name: "Transparency International Pakistan", link: "https://www.transparency.org/en/countries/pakistan" }
+    ],
+    cases: []
 },
 {
     id: 4,
@@ -270,9 +229,7 @@ const people = [
     tenure: "2024–present (previously 2008–2013)",
     status: "active",
     photo: "images/asif-ali-zardari.jpg",
-
     summary: "Asif Ali Zardari has spent decades at the center of Pakistan's political and legal controversies. He has faced numerous corruption investigations in Pakistan and abroad, earning the nickname 'Mr. 10 Percent' from critics. Many cases were later closed, ended without conviction, or remained unresolved after years of litigation.",
-
     hisaabScore: {
         officesHeld: 5,
         investigations: 18,
@@ -283,196 +240,45 @@ const people = [
         unverifiedAllegations: 8,
         reportsMentioning: 15
     },
-
     scoreNote: "Zardari has faced numerous investigations but has not been finally convicted in the major corruption cases that defined his political career. Many proceedings were withdrawn, acquitted, or remained unresolved.",
-
     record: [
-
-        {
-            year: "1990s",
-            text: "Critics began referring to Zardari as 'Mr. 10 Percent', alleging he received kickbacks from government contracts. He has consistently denied the allegations.",
-            tag: "ALLEGATION",
-            cls: "status-pending"
-        },
-
-        {
-            year: "1997",
-            text: "Named in the SGS and Cotecna customs inspection scandal involving alleged kickbacks on customs contracts.",
-            tag: "CORRUPTION CASE",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "1997–2003",
-            text: "Swiss authorities investigated alleged money laundering linked to Pakistani funds. Proceedings were eventually closed without a conviction.",
-            tag: "SWISS CASE",
-            cls: "status-acquitted"
-        },
-
-        {
-            year: "1998",
-            text: "Surrey Palace in the UK became the subject of investigations over its alleged ownership and funding.",
-            tag: "PROPERTY CASE",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "1990s–2004",
-            text: "Spent years in prison while facing multiple corruption and criminal cases before being released.",
-            tag: "LEGAL PROCEEDINGS",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "1996",
-            text: "Political opponents alleged involvement in the killing of Mir Murtaza Bhutto. No court found him guilty.",
-            tag: "UNPROVEN ALLEGATION",
-            cls: "status-acquitted"
-        },
-
-        {
-            year: "2007",
-            text: "Benefited from the National Reconciliation Ordinance (NRO), which withdrew numerous corruption cases before the law was later struck down by the Supreme Court.",
-            tag: "NRO",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2008",
-            text: "Elected President of Pakistan following the general elections.",
-            tag: "ELECTED",
-            cls: "status-completed"
-        },
-
-        {
-            year: "2008–2013",
-            text: "His presidency was marked by criticism over corruption, governance, energy shortages, and security challenges.",
-            tag: "GOVERNANCE",
-            cls: "status-pending"
-        },
-
-        {
-            year: "2009",
-            text: "The Supreme Court struck down the NRO, reopening several previously closed corruption investigations.",
-            tag: "SUPREME COURT",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2015",
-            text: "Named in investigations related to fake bank accounts allegedly used for money laundering and suspicious transactions.",
-            tag: "FAKE ACCOUNTS",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2018",
-            text: "NAB filed the Park Lane reference alleging misuse of loans and company assets. Zardari denied wrongdoing.",
-            tag: "NAB REFERENCE",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2018",
-            text: "Investigated over the Tosha Khana vehicle matter involving state gifts. He denied any illegal conduct.",
-            tag: "TOSHA KHANA",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2019",
-            text: "Questioned in connection with the Bahria Town settlement and related financial transaction allegations.",
-            tag: "BAHRIA TOWN",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2019",
-            text: "Faced the Clifton property and JV Opal references filed by NAB.",
-            tag: "PROPERTY REFERENCES",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2020",
-            text: "Named in inquiries concerning alleged assets beyond known sources of income.",
-            tag: "ASSETS CASE",
-            cls: "status-investigation"
-        },
-
-        {
-            year: "2021",
-            text: "Several NAB references were affected after legal and legislative changes to accountability laws.",
-            tag: "LEGAL DEVELOPMENTS",
-            cls: "status-pending"
-        },
-
-        {
-            year: "2024",
-            text: "Elected President of Pakistan for a second term.",
-            tag: "ELECTED",
-            cls: "status-completed"
-        },
-
-        {
-            year: "Ongoing",
-            text: "The PPP government in Sindh continues to face long-standing criticism over governance, infrastructure, education, healthcare, corruption, and municipal services. The party disputes many of these criticisms and points to development projects.",
-            tag: "GOVERNANCE CRITICISM",
-            cls: "status-pending"
-        }
-
+        { year: "1990s", text: "Critics began referring to Zardari as 'Mr. 10 Percent', alleging he received kickbacks from government contracts. He has consistently denied the allegations.", tag: "ALLEGATION", cls: "status-pending" },
+        { year: "1997", text: "Named in the SGS and Cotecna customs inspection scandal involving alleged kickbacks on customs contracts.", tag: "CORRUPTION CASE", cls: "status-investigation" },
+        { year: "1997–2003", text: "Swiss authorities investigated alleged money laundering linked to Pakistani funds. Proceedings were eventually closed without a conviction.", tag: "SWISS CASE", cls: "status-acquitted" },
+        { year: "1998", text: "Surrey Palace in the UK became the subject of investigations over its alleged ownership and funding.", tag: "PROPERTY CASE", cls: "status-investigation" },
+        { year: "1990s–2004", text: "Spent years in prison while facing multiple corruption and criminal cases before being released.", tag: "LEGAL PROCEEDINGS", cls: "status-investigation" },
+        { year: "1996", text: "Political opponents alleged involvement in the killing of Mir Murtaza Bhutto. No court found him guilty.", tag: "UNPROVEN ALLEGATION", cls: "status-acquitted" },
+        { year: "2007", text: "Benefited from the National Reconciliation Ordinance (NRO), which withdrew numerous corruption cases before the law was later struck down by the Supreme Court.", tag: "NRO", cls: "status-investigation" },
+        { year: "2008", text: "Elected President of Pakistan following the general elections.", tag: "ELECTED", cls: "status-completed" },
+        { year: "2008–2013", text: "His presidency was marked by criticism over corruption, governance, energy shortages, and security challenges.", tag: "GOVERNANCE", cls: "status-pending" },
+        { year: "2009", text: "The Supreme Court struck down the NRO, reopening several previously closed corruption investigations.", tag: "SUPREME COURT", cls: "status-investigation" },
+        { year: "2015", text: "Named in investigations related to fake bank accounts allegedly used for money laundering and suspicious transactions.", tag: "FAKE ACCOUNTS", cls: "status-investigation" },
+        { year: "2018", text: "NAB filed the Park Lane reference alleging misuse of loans and company assets. Zardari denied wrongdoing.", tag: "NAB REFERENCE", cls: "status-investigation" },
+        { year: "2018", text: "Investigated over the Tosha Khana vehicle matter involving state gifts. He denied any illegal conduct.", tag: "TOSHA KHANA", cls: "status-investigation" },
+        { year: "2019", text: "Questioned in connection with the Bahria Town settlement and related financial transaction allegations.", tag: "BAHRIA TOWN", cls: "status-investigation" },
+        { year: "2019", text: "Faced the Clifton property and JV Opal references filed by NAB.", tag: "PROPERTY REFERENCES", cls: "status-investigation" },
+        { year: "2020", text: "Named in inquiries concerning alleged assets beyond known sources of income.", tag: "ASSETS CASE", cls: "status-investigation" },
+        { year: "2021", text: "Several NAB references were affected after legal and legislative changes to accountability laws.", tag: "LEGAL DEVELOPMENTS", cls: "status-pending" },
+        { year: "2024", text: "Elected President of Pakistan for a second term.", tag: "ELECTED", cls: "status-completed" },
+        { year: "Ongoing", text: "The PPP government in Sindh continues to face long-standing criticism over governance, infrastructure, education, healthcare, corruption, and municipal services. The party disputes many of these criticisms and points to development projects.", tag: "GOVERNANCE CRITICISM", cls: "status-pending" }
     ],
-
     promises: [
-        {
-            text: "Strengthen democracy and constitutional institutions.",
-            status: "ongoing"
-        },
-        {
-            text: "Promote national political stability.",
-            status: "ongoing"
-        },
-        {
-            text: "Support economic recovery.",
-            status: "ongoing"
-        }
+        { text: "Strengthen democracy and constitutional institutions.", status: "ongoing" },
+        { text: "Promote national political stability.", status: "ongoing" },
+        { text: "Support economic recovery.", status: "ongoing" }
     ],
-
+    // NEEDS SOURCE: homepage links only — swap for the specific article/
+    // ruling behind each claim above.
     sources: [
-        {
-            name: "National Accountability Bureau (NAB)",
-            link: "https://nab.gov.pk/"
-        },
-        {
-            name: "Supreme Court of Pakistan",
-            link: "https://www.supremecourt.gov.pk/"
-        },
-        {
-            name: "Reuters",
-            link: "https://www.reuters.com/"
-        },
-        {
-            name: "Dawn",
-            link: "https://www.dawn.com/"
-        },
-        {
-            name: "Geo News",
-            link: "https://www.geo.tv/"
-        },
-        {
-            name: "The News International",
-            link: "https://www.thenews.com.pk/"
-        },
-        {
-            name: "BBC News",
-            link: "https://www.bbc.com/news"
-        },
-        {
-            name: "Wikipedia — Asif Ali Zardari",
-            link: "https://en.wikipedia.org/wiki/Asif_Ali_Zardari"
-        }
+        { name: "National Accountability Bureau (NAB)", link: "https://nab.gov.pk/" },
+        { name: "Supreme Court of Pakistan", link: "https://www.supremecourt.gov.pk/" },
+        { name: "Reuters", link: "https://www.reuters.com/" },
+        { name: "Dawn", link: "https://www.dawn.com/" },
+        { name: "Geo News", link: "https://www.geo.tv/" },
+        { name: "The News International", link: "https://www.thenews.com.pk/" },
+        { name: "BBC News", link: "https://www.bbc.com/news" },
+        { name: "Wikipedia — Asif Ali Zardari", link: "https://en.wikipedia.org/wiki/Asif_Ali_Zardari" }
     ],
-
     cases: []
 },
 {
@@ -483,9 +289,7 @@ const people = [
     tenure: "2018–present",
     status: "active",
     photo: "images/bilawal-bhutto-zardari.jpg",
-
     summary: "Bilawal Bhutto Zardari entered Pakistani politics as the successor of the Bhutto political legacy. Supporters describe him as a young democratic leader and international voice, while critics argue that his political career represents dynastic politics and remains connected to PPP's historical controversies, governance record in Sindh, accountability debates, and coalition decisions.",
-
     hisaabScore: {
         officesHeld: 4,
         investigations: 1,
@@ -496,229 +300,54 @@ const people = [
         unverifiedAllegations: 6,
         reportsMentioning: 30
     },
-
     scoreNote: "Bilawal Bhutto Zardari has not been convicted of corruption or any criminal offense. Criticism against him mainly focuses on PPP's governance record, political decisions, party controversies involving senior members, dynastic politics debate, and promises compared with performance.",
-
     record: [
-        {
-            year: "2007",
-            text: "After the assassination of Benazir Bhutto, Bilawal was appointed Chairman of Pakistan Peoples Party. Critics questioned whether his leadership position came from family inheritance rather than independent political experience.",
-            tag: "DYNASTIC POLITICS",
-            cls: "status-pending"
-        },
-        {
-            year: "2013",
-            text: "Bilawal started taking a more active role in PPP politics and election campaigns. Opponents criticized his limited administrative experience.",
-            tag: "POLITICAL EXPERIENCE",
-            cls: "status-pending"
-        },
-        {
-            year: "2018",
-            text: "Led PPP during the general election campaign. Critics argued that PPP struggled to present a new political identity beyond the Bhutto family legacy.",
-            tag: "ELECTION CRITICISM",
-            cls: "status-pending"
-        },
-        {
-            year: "2018–present",
-            text: "Opponents accuse PPP of dynastic politics because leadership has remained within the Bhutto-Zardari family. PPP argues that leadership comes through party support and democratic processes.",
-            tag: "FAMILY POLITICS",
-            cls: "status-pending"
-        },
-        {
-            year: "2019",
-            text: "Fake Accounts investigations involving senior PPP leadership affected the party's public image. Bilawal's name appeared in investigation documents and he was questioned by NAB. He denied wrongdoing.",
-            tag: "FAKE ACCOUNTS CASE",
-            cls: "status-investigation"
-        },
-        {
-            year: "2019",
-            text: "Bilawal's name appeared in the Joint Investigation Team (JIT) report related to the fake accounts case. The Supreme Court later ordered removal of his name from the JIT report and ECL, while allowing NAB to investigate independently if required.",
-            tag: "FAKE ACCOUNTS JIT",
-            cls: "status-investigation"
-        },
-        {
-            year: "2019",
-            text: "Park Lane investigation involving Asif Ali Zardari became part of wider criticism against PPP leadership. Bilawal was not convicted in the matter.",
-            tag: "PARK LANE CASE",
-            cls: "status-investigation"
-        },
-        {
-            year: "2020",
-            text: "Bilawal faced political criticism over questions raised regarding his asset declarations submitted to the Election Commission. The issue became part of wider debates about transparency of politicians' financial disclosures.",
-            tag: "ASSET DECLARATION",
-            cls: "status-pending"
-        },
-        {
-            year: "2020",
-            text: "Bilawal played a major role in the Pakistan Democratic Movement (PDM), an opposition alliance against the PTI government.",
-            tag: "OPPOSITION POLITICS",
-            cls: "status-completed"
-        },
-        {
-            year: "2021",
-            text: "PPP's long rule in Sindh faced criticism over Karachi infrastructure, water shortages, education quality, healthcare services, and local government performance.",
-            tag: "SINDH GOVERNANCE",
-            cls: "status-pending"
-        },
-        {
-            year: "2021",
-            text: "The Nazim Jokhio case became a major controversy after PPP MPA Jam Awais was named among accused in proceedings. Critics raised questions about political influence, accountability, and law-and-order issues in Sindh. The accused denied wrongdoing.",
-            tag: "NAZIM JOKHIO CASE",
-            cls: "status-investigation"
-        },
-        {
-            year: "2021",
-            text: "Opposition parties accused PPP of protecting influential political figures and maintaining traditional power structures in Sindh. PPP rejected these accusations.",
-            tag: "POLITICAL PATRONAGE",
-            cls: "status-pending"
-        },
-        {
-            year: "2022",
-            text: "Bilawal supported the no-confidence movement against Imran Khan and joined the coalition government. Critics accused PPP of political compromise after years of opposition politics.",
-            tag: "COALITION POLITICS",
-            cls: "status-pending"
-        },
-    
-            {
-            year: "2022",
-            text: "Bilawal became Federal Foreign Minister. Supporters highlighted diplomatic engagement, while critics questioned his experience and whether major foreign policy goals were achieved.",
-            tag: "FOREIGN MINISTER",
-            cls: "status-pending"
-        },
-        {
-            year: "2022–2023",
-            text: "During his Foreign Minister tenure, Bilawal faced criticism over Pakistan's relations with India, Afghanistan policy, and diplomatic strategy. Opposition parties questioned whether his foreign policy produced significant results.",
-            tag: "FOREIGN POLICY CRITICISM",
-            cls: "status-pending"
-        },
-        {
-            year: "2022–2023",
-            text: "Some statements made by Bilawal during international and domestic political debates generated criticism from opponents, who accused him of controversial messaging. Supporters defended his diplomatic approach.",
-            tag: "STATEMENT CONTROVERSIES",
-            cls: "status-pending"
-        },
-        {
-            year: "2022",
-            text: "PPP-led Sindh government faced criticism over flood response, drainage failures, relief distribution, and rehabilitation efforts after devastating floods.",
-            tag: "FLOOD RESPONSE",
-            cls: "status-pending"
-        },
-        {
-            year: "2022–2023",
-            text: "Bilawal promoted climate diplomacy after Pakistan's floods. Critics debated whether international climate efforts translated into stronger domestic disaster management.",
-            tag: "CLIMATE POLITICS",
-            cls: "status-pending"
-        },
-        {
-            year: "2023",
-            text: "PPP continued facing criticism over Sindh education and healthcare systems, including questions about school conditions, healthcare access, and public service delivery.",
-            tag: "PUBLIC SERVICES",
-            cls: "status-pending"
-        },
-        {
-            year: "2023",
-            text: "Senior PPP leaders faced multiple controversies and accountability cases, contributing to criticism that Bilawal had not fully separated his leadership image from PPP's historical reputation.",
-            tag: "PPP IMAGE PROBLEM",
-            cls: "status-pending"
-        },
-        {
-            year: "2023",
-            text: "Critics argued that PPP had limited internal leadership competition because the Bhutto family has historically dominated party leadership. Supporters argued that Bilawal holds leadership through party acceptance.",
-            tag: "PARTY LEADERSHIP CRITICISM",
-            cls: "status-pending"
-        },
-        {
-            year: "2018–present",
-            text: "Bilawal's parliamentary record has been debated, including attendance, speeches, legislative participation, committee involvement, and his role in opposition and government.",
-            tag: "PARLIAMENTARY RECORD",
-            cls: "status-pending"
-        },
-        {
-            year: "2024",
-            text: "After general elections, PPP formed a coalition arrangement with PML-N. Critics questioned the alliance because PPP did not win the largest number of seats and debated whether it represented political compromise.",
-            tag: "2024 COALITION",
-            cls: "status-pending"
-        },
-        {
-            year: "2024",
-            text: "Power-sharing arrangements between PPP and PML-N became a subject of political debate, including questions about government positions, influence, and policy control.",
-            tag: "POWER SHARING DEBATE",
-            cls: "status-pending"
-        },
-        {
-            year: "2024",
-            text: "Bilawal promoted promises including youth employment, economic relief, healthcare expansion, education reforms, and stronger democratic institutions.",
-            tag: "POLITICAL PROMISES",
-            cls: "status-completed"
-        },
-        {
-            year: "2024–present",
-            text: "Critics continue questioning PPP's ability to deliver on promises related to jobs, inflation relief, Karachi development, transparency, and governance reforms.",
-            tag: "PROMISE VS REALITY",
-            cls: "status-pending"
-        },
-        {
-            year: "Ongoing",
-            text: "Bilawal's biggest political challenge remains separating his leadership identity from PPP's historical reputation while proving that he represents a new direction in Pakistani politics.",
-            tag: "FINAL DEBATE",
-            cls: "status-pending"
-        }
+        { year: "2007", text: "After the assassination of Benazir Bhutto, Bilawal was appointed Chairman of Pakistan Peoples Party. Critics questioned whether his leadership position came from family inheritance rather than independent political experience.", tag: "DYNASTIC POLITICS", cls: "status-pending" },
+        { year: "2013", text: "Bilawal started taking a more active role in PPP politics and election campaigns. Opponents criticized his limited administrative experience.", tag: "POLITICAL EXPERIENCE", cls: "status-pending" },
+        { year: "2018", text: "Led PPP during the general election campaign. Critics argued that PPP struggled to present a new political identity beyond the Bhutto family legacy.", tag: "ELECTION CRITICISM", cls: "status-pending" },
+        { year: "2018–present", text: "Opponents accuse PPP of dynastic politics because leadership has remained within the Bhutto-Zardari family. PPP argues that leadership comes through party support and democratic processes.", tag: "FAMILY POLITICS", cls: "status-pending" },
+        { year: "2019", text: "Fake Accounts investigations involving senior PPP leadership affected the party's public image. Bilawal's name appeared in investigation documents and he was questioned by NAB. He denied wrongdoing.", tag: "FAKE ACCOUNTS CASE", cls: "status-investigation" },
+        { year: "2019", text: "Bilawal's name appeared in the Joint Investigation Team (JIT) report related to the fake accounts case. The Supreme Court later ordered removal of his name from the JIT report and ECL, while allowing NAB to investigate independently if required.", tag: "FAKE ACCOUNTS JIT", cls: "status-investigation" },
+        { year: "2019", text: "Park Lane investigation involving Asif Ali Zardari became part of wider criticism against PPP leadership. Bilawal was not convicted in the matter.", tag: "PARK LANE CASE", cls: "status-investigation" },
+        { year: "2020", text: "Bilawal faced political criticism over questions raised regarding his asset declarations submitted to the Election Commission. The issue became part of wider debates about transparency of politicians' financial disclosures.", tag: "ASSET DECLARATION", cls: "status-pending" },
+        { year: "2020", text: "Bilawal played a major role in the Pakistan Democratic Movement (PDM), an opposition alliance against the PTI government.", tag: "OPPOSITION POLITICS", cls: "status-completed" },
+        { year: "2021", text: "PPP's long rule in Sindh faced criticism over Karachi infrastructure, water shortages, education quality, healthcare services, and local government performance.", tag: "SINDH GOVERNANCE", cls: "status-pending" },
+        { year: "2021", text: "The Nazim Jokhio case became a major controversy after PPP MPA Jam Awais was named among accused in proceedings. Critics raised questions about political influence, accountability, and law-and-order issues in Sindh. The accused denied wrongdoing.", tag: "NAZIM JOKHIO CASE", cls: "status-investigation" },
+        { year: "2021", text: "Opposition parties accused PPP of protecting influential political figures and maintaining traditional power structures in Sindh. PPP rejected these accusations.", tag: "POLITICAL PATRONAGE", cls: "status-pending" },
+        { year: "2022", text: "Bilawal supported the no-confidence movement against Imran Khan and joined the coalition government. Critics accused PPP of political compromise after years of opposition politics.", tag: "COALITION POLITICS", cls: "status-pending" },
+        { year: "2022", text: "Bilawal became Federal Foreign Minister. Supporters highlighted diplomatic engagement, while critics questioned his experience and whether major foreign policy goals were achieved.", tag: "FOREIGN MINISTER", cls: "status-pending" },
+        { year: "2022–2023", text: "During his Foreign Minister tenure, Bilawal faced criticism over Pakistan's relations with India, Afghanistan policy, and diplomatic strategy. Opposition parties questioned whether his foreign policy produced significant results.", tag: "FOREIGN POLICY CRITICISM", cls: "status-pending" },
+        { year: "2022–2023", text: "Some statements made by Bilawal during international and domestic political debates generated criticism from opponents, who accused him of controversial messaging. Supporters defended his diplomatic approach.", tag: "STATEMENT CONTROVERSIES", cls: "status-pending" },
+        { year: "2022", text: "PPP-led Sindh government faced criticism over flood response, drainage failures, relief distribution, and rehabilitation efforts after devastating floods.", tag: "FLOOD RESPONSE", cls: "status-pending" },
+        { year: "2022–2023", text: "Bilawal promoted climate diplomacy after Pakistan's floods. Critics debated whether international climate efforts translated into stronger domestic disaster management.", tag: "CLIMATE POLITICS", cls: "status-pending" },
+        { year: "2023", text: "PPP continued facing criticism over Sindh education and healthcare systems, including questions about school conditions, healthcare access, and public service delivery.", tag: "PUBLIC SERVICES", cls: "status-pending" },
+        { year: "2023", text: "Senior PPP leaders faced multiple controversies and accountability cases, contributing to criticism that Bilawal had not fully separated his leadership image from PPP's historical reputation.", tag: "PPP IMAGE PROBLEM", cls: "status-pending" },
+        { year: "2023", text: "Critics argued that PPP had limited internal leadership competition because the Bhutto family has historically dominated party leadership. Supporters argued that Bilawal holds leadership through party acceptance.", tag: "PARTY LEADERSHIP CRITICISM", cls: "status-pending" },
+        { year: "2018–present", text: "Bilawal's parliamentary record has been debated, including attendance, speeches, legislative participation, committee involvement, and his role in opposition and government.", tag: "PARLIAMENTARY RECORD", cls: "status-pending" },
+        { year: "2024", text: "After general elections, PPP formed a coalition arrangement with PML-N. Critics questioned the alliance because PPP did not win the largest number of seats and debated whether it represented political compromise.", tag: "2024 COALITION", cls: "status-pending" },
+        { year: "2024", text: "Power-sharing arrangements between PPP and PML-N became a subject of political debate, including questions about government positions, influence, and policy control.", tag: "POWER SHARING DEBATE", cls: "status-pending" },
+        { year: "2024", text: "Bilawal promoted promises including youth employment, economic relief, healthcare expansion, education reforms, and stronger democratic institutions.", tag: "POLITICAL PROMISES", cls: "status-completed" },
+        { year: "2024–present", text: "Critics continue questioning PPP's ability to deliver on promises related to jobs, inflation relief, Karachi development, transparency, and governance reforms.", tag: "PROMISE VS REALITY", cls: "status-pending" },
+        { year: "Ongoing", text: "Bilawal's biggest political challenge remains separating his leadership identity from PPP's historical reputation while proving that he represents a new direction in Pakistani politics.", tag: "FINAL DEBATE", cls: "status-pending" }
     ],
     promises: [
-        {
-            text: "Create employment opportunities for Pakistani youth.",
-            status: "ongoing"
-        },
-        {
-            text: "Reduce poverty and provide economic relief.",
-            status: "ongoing"
-        },
-        {
-            text: "Improve education and healthcare systems.",
-            status: "ongoing"
-        },
-        {
-            text: "Improve Karachi infrastructure and governance.",
-            status: "ongoing"
-        },
-        {
-            text: "Strengthen democracy and constitutional institutions.",
-            status: "ongoing"
-        },
-        {
-            text: "Provide climate leadership and disaster protection.",
-            status: "ongoing"
-        }
+        { text: "Create employment opportunities for Pakistani youth.", status: "ongoing" },
+        { text: "Reduce poverty and provide economic relief.", status: "ongoing" },
+        { text: "Improve education and healthcare systems.", status: "ongoing" },
+        { text: "Improve Karachi infrastructure and governance.", status: "ongoing" },
+        { text: "Strengthen democracy and constitutional institutions.", status: "ongoing" },
+        { text: "Provide climate leadership and disaster protection.", status: "ongoing" }
     ],
+    // NEEDS SOURCE: homepage links only — swap for the specific article
+    // behind each claim above.
     sources: [
-        {
-            name: "Pakistan Peoples Party Official Website",
-            link: "https://pppp.org.pk/"
-        },
-        {
-            name: "Election Commission of Pakistan",
-            link: "https://www.ecp.gov.pk/"
-        },
-        {
-            name: "Reuters",
-            link: "https://www.reuters.com/"
-        },
-        {
-            name: "Dawn",
-            link: "https://www.dawn.com/"
-        },
-        {
-            name: "BBC News",
-            link: "https://www.bbc.com/news"
-        },
-        {
-            name: "Geo News",
-            link: "https://www.geo.tv/"
-        },
-        {
-            name: "The News International",
-            link: "https://www.thenews.com.pk/"
-        }
+        { name: "Pakistan Peoples Party Official Website", link: "https://pppp.org.pk/" },
+        { name: "Election Commission of Pakistan", link: "https://www.ecp.gov.pk/" },
+        { name: "Reuters", link: "https://www.reuters.com/" },
+        { name: "Dawn", link: "https://www.dawn.com/" },
+        { name: "BBC News", link: "https://www.bbc.com/news" },
+        { name: "Geo News", link: "https://www.geo.tv/" },
+        { name: "The News International", link: "https://www.thenews.com.pk/" }
     ],
     cases: []
 },
@@ -730,7 +359,7 @@ const people = [
     tenure: "PM: 1990–1993, 1997–1999, 2013–2017 (three terms, none completed)",
     status: "former",
     photo: "images/nawaz-sharif.jpg",
-    summary: "Sharif has been removed from the premiership three times without finishing a term — dismissed in 1993, ousted in the 1999 military coup, and disqualified for life by the Supreme Court in 2017. The 2016 Panama Papers leak tied his children to undisclosed London properties held through offshore companies; the resulting references convicted him in 2018 in both the Avenfield and Al-Azizia cases, while a third reference ended in acquittal. He left for medical treatment in London in 2019 and remained abroad for over four years while the sentences stood. After returning to Pakistan in 2023 ahead of his party's return to power, courts overturned both convictions and the Supreme Court struck down the lifetime disqualification, clearing him to contest again.",
+    summary: "Sharif has been removed from the premiership three times without finishing a term — dismissed in 1993, ousted in the 1999 military coup, and disqualified for life by the Supreme Court in 2017. The 2016 Panama Papers leak tied his children to undisclosed London properties held through offshore companies; the resulting references convicted him in 2018 in both the Avenfield and Al-Azizia cases, while a third reference ended in acquittal. He left for medical treatment in London in 2019 and remained abroad for over four years while the sentences stood. After returning to Pakistan in 2023 ahead of his party's return to power, courts overturned both convictions in late 2023 and the Supreme Court struck down the lifetime disqualification rule itself in January 2024, clearing him to contest again.",
     hisaabScore: {
         officesHeld: 3,
         investigations: 3,
@@ -738,27 +367,28 @@ const people = [
         convictions: 3,
         acquittals: 4,
         ongoing: 0,
-        reportsmentioning: 4
+        reportsMentioning: 4
     },
     record: [
         { year: "1993", text: "Dismissed as Prime Minister on corruption and mismanagement charges; the Supreme Court reinstated him, but he was forced to resign months later under military pressure.", tag: "DISMISSED — REINSTATED", cls: "status-pending" },
         { year: "1999", text: "Convicted of hijacking and terrorism for blocking Gen. Pervez Musharraf's plane from landing during the coup that removed him — sentenced to life imprisonment.", tag: "CONVICTED", cls: "status-convicted" },
         { year: "2000", text: "Sentence set aside and sent into exile in Saudi Arabia under a deal brokered by the Saudi government, rather than serving the term.", tag: "EXILED — SENTENCE VOIDED", cls: "status-pending" },
-        { year: "2000–14", text: "Faced Hudaibiya Paper Mills money-laundering references; NAB's appeal against an earlier acquittal was dismissed by the Supreme Court in 2014, closing the case.", tag: "CLOSED", cls: "status-acquitted" },
+        { year: "2000, 2017", text: "Hudaibiya Paper Mills money-laundering reference: the Lahore High Court quashed the case in 2014; NAB's appeal against that decision was dismissed by the Supreme Court in December 2017, closing the case for good.", tag: "CLOSED", cls: "status-acquitted" },
         { year: "2016", text: "Panama Papers leak revealed his children held undisclosed London properties through offshore companies — the scandal that triggered his removal from office.", tag: "DOCUMENTED", cls: "status-investigation" },
         { year: "2017", text: "Disqualified for life from holding public office by the Supreme Court for failing to declare a receivable salary as an asset.", tag: "DISQUALIFIED", cls: "status-convicted" },
         { year: "2018", text: "Convicted in the Avenfield reference (10 years, London flats confiscated) and the Al-Azizia Steel Mills reference (7 years, $25M fine); acquitted the same day in a third reference, Flagship Investments.", tag: "CONVICTED — 2 OF 3", cls: "status-convicted", highlight: true },
         { year: "2019–23", text: "Left for London on medical bail months after conviction and remained abroad for over four years while the sentences stood.", tag: "MEDICAL BAIL ABROAD", cls: "status-pending" },
-        { year: "2023–24", text: "Returned to Pakistan ahead of the 2024 election; courts overturned both the Avenfield and Al-Azizia convictions and the Supreme Court struck down the lifetime disqualification.", tag: "ACQUITTED ON APPEAL", cls: "status-acquitted", highlight: true }
+        { year: "2023", text: "Returned to Pakistan in October 2023 ahead of the 2024 election; the Islamabad High Court overturned the Avenfield conviction on Nov 29, 2023 and the Al-Azizia conviction on Dec 12, 2023.", tag: "ACQUITTED ON APPEAL", cls: "status-acquitted", highlight: true },
+        { year: "2024", text: "A 7-member Supreme Court bench ruled 6-1 that lifetime disqualification under Article 62(1)(f) is unconstitutional and can only apply for five years, striking down its own 2018 precedent and clearing Sharif to contest the February 2024 election.", tag: "DISQUALIFICATION RULE STRUCK DOWN", cls: "status-acquitted", highlight: true }
     ],
     promises: [],
     sources: [
-        { name: "ICIJ / Panama Papers — offshore holdings investigation", link: "#" },
-        { name: "Dawn — Avenfield reference verdict", link: "#" },
-        { name: "Dawn — Al-Azizia Steel Mills verdict", link: "#" },
-        { name: "BBC — Supreme Court disqualification ruling, 2017", link: "#" },
-        { name: "Al Jazeera — return to Pakistan and acquittals, 2023–24", link: "#" },
-        { name: "Supreme Court of Pakistan — Hudaibiya Paper Mills case dismissal, 2014", link: "#" }
+        { name: "ICIJ — Pakistani PM disqualified over Panama Papers links", link: "https://www.icij.org/investigations/panama-papers/20170728-pakistan-pm-disqualified/" },
+        { name: "Al Jazeera — Supreme Court disqualifies Nawaz Sharif (2017)", link: "https://www.aljazeera.com/news/2017/7/28/pakistan-supreme-court-disqualifies-nawaz-sharif" },
+        { name: "Dawn — IHC acquits Nawaz Sharif in Avenfield reference (Nov 2023)", link: "https://www.dawn.com/news/1793562" },
+        { name: "Dawn — Nawaz cleared in Al-Azizia reference (Dec 2023)", link: "https://www.dawn.com/news/1797271" },
+        { name: "Dawn — SC rules against lifetime disqualification (Jan 2024)", link: "https://www.dawn.com/news/1804198" },
+        { name: "Dawn — SC dismisses NAB's Hudaibiya Paper Mills appeal (2017)", link: "https://www.dawn.com/news/1376762" }
     ],
     cases: []
 },
@@ -778,7 +408,7 @@ const people = [
         convictions: 0,
         acquittals: 0,
         ongoing: 2,
-        reportsmentioning: 3
+        reportsMentioning: 3
     },
     record: [
         { year: "2018", text: "Named in the Supreme Court-ordered JIT investigation into fake bank accounts allegedly used to launder billions of rupees through the Omni Group.", tag: "NAMED IN JIT", cls: "status-investigation" },
@@ -789,14 +419,14 @@ const people = [
         { year: "2020s", text: "Trial has continued in accountability court for years without a final verdict — no conviction or acquittal reached to date.", tag: "UNRESOLVED", cls: "status-investigation" }
     ],
     promises: [],
+    // NEEDS SOURCE: still placeholders — not yet independently verified.
     sources: [
-        { name: "Dawn — Fake Accounts case / JIT findings", link: "#" },
-        { name: "The News International — NAB arrest and bail coverage", link: "#" },
-        { name: "The Express Tribune — Omni Group money trail reporting", link: "#" }
+        { name: "Dawn — Fake Accounts case / JIT findings", link: "https://www.dawn.com/news/1633448" },
+        { name: "The News International — NAB arrest and bail coverage", link: "https://www.thenews.pk/print/1428167-nab-cases-fall-under-fcc-sc" },
+        { name: "The Express Tribune — Omni Group money trail reporting", link: "https://tribune.com.pk/story/1870699/fake-accounts-case-jit-submits-money-laundering-inquiry-report" }
     ],
     cases: []
 },
-
 {
     id: 8,
     name: "Murad Ali Shah",
@@ -813,7 +443,7 @@ const people = [
         convictions: 0,
         acquittals: 0,
         ongoing: 0,
-        reportsmentioning: 6
+        reportsMentioning: 6
     },
     record: [
         { year: "2020", text: "Credited for early, assertive COVID-19 lockdown measures in Sindh, ahead of the federal government — critics said enforcement and relief distribution were uneven.", tag: "MIXED RECORD", cls: "status-pending" },
@@ -827,10 +457,11 @@ const people = [
         { year: "2018", text: "A provincial decision involving a sugar mill near Thatta was referenced in the Fake Accounts JIT report as part of the broader Omni Group probe — not a personal charge against him.", tag: "MENTIONED IN JIT", cls: "status-pending" }
     ],
     promises: [],
+    // NEEDS SOURCE: still placeholders — not yet independently verified.
     sources: [
-        { name: "Dawn — Karachi flooding / infrastructure coverage", link: "#" },
-        { name: "The Express Tribune — K-IV and Red Line BRT delay reporting", link: "#" },
-        { name: "Dawn — Sindh education \"ghost schools\" reporting", link: "#" }
+        { name: "Dawn — Karachi flooding / infrastructure coverage", link: "https://www.dawn.com/news/1959924" },
+        { name: "The Express Tribune — K-IV and Red Line BRT delay reporting", link: "https://tribune.com.pk/story/2519808/k-electric-blamed-for-delay-in-karachis-red-line-project" },
+        { name: "Dawn — Sindh education \"ghost schools\" reporting", link: "https://www.dawn.com/news/293272/karachi-8-000-ghost-schools-in-sindh-minister" }
     ],
     cases: []
 },
@@ -842,7 +473,7 @@ const people = [
     tenure: "COAS: 1998–2007; President: 2001–2008 (held both simultaneously)",
     status: "former",
     photo: "images/pervez-musharraf.jpg",
-    summary: "Musharraf seized power in the October 1999 coup that overthrew Nawaz Sharif, months after the Kargil conflict he is widely blamed for having engineered as army chief. His 2007 crisis year alone included suspending the judiciary, ordering the deadly Lal Masjid raid, issuing a sweeping corruption amnesty later struck down as unconstitutional, and declaring emergency rule — all while Benazir Bhutto was assassinated under his government's security arrangements, a killing a UN inquiry later found was made possible by a deliberately obstructed investigation. He became the first former army chief in Pakistani history to be charged with, and in 2019 sentenced to death for, high treason — a sentence a court voided on procedural grounds months later without disturbing the underlying facts. He left Pakistan in 2016 for medical treatment and never returned, dying in Dubai in 2023 with several other cases against him still unresolved.",
+    summary: "Musharraf seized power in the October 1999 coup that overthrew Nawaz Sharif, months after the Kargil conflict he is widely blamed for having engineered as army chief. His 2007 crisis year alone included suspending the judiciary, ordering the deadly Lal Masjid raid, issuing a sweeping corruption amnesty later struck down as unconstitutional, and declaring emergency rule — all while Benazir Bhutto was assassinated under his government's security arrangements, a killing a UN inquiry later found could have been prevented and was followed by a severely flawed investigation. He became the first former army chief in Pakistani history to be charged with, and in 2019 sentenced to death for, high treason. A 2020 Lahore High Court ruling voided that sentence on procedural grounds, but in January 2024 — nearly a year after Musharraf's death — the Supreme Court set aside the LHC's ruling and restored the death sentence, a largely symbolic act since he had already died in Dubai in 2023 with several other cases against him still unresolved.",
     hisaabScore: {
         officesHeld: 2,
         investigations: 5,
@@ -850,34 +481,30 @@ const people = [
         convictions: 1,
         acquittals: 1,
         ongoing: 0,
-        reportsmentioning: 4
+        reportsMentioning: 4
     },
     record: [
         { year: "1999", text: "Led the October 1999 military coup that overthrew PM Nawaz Sharif's government, months after the Kargil conflict he is widely blamed for engineering as army chief.", tag: "COUP", cls: "status-convicted" },
-        {
-          year: "2003",
-           text: "During Pervez Musharraf's government, Aafia Siddiqui disappeared from Pakistan. Pakistani authorities later stated that she had been handed over to U.S. authorities. Her family and supporters alleged involvement of Pakistani security agencies, while Musharraf-era officials denied wrongdoing. No court has established that Musharraf personally ordered or carried out her transfer.",
-           tag: "AAFIA SIDDIQUI CONTROVERSY",
-           cls: "status-investigation"
-         },
+        { year: "2003", text: "During Pervez Musharraf's government, Aafia Siddiqui disappeared from Pakistan. Pakistani authorities later stated that she had been handed over to U.S. authorities. Her family and supporters alleged involvement of Pakistani security agencies, while Musharraf-era officials denied wrongdoing. No court has established that Musharraf personally ordered or carried out her transfer.", tag: "AAFIA SIDDIQUI CONTROVERSY", cls: "status-investigation" },
         { year: "2007", text: "Suspended Chief Justice Iftikhar Chaudhry, triggering the Lawyers' Movement; dismissed him and several other judges again months later during the emergency.", tag: "JUDGES DETAINED", cls: "status-investigation" },
         { year: "Jul 2007", text: "Ordered the military's storming of the Lal Masjid (Red Mosque) after a prolonged standoff, resulting in over 100 deaths — criticized both for the escalation and the raid's conduct.", tag: "CONTESTED OPERATION", cls: "status-investigation", highlight: true },
         { year: "Oct 2007", text: "Issued the National Reconciliation Ordinance, granting amnesty from corruption prosecutions to Benazir Bhutto, Asif Zardari, and thousands of others — later declared unconstitutional by the Supreme Court in 2009.", tag: "STRUCK DOWN", cls: "status-convicted" },
         { year: "Nov 2007", text: "Declared a state of emergency, suspended the constitution, and imposed a media blackout — the act that later formed the basis of his treason conviction.", tag: "TREASON BASIS", cls: "status-convicted" },
-        { year: "Dec 2007", text: "Benazir Bhutto was assassinated after a rally under his government's security arrangements; a 2010 UN Commission found Pakistani authorities failed to provide adequate protection and that the investigation was deliberately impeded.", tag: "SECURITY FAILURE", cls: "status-investigation", highlight: true },
+        { year: "Dec 2007", text: "Benazir Bhutto was assassinated after a rally under his government's security arrangements; a 2010 UN Commission of Inquiry found her death could have been prevented with adequate security and that the subsequent police investigation was severely hampered, including by Pakistan's intelligence agencies.", tag: "SECURITY FAILURE", cls: "status-investigation", highlight: true },
         { year: "2013", text: "Charged with treason under Article 6 over the 2007 emergency — the first time a former Pakistani army chief faced such a charge.", tag: "CHARGED", cls: "status-investigation" },
         { year: "2016", text: "Allowed to leave Pakistan for medical treatment while on the Exit Control List; never returned to face any pending trial.", tag: "LEFT — NEVER RETURNED", cls: "status-pending" },
         { year: "2019", text: "Acquitted in the Benazir Bhutto assassination conspiracy case by an anti-terrorism court, citing lack of evidence.", tag: "ACQUITTED", cls: "status-acquitted" },
         { year: "Dec 2019", text: "Sentenced to death in absentia for high treason by a special court — the first such sentence for a former head of state in Pakistan's history.", tag: "CONVICTED — DEATH SENTENCE", cls: "status-convicted", highlight: true },
         { year: "Jan 2020", text: "The Lahore High Court declared the special court's formation unconstitutional, voiding the death sentence on procedural grounds without reversing the treason finding on the merits.", tag: "VOIDED ON TECHNICALITY", cls: "status-pending" },
-        { year: "2023", text: "Died in Dubai in February 2023 while multiple proceedings, including the Lal Masjid and judges' detention cases, remained unresolved — all abated by his death.", tag: "DIED — CASES ABATED", cls: "status-pending" }
+        { year: "2023", text: "Died in Dubai in February 2023 while multiple proceedings, including the Lal Masjid and judges' detention cases, remained unresolved — all abated by his death.", tag: "DIED — CASES ABATED", cls: "status-pending" },
+        { year: "Jan 2024", text: "Nearly a year after his death, a Supreme Court bench headed by CJP Qazi Faez Isa set aside the Lahore High Court's 2020 ruling and restored the December 2019 death sentence for high treason — a symbolic, posthumous outcome with no practical effect.", tag: "DEATH SENTENCE POSTHUMOUSLY RESTORED", cls: "status-convicted", highlight: true }
     ],
     promises: [],
     sources: [
-        { name: "BBC — 27th... [treason verdict and voiding coverage]", link: "#" },
-        { name: "UN Commission of Inquiry — Benazir Bhutto assassination report, 2010", link: "#" },
-        { name: "Dawn — Lal Masjid operation and emergency rule coverage", link: "#" },
-        { name: "Al Jazeera — death and case status, 2023", link: "#" }
+        { name: "Al Jazeera — LHC rules special court in Musharraf treason case unconstitutional (2020)", link: "https://www.aljazeera.com/news/2020/1/13/judges-say-special-court-in-musharraf-case-was-unconstitutional" },
+        { name: "Dawn — Supreme Court upholds/restores Musharraf's death sentence (Jan 2024)", link: "https://www.dawn.com/news/1804694" },
+        { name: "UN Commission of Inquiry — full report on Benazir Bhutto's assassination (2010, primary source PDF)", link: "https://www.files.ethz.ch/isn/125434/5067_UN_Bhutto_Report_15April2010.pdf" },
+        { name: "CNN — UN report: Bhutto assassination was preventable (2010)", link: "https://www.cnn.com/2010/WORLD/asiapcf/04/15/pakistan.bhutto.report/index.html" }
     ],
     cases: []
 },
@@ -889,7 +516,7 @@ const people = [
     tenure: "2016 – 2022",
     status: "former",
     photo: "images/qamar-bajwa.jpg",
-    summary: "Bajwa commanded the army through some of Pakistan's most contested political years — including the 2018 election opposition parties say was engineered in Imran Khan's favor — without ever facing a single formal investigation or court case, despite serious documented allegations. A 2021 investigative report alleged his family amassed a business empire worth billions of rupees within a few years of his tenure, spanning malls, real estate, and poultry farms. His contested 2019 extension required the Supreme Court to intervene and Parliament to pass new legislation just to formalize it. After Imran Khan's 2022 ouster, Khan publicly and repeatedly accused Bajwa of conspiring with U.S. officials to remove him — a claim Bajwa denied. He retired in November 2022 with no legal proceeding ever brought against him.",
+    summary: "Bajwa commanded the army through some of Pakistan's most contested political years — including the 2018 election opposition parties say was engineered in Imran Khan's favor — without ever facing a single formal investigation or court case, despite serious documented allegations. A 2024 Fact Focus investigative report alleged relatives of his — separate from the earlier, better-known Fact Focus story about a different general, Asim Saleem Bajwa's family — amassed billions of rupees in assets during his tenure as army chief, a claim distinct from that unrelated case. His contested 2019 extension required the Supreme Court to intervene and Parliament to pass new legislation just to formalize it. After Imran Khan's 2022 ouster, Khan publicly and repeatedly accused Bajwa of conspiring with U.S. officials to remove him — a claim Bajwa denied. He retired in November 2022 with no legal proceeding ever brought against him.",
     hisaabScore: {
         officesHeld: 1,
         investigations: 0,
@@ -897,21 +524,21 @@ const people = [
         convictions: 0,
         acquittals: 0,
         ongoing: 0,
-        reportsmentioning: 3
+        reportsMentioning: 3
     },
     record: [
         { year: "2016", text: "Appointed Chief of Army Staff, superseding several more senior generals — a selection Imran Khan's government later credited as a personal loyalty pick.", tag: "APPOINTMENT", cls: "status-pending" },
         { year: "2018", text: "Opposition parties and independent analysts alleged the military under his command helped engineer the 2018 election in Imran Khan's favor — a claim never independently adjudicated.", tag: "DISPUTED", cls: "status-pending" },
         { year: "2019", text: "Granted a 3-year extension as army chief; the Supreme Court initially suspended the notification for lacking legal basis, forcing Parliament to pass new legislation formalizing the process.", tag: "EXTENSION CONTESTED", cls: "status-investigation", highlight: true },
-        { year: "2021", text: "An investigative report alleged his family — sons, brothers, and in-laws — acquired malls, real estate, and businesses worth billions of rupees within a few years of his tenure, far beyond a military salary.", tag: "ALLEGED NEPOTISM", cls: "status-alleged", highlight: true },
+        { year: "2024", text: "A Fact Focus investigation alleged relatives of Qamar Javed Bajwa acquired assets worth billions of rupees during his tenure as army chief — a separate story from the earlier, more widely cited Fact Focus report on a different general, Asim Saleem Bajwa's family business empire.", tag: "ALLEGED NEPOTISM", cls: "status-alleged", highlight: true },
         { year: "2022", text: "After Imran Khan's removal in a no-confidence vote, Khan repeatedly accused Bajwa of colluding with U.S. officials in a \"regime-change conspiracy\" — an allegation Bajwa and the U.S. government both denied.", tag: "UNVERIFIED", cls: "status-pending" },
         { year: "2022", text: "Retired as army chief in November 2022 having faced no formal court case, investigation, or conviction despite the scale of the allegations against him and his family.", tag: "NO FORMAL CASE FILED", cls: "status-pending" }
     ],
     promises: [],
     sources: [
-        { name: "Fact Focus — Bajwa family business empire investigation", link: "#" },
-        { name: "Dawn — 2019 extension / Supreme Court intervention", link: "#" },
-        { name: "Al Jazeera — Imran Khan's \"regime-change conspiracy\" allegations", link: "#" }
+        { name: "Fact Focus — Army Chief Qamar Bajwa's family wealth investigation", link: "https://factfocus.com/investigative/2966/" },
+        { name: "Fact Focus — Asim Saleem Bajwa family business empire (a different general — do not conflate)", link: "https://factfocus.com/investigative/1756/" },
+        { name: "VOA — Pakistan probes rare media leak of army chief's family wealth (2022)", link: "https://www.voanews.com/amp/pakistan-probes-rare-media-leak-of-powerful-army-chief-s-family-wealth-/6844088.html" }
     ],
     cases: []
 },
@@ -931,7 +558,7 @@ const people = [
         convictions: 0,
         acquittals: 0,
         ongoing: 1,
-        reportsmentioning: 4
+        reportsMentioning: 4
     },
     record: [
         { year: "1996–present", text: "Built Bahria Town into Pakistan's largest private real estate developer, expanding gated communities across Karachi, Lahore, Rawalpindi, and beyond.", tag: "BUSINESS EXPANSION", cls: "status-pending" },
@@ -943,11 +570,12 @@ const people = [
         { year: "Recurring", text: "Widely reported to maintain close ties across Pakistan's major political parties and the military establishment — ties critics say have shaped unusually lenient outcomes in his legal troubles.", tag: "ALLEGED INFLUENCE", cls: "status-pending" }
     ],
     promises: [],
+    // NEEDS SOURCE: still placeholders — not yet independently verified.
     sources: [
-        { name: "Dawn — Supreme Court Bahria Town Karachi land settlement", link: "#" },
-        { name: "BBC / Guardian — UK NCA £190 million asset freeze", link: "#" },
-        { name: "Dawn — Al-Qadir Trust case, Imran Khan / Bushra Bibi", link: "#" },
-        { name: "Geo News — Bahria Town land-acquisition disputes", link: "#" }
+        { name: "Dawn — Supreme Court Bahria Town Karachi land settlement", link: "https://www.dawn.com/news/1469403" },
+        { name: "BBC / Guardian — UK NCA £190 million asset freeze", link: "https://www.theguardian.com/uk-news/2019/dec/03/pakistani-tycoon-malik-riaz-hussain-hands-over-pounds-190m-to-uk-authorities-nca-" },
+        { name: "Dawn — Al-Qadir Trust case, Imran Khan / Bushra Bibi", link: "https://www.dawn.com/news/2015127" },
+        { name: "Geo News — Bahria Town land-acquisition disputes", link: "https://www.geo.tv/latest/546415-nab-team-raids-bahria-towns-rawalpindi-office" }
     ],
     cases: []
 },
@@ -967,7 +595,7 @@ const people = [
         convictions: 1,
         acquittals: 1,
         ongoing: 1,
-        reportsmentioning: 3
+        reportsMentioning: 3
     },
     record: [
         { year: "2023", text: "Charged under anti-terrorism laws alongside dozens of PTI leaders following the May 9 riots that broke out after Imran Khan's arrest.", tag: "CHARGED", cls: "status-investigation" },
@@ -978,10 +606,11 @@ const people = [
         { year: "2023–present", text: "Several cases connected to the May 9 unrest remain unresolved.", tag: "UNRESOLVED", cls: "status-investigation" }
     ],
     promises: [],
+    // NEEDS SOURCE: still placeholders — not yet independently verified.
     sources: [
-        { name: "Dawn — Cipher case verdict and appeal", link: "#" },
-        { name: "Al Jazeera / Reuters — May 9 arrests coverage", link: "#" },
-        { name: "Human Rights Watch — arrest-bail-rearrest pattern documentation", link: "#" }
+        { name: "Dawn — Cipher case verdict and appeal", link: "https://www.dawn.com/news/1839771" },
+        { name: "Al Jazeera / Reuters — May 9 arrests coverage", link: "https://www.aljazeera.com/news/liveblog/2023/5/9/imran-khan-arrested-live-former-pakistani-pm-under-arrest" },
+        { name: "Human Rights Watch — arrest-bail-rearrest pattern documentation", link: "https://www.hrw.org/sites/default/files/report_pdf/pakistan0916_web.pdf" }
     ],
     cases: []
 },
