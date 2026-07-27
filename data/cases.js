@@ -904,7 +904,7 @@ figures:[
 {
 id:8,
 title:"Missing Persons in Balochistan",
-image:"images/missing-persons-balochistan.jpg",
+image:"images/missing-person-balochistan.jpg",
 category:"Human Rights / Enforced Disappearances",
 institution:"Government of Pakistan • Commission of Inquiry on Enforced Disappearances • Supreme Court of Pakistan",
 dateRange:"2000–Present",
@@ -1420,5 +1420,696 @@ link:"https://www.aljazeera.com/"
 figures:[]
 
 
+},
+{
+id:9,
+title:"Dr. Aafia Siddiqui Case",
+image:"images/aafia-siddiqui.jpg",
+category:"Human Rights / International / National Security",
+institution:"Government of Pakistan • Government of the United States",
+dateRange:"2003–Present",
+status:"pending",
+
+overview:"The disappearance of Dr. Aafia Siddiqui in 2003, her arrest in Afghanistan in 2008, conviction in the United States in 2010, and continued imprisonment have made her case one of Pakistan's most debated human rights and diplomatic controversies. While her conviction concerns the 2008 Ghazni incident, questions about the years between her disappearance and arrest remain the subject of public debate.",
+
+background:[
+"Dr. Aafia Siddiqui studied at MIT and Brandeis University before returning to Pakistan.",
+"She disappeared in Karachi in March 2003 along with three of her children.",
+"Her family maintained she was forcibly disappeared, while U.S. authorities denied secretly detaining her during those years.",
+"She reappeared in Afghanistan in 2008 and was later transferred to the United States for trial."
+],
+
+timeline:[
+{
+date:"March 2003",
+title:"Disappearance",
+description:"Dr. Aafia Siddiqui disappeared in Karachi with her children. Her whereabouts remained publicly unknown for several years."
+},
+{
+date:"2003–2008",
+title:"Years of Uncertainty",
+description:"Her family alleged she was secretly detained during this period. The United States denied holding her before her arrest in Afghanistan."
+},
+{
+date:"July 2008",
+title:"Arrest in Afghanistan",
+description:"Afghan authorities detained her in Ghazni while reportedly carrying documents and notes. She was later handed over to U.S. custody."
+},
+{
+date:"August 2008",
+title:"Ghazni Incident",
+description:"U.S. prosecutors alleged she grabbed a rifle and fired at U.S. personnel. She denied the allegations. No U.S. personnel were injured."
+},
+{
+date:"February 2010",
+title:"Conviction",
+description:"A U.S. federal jury convicted her of attempted murder and assault related to the Ghazni incident."
+},
+{
+date:"September 2010",
+title:"Sentencing",
+description:"She was sentenced to 86 years in prison."
+},
+{
+date:"2010–Present",
+title:"Continuing Campaigns",
+description:"Successive Pakistani governments have pursued varying diplomatic and legal efforts while supporters continue to call for her return."
+}
+],
+
+allegations:[
+"Her family alleged she was forcibly disappeared in 2003.",
+"Supporters argue that the years between 2003 and 2008 have never been fully explained.",
+"Human rights organizations and campaigners have raised concerns regarding her treatment and imprisonment.",
+"U.S. prosecutors alleged she attempted to kill U.S. personnel during the Ghazni incident; she denied the allegation."
+],
+
+officialPosition:[
+"The United States maintains that her conviction resulted from evidence presented during a federal criminal trial.",
+"Pakistani governments have repeatedly stated that they have sought legal and diplomatic avenues regarding her case.",
+"No Pakistani court has determined that she was unlawfully handed over by a specific Pakistani official."
+],
+
+majorInvestigations:[
+"The U.S. federal criminal proceedings focused on the Ghazni shooting allegations rather than the events surrounding her disappearance.",
+"Her disappearance between 2003 and 2008 has remained the subject of public debate, media reporting and political discussion."
+],
+
+evidence:[
+"U.S. federal court records.",
+"Trial testimony and exhibits presented during the 2010 proceedings.",
+"Statements issued by Pakistani officials over multiple administrations.",
+"Public campaigns led by her family and supporters."
+],
+
+campaigns:[
+"Public demonstrations across Pakistan demanding her repatriation.",
+"Legal and diplomatic appeals by her family.",
+"Advocacy campaigns by supporters calling for renewed negotiations."
+],
+
+internationalAttention:[
+"The case has attracted significant international media coverage.",
+"It has been discussed by lawyers, human rights advocates and diplomatic officials in both Pakistan and the United States."
+],
+
+institutions:[
+{
+name:"Government of Pakistan",
+role:"Diplomatic engagement and consular support.",
+criticism:"Successive governments have been criticized by supporters for failing to secure her return.",
+officialPosition:"States that diplomatic and legal efforts have continued under different administrations."
+},
+{
+name:"United States Department of Justice",
+role:"Prosecuted the criminal case in federal court.",
+officialPosition:"Maintains that the conviction followed due legal process."
+}
+],
+
+laws:[
+"United States federal criminal law relating to attempted murder and assault.",
+"Vienna Convention principles regarding consular access.",
+"Diplomatic and international legal mechanisms relating to prisoner transfers."
+],
+
+majorQuestions:[
+"What happened between 2003 and 2008?",
+"What became of her missing years?",
+"What diplomatic options remain available today?",
+"Can Pakistan and the United States reach an agreement regarding her future?"
+],
+
+statistics:[
+"Missing from public view for approximately five years.",
+"Sentenced to 86 years in prison in 2010.",
+"Her case has remained active in Pakistani public debate for more than two decades."
+],
+
+impact:[
+"Her case has become one of Pakistan's most recognized human rights and diplomatic issues.",
+"It continues to influence discussions about international cooperation, due process and state accountability."
+],
+
+questions:[
+"Will the unanswered questions surrounding her disappearance ever be fully resolved?",
+"Will diplomatic efforts eventually lead to her return to Pakistan?",
+"What lessons does the case hold for protecting citizens abroad?"
+],
+
+legacy:[
+"One of the most internationally recognized legal cases involving a Pakistani citizen.",
+"Continues to shape political debate, public campaigns and diplomatic discussions."
+],
+
+whyItMatters:[
+"The case represents the intersection of national security, human rights, international law and diplomacy.",
+"It remains deeply emotional for many Pakistanis because of the unresolved questions surrounding her disappearance."
+],
+
+hisaabNote:"For millions of Pakistanis, Dr. Aafia Siddiqui is more than a prisoner—she is remembered as a daughter of Pakistan whose story still raises painful questions. Years have passed, governments have changed, promises have been made, yet for many her return remains an unfulfilled hope. Whether viewed through the lens of law, diplomacy or human rights, her case continues to leave families asking whether every citizen deserves the same determination from those entrusted with protecting them.",
+
+sources:[
+{
+name:"United States Department of Justice",
+link:"https://www.justice.gov/"
+},
+{
+name:"PACER / U.S. Federal Court Records",
+link:"https://pacer.uscourts.gov/"
+},
+{
+name:"BBC News",
+link:"https://www.bbc.com/news"
+},
+{
+name:"Reuters",
+link:"https://www.reuters.com/"
+},
+{
+name:"Dawn",
+link:"https://www.dawn.com/"
+},
+{
+name:"Al Jazeera",
+link:"https://www.aljazeera.com/"
+}
+],
+
+figures:[]
+},
+{
+id:10,
+title:"Baldia Factory Fire",
+image:"images/baldia-factory-fire.jpg",
+category:"Industrial Disaster / Labour Rights",
+institution:"Ali Enterprises • Sindh Government",
+dateRange:"11 September 2012 – Present",
+status:"investigation",
+
+overview:"One of Pakistan's deadliest industrial disasters. A fire at Karachi's Ali Enterprises garment factory killed more than 250 workers, exposing severe fire safety failures, alleged criminal activity, and years of legal battles for justice.",
+
+background:[
+"Ali Enterprises was a garment factory in Karachi employing hundreds of workers.",
+"On 11 September 2012, a massive fire spread rapidly through the building.",
+"Many workers were unable to escape because exits were reportedly locked or inaccessible.",
+"The tragedy sparked nationwide demands for accountability and workplace safety reforms."
+],
+
+timeline:[
+{
+date:"11 Sept 2012",
+title:"Fire Erupts",
+description:"A fire broke out inside Ali Enterprises in Baldia Town, Karachi. Hundreds of workers became trapped."
+},
+{
+date:"11 Sept 2012",
+title:"Mass Casualties",
+description:"More than 250 workers lost their lives while dozens were injured, making it one of Pakistan's worst industrial disasters."
+},
+{
+date:"2012",
+title:"Initial Investigation",
+description:"Authorities initially treated the incident as an industrial accident caused by negligence."
+},
+{
+date:"2015",
+title:"New Evidence",
+description:"Investigators alleged the fire had been deliberately started following an extortion dispute."
+},
+{
+date:"2018",
+title:"Court Proceedings",
+description:"Anti-Terrorism Court proceedings continued against individuals accused in the investigation."
+},
+{
+date:"2020–Present",
+title:"Justice Continues",
+description:"Legal proceedings, compensation disputes and accountability efforts continue years after the tragedy."
+}
+],
+
+allegations:[
+"Factory exits were reportedly locked during the fire.",
+"Emergency exits and fire safety measures were allegedly inadequate.",
+"Investigators later alleged the fire was deliberately set after an extortion demand.",
+"Questions remain over corporate responsibility and regulatory oversight."
+],
+
+officialPosition:[
+"Authorities conducted multiple criminal investigations.",
+"Government agencies introduced workplace safety reforms after the disaster.",
+"Courts continue to examine evidence presented during the investigations."
+],
+
+majorInvestigations:[
+"Karachi Police investigation.",
+"Joint Investigation Team (JIT).",
+"Anti-Terrorism Court proceedings.",
+"Forensic examinations of the fire scene."
+],
+
+evidence:[
+"Forensic reports.",
+"Witness testimonies.",
+"CCTV and factory records.",
+"Court documents."
+],
+
+campaigns:[
+"Families demanded justice.",
+"Labour rights organizations called for stronger workplace protections.",
+"International groups supported compensation efforts."
+],
+
+internationalAttention:[
+"International Labour Organization (ILO).",
+"Human Rights Watch.",
+"European labor rights organizations.",
+"Global media coverage."
+],
+
+institutions:[
+{
+name:"Sindh Government",
+role:"Oversaw investigations and compensation.",
+criticism:"Criticized over factory safety enforcement.",
+officialPosition:"Introduced workplace safety reforms after the tragedy."
+},
+{
+name:"Anti-Terrorism Court",
+role:"Heard criminal proceedings linked to the case."
+},
+{
+name:"Labour Department",
+role:"Responsible for workplace inspections and labour regulations."
+}
+],
+
+laws:[
+"Factories Act.",
+"Pakistan Penal Code.",
+"Anti-Terrorism Act.",
+"Labour safety regulations."
+],
+
+majorQuestions:[
+"Could the deaths have been prevented?",
+"Were safety inspections properly conducted?",
+"Who should ultimately be held responsible?",
+"Have workplace safety standards improved since 2012?"
+],
+
+statistics:[
+"260+ people killed.",
+"50+ injured.",
+"One of Pakistan's deadliest industrial disasters.",
+"Years of court proceedings followed."
+],
+
+impact:[
+"The tragedy exposed major weaknesses in workplace safety enforcement.",
+"It changed the national conversation on labour rights and industrial regulation."
+],
+
+questions:[
+"Did every responsible individual face accountability?",
+"Have all victims' families received justice?",
+"Could similar disasters still happen today?"
+],
+
+legacy:[
+"One of Pakistan's darkest workplace tragedies.",
+"A lasting symbol of the need for stronger labour protections."
+],
+
+whyItMatters:[
+"Every worker deserves to return home safely after a day's work.",
+"The Baldia Factory Fire became a reminder of the human cost when safety and accountability fail."
+],
+
+caseStatus:{
+status:"Partially Resolved",
+lastUpdate:"Ongoing legal developments",
+accountability:"Several proceedings concluded, while debate over full accountability continues."
+},
+
+hisaabNote:"They left home carrying lunchboxes and dreams for their families. Many never returned. Behind every factory uniform was a life, a family and a future that disappeared in smoke. Justice delayed cannot restore those lives—but remembering them ensures they are never reduced to a statistic.",
+
+sources:[
+{
+name:"Supreme Court of Pakistan",
+link:"https://www.supremecourt.gov.pk/"
+},
+{
+name:"Human Rights Watch",
+link:"https://www.hrw.org/"
+},
+{
+name:"International Labour Organization (ILO)",
+link:"https://www.ilo.org/"
+},
+{
+name:"Reuters",
+link:"https://www.reuters.com/"
+},
+{
+name:"Dawn",
+link:"https://www.dawn.com/"
+},
+{
+name:"BBC News",
+link:"https://www.bbc.com/news"
+}
+],
+
+figures:[]
+},
+{
+id:11,
+title:"Bahria Town Karachi / Malir Land Case",
+image:"images/bahria-town-malir.jpg",
+category:"Land Dispute / Governance / Accountability",
+institution:"Sindh Government • Malir Development Authority • Supreme Court of Pakistan",
+dateRange:"2015 – Present",
+status:"pending",
+
+overview:"One of Pakistan's largest land controversy cases. The dispute centered on thousands of acres in Malir that the Supreme Court ruled had been transferred through an illegal exchange process. The litigation resulted in a landmark Rs460 billion settlement while questions over land governance and accountability continued.",
+
+background:[
+"The Sindh Government transferred land to the Malir Development Authority (MDA).",
+"MDA later exchanged large portions of that land with Bahria Town.",
+"The legality of these exchanges was challenged before the Supreme Court.",
+"In 2018, the Court ruled that the exchange process had no legal basis."
+],
+
+timeline:[
+{
+date:"2015",
+title:"Land Controversy Emerges",
+description:"Questions were raised regarding thousands of acres transferred for the Bahria Town Karachi project."
+},
+{
+date:"May 2018",
+title:"Supreme Court Judgment",
+description:"The Supreme Court declared the land exchange between the Sindh Government, MDA and Bahria Town illegal."
+},
+{
+date:"2019",
+title:"Rs460 Billion Settlement",
+description:"The Supreme Court accepted Bahria Town's offer to pay Rs460 billion over several years to settle the dispute."
+},
+{
+date:"2019–Present",
+title:"Implementation",
+description:"The Court has continued monitoring implementation of the settlement and related land matters."
+}
+],
+
+allegations:[
+"Illegal exchange of government land.",
+"Irregular land allotment procedures.",
+"Weak regulatory oversight.",
+"Loss of public land through unlawful transactions."
+],
+
+officialPosition:[
+"The Supreme Court held that the land exchange process violated the law.",
+"Bahria Town maintained that it acquired land through lawful agreements and accepted the court-approved settlement.",
+"Government authorities stated they would implement the Court's directions."
+],
+
+majorInvestigations:[
+"Supreme Court constitutional proceedings.",
+"Implementation proceedings.",
+"Investigations into land transfers and official approvals."
+],
+
+evidence:[
+"Supreme Court judgments.",
+"Land exchange records.",
+"Malir Development Authority documents.",
+"Government land allotment records."
+],
+
+campaigns:[
+"Civil society demanded greater transparency in public land management.",
+"Residents and landowners challenged disputed acquisitions through legal proceedings."
+],
+
+internationalAttention:[
+"The case attracted international attention because of the unprecedented Rs460 billion settlement and its implications for governance and property rights."
+],
+
+institutions:[
+{
+name:"Supreme Court of Pakistan",
+role:"Declared the land exchange illegal and supervised implementation of the settlement."
+},
+{
+name:"Malir Development Authority",
+role:"Managed the government land involved in the disputed exchange."
+},
+{
+name:"Government of Sindh",
+role:"Approved the land transactions that later became the subject of judicial review."
+}
+],
+
+laws:[
+"Colonisation of Government Lands Act, 1912",
+"Constitution of Pakistan",
+"Provincial land administration laws"
+],
+
+majorQuestions:[
+"How did the land exchange receive official approval?",
+"Were existing landowners adequately protected?",
+"Has the settlement fully resolved the dispute?",
+"What reforms are needed to prevent similar cases?"
+],
+
+statistics:[
+"Nearly 17,000 acres involved.",
+"Rs460 billion settlement approved by the Supreme Court.",
+"One of Pakistan's largest land disputes."
+],
+
+impact:[
+"The case reshaped discussions on public land management, accountability and judicial oversight across Pakistan."
+],
+
+questions:[
+"Can public land transactions become more transparent?",
+"Have all accountability questions been answered?",
+"How can future land disputes be prevented?"
+],
+
+legacy:[
+"One of the largest land governance cases in Pakistan's history.",
+"A landmark judgment on judicial oversight of public land."
+],
+
+whyItMatters:[
+"Public land is a national asset. When questions arise over how it is transferred or managed, transparency and accountability become matters of public trust."
+],
+
+caseStatus:{
+status:"Settlement Under Court Supervision",
+lastUpdate:"Ongoing",
+accountability:"Implementation and related legal proceedings have continued under judicial oversight."
+},
+
+hisaabNote:"Land is more than property—it is livelihood, history and home. This case became a reminder that decisions involving public land can affect generations, making transparency and accountability essential to maintaining public trust.",
+
+sources:[
+{
+name:"Supreme Court Judgment",
+link:"https://www.supremecourt.gov.pk/"
+},
+{
+name:"Dawn – Rs460 Billion Settlement",
+link:"https://www.dawn.com/news/1471121"
+},
+{
+name:"Supreme Court Case Record",
+link:"https://pakcaselaw.duckdns.org/case/188203/jahanzaib-kalmaty-and-others-vs-province-of-sindh-through-board-of-2023-scp-367"
+},
+{
+name:"Reuters",
+link:"https://www.reuters.com/"
+},
+{
+name:"BBC News",
+link:"https://www.bbc.com/news"
+}
+],
+
+figures:[11]
+},
+{
+id:12,
+title:"NICL Land Scandal",
+image:"images/nicl-scandal.jpg",
+category:"Corruption / Public Funds",
+institution:"National Insurance Company Limited (NICL)",
+dateRange:"2010–Present",
+status:"convicted",
+
+overview:"The NICL scandal involved allegations that government-owned insurance funds were used to purchase land at inflated prices, allegedly causing losses worth hundreds of millions of rupees. The case became one of Pakistan's major public-sector corruption investigations.",
+
+background:[
+"NICL is a government-owned insurance company.",
+"In 2009, NICL purchased commercial land in Karachi's Korangi area.",
+"Investigators alleged the land was bought at an inflated price, causing major losses to the public treasury.",
+"The controversy triggered FIA and later NAB investigations."
+],
+
+timeline:[
+{
+date:"2009",
+title:"Land Purchased",
+description:"NICL purchased commercial land in Korangi, Karachi."
+},
+{
+date:"2010",
+title:"FIA Investigation",
+description:"The Federal Investigation Agency registered cases alleging corruption and abuse of authority."
+},
+{
+date:"2011",
+title:"NAB Proceedings",
+description:"The National Accountability Bureau pursued references against several officials."
+},
+{
+date:"2018",
+title:"Accountability Court Verdict",
+description:"An accountability court convicted former NICL Chairman Ayaz Khan Niazi and several others in one land purchase reference."
+},
+{
+date:"Present",
+title:"Continuing Legal Record",
+description:"Some related references concluded differently, while appeals and other proceedings continued over time."
+}
+],
+
+allegations:[
+"Purchase of land at an allegedly inflated price.",
+"Misuse of public funds.",
+"Abuse of official authority.",
+"Financial loss to the national exchequer."
+],
+
+officialPosition:[
+"Investigators alleged that irregularities caused significant financial losses.",
+"The accused denied wrongdoing during legal proceedings.",
+"Courts decided different references based on the evidence presented in each case."
+],
+
+majorInvestigations:[
+"Federal Investigation Agency (FIA).",
+"National Accountability Bureau (NAB).",
+"Accountability Court proceedings."
+],
+
+evidence:[
+"Land purchase agreements.",
+"Property valuation reports.",
+"Official NICL records.",
+"Court documents."
+],
+
+campaigns:[
+"Transparency advocates called for stronger oversight of state-owned companies.",
+"The case increased public attention on procurement reforms."
+],
+
+internationalAttention:[
+"The scandal received national attention and was cited by anti-corruption organizations as an example of governance challenges."
+],
+
+institutions:[
+{
+name:"National Insurance Company Limited (NICL)",
+role:"Government-owned insurance company involved in the disputed land purchase."
+},
+{
+name:"Federal Investigation Agency (FIA)",
+role:"Conducted the initial criminal investigation."
+},
+{
+name:"National Accountability Bureau (NAB)",
+role:"Filed corruption references before accountability courts."
+},
+{
+name:"Accountability Court",
+role:"Heard evidence and delivered judgments in corruption references."
+}
+],
+
+laws:[
+"National Accountability Ordinance.",
+"Pakistan Penal Code.",
+"Anti-Corruption laws.",
+"Public procurement and corporate governance rules."
+],
+
+majorQuestions:[
+"Could stronger oversight have prevented the alleged losses?",
+"Were public assets adequately protected?",
+"Have governance reforms reduced similar risks?"
+],
+
+statistics:[
+"Alleged losses of hundreds of millions of rupees.",
+"Multiple criminal references filed.",
+"One of Pakistan's most prominent public-sector corruption cases."
+],
+
+impact:[
+"The case highlighted weaknesses in governance, procurement and oversight within state-owned enterprises."
+],
+
+questions:[
+"Did the legal process deliver complete accountability?",
+"What further reforms are needed in public-sector companies?"
+],
+
+legacy:[
+"An important accountability case involving a government-owned enterprise.",
+"It contributed to calls for stronger corporate governance in public institutions."
+],
+
+whyItMatters:[
+"When public money is spent unlawfully, every taxpayer bears the cost. Cases like this test whether state institutions can protect national resources and hold officials accountable."],
+
+caseStatus:{
+status:"Partially Resolved",
+lastUpdate:"Court proceedings and appeals continued in related matters.",
+accountability:"Convictions were secured in one major reference, while other related cases had different legal outcomes."
+},
+
+hisaabNote:"Public institutions exist to protect national wealth—not to put it at risk. Every rupee lost through corruption is a rupee taken from schools, hospitals and the future of ordinary citizens. Accountability is not just about punishment; it is about restoring public trust.",
+
+sources:[
+{
+name:"Transparency International Pakistan – NICL",
+link:"https://transparency.org.pk/nicl/"
+},
+{
+name:"National Insurance Company Limited",
+link:"https://nicl.com.pk/"
+},
+{
+name:"Senate of Pakistan – NICL Cases",
+link:"https://www.senate.gov.pk/uploads/documents/questions/1400228756_462.pdf"
+},
+{
+name:"Geo News – NICL Corruption Case Verdict",
+link:"https://www.youtube.com/watch?v=WAhiX4GyTzI"
+}
+],
+
+figures:[]
 },
 ];
