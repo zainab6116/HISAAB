@@ -44,6 +44,30 @@ function overview(){
     '</div>';
 }
 
+function allegations(){
+    if(!thisCase.allegations || !thisCase.allegations.length) return "";
+    return '<div class="case-block">' +
+        '<p class="case-block-label">The Allegations</p>' +
+        '<ul>' + thisCase.allegations.map(function(a){ return '<li>' + a + '</li>'; }).join("") + '</ul>' +
+    '</div>';
+}
+
+function response(){
+    if(!thisCase.response || !thisCase.response.length) return "";
+    return '<div class="case-block">' +
+        '<p class="case-block-label">The Response</p>' +
+        '<ul>' + thisCase.response.map(function(r){ return '<li>' + r + '</li>'; }).join("") + '</ul>' +
+    '</div>';
+}
+
+function evidence(){
+    if(!thisCase.evidence || !thisCase.evidence.length) return "";
+    return '<div class="case-block">' +
+        '<p class="case-block-label">Evidence Referenced</p>' +
+        '<ul>' + thisCase.evidence.map(function(e){ return '<li>' + e + '</li>'; }).join("") + '</ul>' +
+    '</div>';
+}
+
 function timeline(){
     if(!thisCase.timeline || !thisCase.timeline.length) return "";
     return '<div class="case-block">' +
@@ -86,6 +110,29 @@ function sources(){
         '</div></div>';
 }
 
+function outcomeBlock(){
+    if(!thisCase.outcome) return "";
+    return '<div class="case-block">' +
+        '<p class="case-block-label">The Outcome</p>' +
+        '<p class="case-text">' + thisCase.outcome + '</p>' +
+    '</div>';
+}
+
+function impactBlock(){
+    if(!thisCase.impact) return "";
+    return '<div class="case-block">' +
+        '<p class="case-block-label">Why It Matters</p>' +
+        '<p class="case-text">' + thisCase.impact + '</p>' +
+    '</div>';
+}
+
+function hisaabNoteBlock(){
+    if(!thisCase.hisaabNote) return "";
+    return '<div class="case-block">' +
+        '<div class="hisaab-note"><p>' + thisCase.hisaabNote + '</p></div>' +
+    '</div>';
+}
+
 function ctaBlock(){
     return '<div class="case-block">' +
         '<div class="case-cta">' +
@@ -100,9 +147,15 @@ function render(){
         hero() +
         '<div class="case-body">' +
             overview() +
+            allegations() +
+            response() +
             timeline() +
+            evidence() +
             linkedFigures() +
+            outcomeBlock() +
+            impactBlock() +
             sources() +
+            hisaabNoteBlock() +
             ctaBlock() +
         '</div>';
 }
