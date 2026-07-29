@@ -101,13 +101,15 @@ function makeCaseCard(c){
     '</div>';
 }
 function makeInstitutionCard(i){
+    var roleLine = i.category || i.type || "";
+    var linkedCases = i.relatedCases || i.cases || [];
     return '<div class="record-card" onclick="window.location.href=\'institution.html?id=' + i.id + '\'">' +
-        '<div class="record-photo"><img src="' + i.image + '" alt="' + i.name + '" onerror="this.style.display=\'none\'"></div>' +
+        '<div class="record-photo"><img src="' + (i.image || "") + '" alt="' + i.name + '" onerror="this.style.display=\'none\'"></div>' +
         '<div class="record-body">' +
             '<div class="record-ref">Institution #' + String(i.id).padStart(3,"0") + '</div>' +
             '<div class="record-name">' + i.name + '</div>' +
-            '<div class="record-role">' + i.type + '</div>' +
-            '<span class="record-status status-pending">' + i.cases.length + ' linked case' + (i.cases.length === 1 ? "" : "s") + '</span>' +
+            '<div class="record-role">' + roleLine + '</div>' +
+            '<span class="record-status status-pending">' + linkedCases.length + ' linked case' + (linkedCases.length === 1 ? "" : "s") + '</span>' +
         '</div>' +
     '</div>';
 }
@@ -149,7 +151,8 @@ function loadRecentStrip(){
         items.push({ tag:c.category, title:c.title, sub:c.dateRange, ref:"case.html?id=" + c.id, sortKey:c.id + 100, label:"CASE" });
     });
     institutions.forEach(function(i){
-        items.push({ tag:i.type, title:i.name, sub:i.summary.slice(0,60) + "…", ref:"institution.html?id=" + i.id, sortKey:i.id + 200, label:"INSTITUTION" });
+        var blurb = i.overview || i.summary || "";
+        items.push({ tag:(i.category || i.type || ""), title:i.name, sub:blurb.slice(0,60) + "…", ref:"institution.html?id=" + i.id, sortKey:i.id + 200, label:"INSTITUTION" });
     });
     items.sort(function(a,b){ return b.sortKey - a.sortKey; });
 
@@ -170,7 +173,7 @@ function runSearch(q){
 
     var pMatch = people.filter(function(p){ return p.name.toLowerCase().includes(q) || p.role.toLowerCase().includes(q) || p.institution.toLowerCase().includes(q); });
     var cMatch = hisaabCases.filter(function(c){ return c.title.toLowerCase().includes(q) || c.category.toLowerCase().includes(q) || c.institution.toLowerCase().includes(q) || (STATUS_LABEL[c.status]||"").toLowerCase().includes(q); });
-    var iMatch = institutions.filter(function(i){ return i.name.toLowerCase().includes(q) || i.type.toLowerCase().includes(q); });
+    var iMatch = institutions.filter(function(i){ return i.name.toLowerCase().includes(q) || (i.category || i.type || "").toLowerCase().includes(q); });
 
     var best = "people", grid, label;
     if(cMatch.length >= pMatch.length && cMatch.length >= iMatch.length) best = "cases";

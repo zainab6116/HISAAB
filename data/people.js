@@ -570,7 +570,6 @@ const people = [
         { year: "Recurring", text: "Widely reported to maintain close ties across Pakistan's major political parties and the military establishment — ties critics say have shaped unusually lenient outcomes in his legal troubles.", tag: "ALLEGED INFLUENCE", cls: "status-pending" }
     ],
     promises: [],
-    // NEEDS SOURCE: still placeholders — not yet independently verified.
     sources: [
         { name: "Dawn — Supreme Court Bahria Town Karachi land settlement", link: "https://www.dawn.com/news/1469403" },
         { name: "BBC / Guardian — UK NCA £190 million asset freeze", link: "https://www.theguardian.com/uk-news/2019/dec/03/pakistani-tycoon-malik-riaz-hussain-hands-over-pounds-190m-to-uk-authorities-nca-" },
@@ -606,7 +605,6 @@ const people = [
         { year: "2023–present", text: "Several cases connected to the May 9 unrest remain unresolved.", tag: "UNRESOLVED", cls: "status-investigation" }
     ],
     promises: [],
-    // NEEDS SOURCE: still placeholders — not yet independently verified.
     sources: [
         { name: "Dawn — Cipher case verdict and appeal", link: "https://www.dawn.com/news/1839771" },
         { name: "Al Jazeera / Reuters — May 9 arrests coverage", link: "https://www.aljazeera.com/news/liveblog/2023/5/9/imran-khan-arrested-live-former-pakistani-pm-under-arrest" },
