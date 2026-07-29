@@ -1168,3 +1168,79 @@ footer{ padding:56px 56px 40px; border-top:1px solid var(--line); display:flex; 
 .record-track-year{ font-family:var(--display); font-size:15px; font-weight:600; color:var(--gold-soft); flex-shrink:0; width:52px; }
 .record-track-body p{ font-size:14.5px; line-height:1.75; color:var(--text-primary); margin-bottom:10px; }
 .record-track-item.highlight .record-track-body p{ font-size:15.5px; }
+/* =================================================================
+   PERSON PAGE — STATEMENTS ON RECORD
+   Append this block to hisaab.css (design system v2).
+   Matches the record-track / case-source-item visual language:
+   bordered cards on a hairline grid, gold accent, small-caps meta.
+================================================================= */
+
+.statement-list{
+    display:flex; flex-direction:column; gap:1px;
+    background:var(--line); border:1px solid var(--line);
+}
+
+.statement-row{
+    background:var(--bg-card);
+    padding:28px 30px;
+    border-left:3px solid var(--gold);
+}
+
+.statement-meta{
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:10px;
+    margin-bottom:14px;
+}
+
+.statement-date{
+    font-family:var(--display); font-size:13.5px; font-weight:600;
+    color:var(--gold-soft); letter-spacing:.5px;
+}
+
+.statement-tag{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:5px 12px; border-radius:2px;
+    font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+    color:var(--convicted);
+    border:1px solid currentColor;
+}
+.statement-tag::before{
+    content:''; width:6px; height:6px; border-radius:50%; background:currentColor;
+}
+
+.statement-context{
+    font-size:13px; color:var(--text-muted);
+    letter-spacing:.2px; line-height:1.6;
+    margin-bottom:16px;
+}
+
+.statement-quote{
+    font-family:var(--display); font-style:italic; font-weight:500;
+    font-size:clamp(18px,2.4vw,22px); line-height:1.55;
+    color:var(--text-primary);
+    padding-left:20px;
+    border-left:2px solid var(--line-soft);
+    margin-bottom:16px;
+}
+
+.statement-note{
+    font-size:14px; line-height:1.75;
+    color:var(--text-secondary);
+    margin-bottom:14px;
+}
+
+.statement-source{
+    display:inline-block;
+    font-size:11.5px; letter-spacing:.6px;
+    color:var(--text-muted);
+    border-top:1px solid var(--line-soft);
+    padding-top:12px;
+    width:100%;
+    transition:color .25s;
+}
+.statement-source:hover{ color:var(--gold-soft); }
+
+@media(max-width:700px){
+    .statement-row{ padding:22px 20px; }
+    .statement-quote{ padding-left:16px; }
+}

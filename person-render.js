@@ -33,6 +33,16 @@ if(!person){
     throw new Error("Person not found");
 }
 
+function escapeHtml(str){
+    if(str === undefined || str === null) return "";
+    return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+}
+
 function personStatusInfo(p){
     if(p.hisaabScore.ongoing > 0) return { cls:"status-investigation", label:"Under Investigation" };
     if(p.hisaabScore.convictions > 0) return { cls:"status-convicted", label:"Convicted" };
@@ -74,6 +84,41 @@ function summary(){
     return '<div class="person-block"><p class="person-block-label">Summary</p>' +
         '<p style="font-family:var(--display);font-size:19px;line-height:1.85;color:var(--text-primary);text-align:center;max-width:720px;margin:0 auto;">' + person.summary + '</p>' +
     '</div>';
+}
+
+/* ---------------------------------------------------------
+   NEW: Statements block
+   Renders person.statements — quoted remarks tied to a
+   specific date/context, each linked back to a numbered
+   entry in person.sources via a 1-based `source` index.
+   Quotes are rendered exactly as provided in the data —
+   keep entries short, sourced, and non-verbatim-heavy
+   when populating this array.
+--------------------------------------------------------- */
+function statementsBlock(){
+    if(!person.statements || !person.statements.length) return "";
+    return '<div class="person-block"><p class="person-block-label">Statements On Record</p>' +
+        '<div class="statement-list">' +
+        person.statements.map(function(st){
+            var srcName = (person.sources && person.sources[st.source - 1])
+                ? person.sources[st.source - 1].name
+                : null;
+            var srcLink = (person.sources && person.sources[st.source - 1])
+                ? person.sources[st.source - 1].link
+                : null;
+
+            return '<div class="statement-row">' +
+                '<div class="statement-meta">' +
+                    '<span class="statement-date">' + escapeHtml(st.date) + '</span>' +
+                    (st.tag ? '<span class="statement-tag">' + escapeHtml(st.tag) + '</span>' : '') +
+                '</div>' +
+                (st.context ? '<p class="statement-context">' + escapeHtml(st.context) + '</p>' : '') +
+                '<blockquote class="statement-quote">&ldquo;' + escapeHtml(st.quote) + '&rdquo;</blockquote>' +
+                (st.note ? '<p class="statement-note">' + escapeHtml(st.note) + '</p>' : '') +
+                (srcName ? '<a class="statement-source" href="' + srcLink + '" target="_blank" rel="noopener">Source: ' + escapeHtml(srcName) + '</a>' : '') +
+            '</div>';
+        }).join("") +
+        '</div></div>';
 }
 
 function scorePanel(){
@@ -152,6 +197,7 @@ function render(){
         hero() +
         '<div class="person-body">' +
             summary() +
+            statementsBlock() +
             recordTracker() +
             scorePanel() +
             promises() +

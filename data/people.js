@@ -85,6 +85,7 @@ const people = [
         { year: "2020–22", text: "A 2020 book alleged Munir was behind the removal of a High Court judge critical of the ISI. The judge himself, Shaukat Aziz Siddiqui, publicly rejected this in November 2022, stating his removal predated Munir's ISI appointment and naming a different officer as responsible. The Supreme Court later ruled Siddiqui's own removal unlawful (2024), though on due-process grounds unrelated to Munir.", tag: "REBUTTED BY SUBJECT", cls: "status-acquitted" },
         { year: "2022", text: "Appointed Chief of Army Staff in November 2022 by PM Shehbaz Sharif, during intense polarization with former PM Imran Khan.", tag: "APPOINTMENT", cls: "status-pending" },
         { year: "2023", text: "Following Imran Khan's arrest on 9 May 2023, authorities responded to attacks on military installations with over 10,000 arrests and military trials for civilians. Human rights organizations criticized due-process standards; the military defended the measures as necessary after attacks on its facilities.", tag: "DOCUMENTED", cls: "status-investigation" },
+        { year: "2024", text: " Protests over subsidies/electricity in Azad Kashmir turned violent; at least 5 killed in clashes with Punjab Rangers, Frontier Constabulary, and AJK Police. Government later accepted protesters' economic demands.", tag: "DOCUMENTED — DEATHS IN CLASHES", cls: "status-investigation", highlight: true },
         { year: "2024", text: "Parliament amended the Army Act to extend the tenure of service chiefs from three to five years, passed with minimal debate in a session where opposition lawmakers tore up copies of the bill. Ensures Munir remains Army Chief until at least November 2027.", tag: "ENACTED", cls: "status-investigation" },
         { year: "2025", text: "An investigative report by journalist Ahmad Noorani alleged Munir's relatives were placed in senior state and corporate positions — including the Interior Ministry and Pakistan Cricket Board — without merit-based process. Noorani says his brothers were subsequently raided and tortured in Pakistan in apparent retaliation; press-freedom groups condemned the incident.", tag: "ALLEGED / RETALIATION REPORTED", cls: "status-investigation", highlight: true },
         { year: "2025", text: "Human Rights Council of Balochistan documented 144 enforced disappearances and 46 killings in a single month (February 2025) alone, part of a broader pattern of abductions and killings reported by multiple independent monitors during his command.", tag: "DOCUMENTED PATTERN", cls: "status-investigation" },
@@ -92,10 +93,13 @@ const people = [
         { year: "2025", text: "Delivered a speech reviving \"two-nation theory\" rhetoric, describing Hindus and Muslims as fundamentally different in religion, customs, and ambitions — drawing criticism as divisive rhetoric from a serving military chief.", tag: "CRITICIZED", cls: "status-pending" },
         { year: "2025", text: "Imran Khan has alleged from prison that Munir orchestrated a \"London Plan\" with Nawaz Sharif to sideline PTI, interfered in the 2024 election, and bears responsibility for the treatment of Khan and Bushra Bibi in custody. These are unproven allegations by a political opponent, denied by authorities.", tag: "UNPROVEN ALLEGATION", cls: "status-pending" },
         { year: "2025", text: "IMF's own November 2025 report on Pakistan stated corruption had become embedded in governance \"including the offices of Prime Minister Shehbaz Sharif and Army Chief Asim Munir,\" identifying elite capture as especially damaging.", tag: "IMF FINDING", cls: "status-investigation" },
-        { year: "2025", text: "Parliament passed the 27th Constitutional Amendment, creating the Chief of Defence Forces post giving Munir command of all three armed services, authority over nuclear command appointments, and lifelong legal immunity from prosecution. Critics, including India's UN representative, called it a \"constitutional coup.\"", tag: "MAJOR POWER GRANT", cls: "status-investigation", highlight: true }
+        { year: "2025", text: "Parliament passed the 27th Constitutional Amendment, creating the Chief of Defence Forces post giving Munir command of all three armed services, authority over nuclear command appointments, and lifelong legal immunity from prosecution. Critics, including India's UN representative, called it a \"constitutional coup.\"", tag: "MAJOR POWER GRANT", cls: "status-investigation", highlight: true },
+        { year: "2025", text: " Region-wide JKJAAC strike in Azad Kashmir escalated into clashes with security forces; 10 killed, 100+ injured. Government said it accepted most demands; protest leaders disputed that and continued mobilizing.", tag: "DOCUMENTED — DEATHS IN CLASHES", cls: "status-investigation", highlight: true },
+        { year: "2025", text: "Imran Khan publicly accused Munir of a pattern of \"mass killing of unarmed and ordinary civilians,\" citing May 9 2023, Nov 26 2024, Azad Kashmir, and Muridke as a chain of events. This is a political opponent's characterization, not a court finding.", tag: "UNPROVEN ALLEGATION", cls: "status-pending" },
+        { year: "2026", text: "Protests over refugee-seat representation and political reform spread across Muzaffarabad, Rawalakot, Mirpur and Kotli; a communications blackout was imposed. In clashes through June–July, JKJAAC reported roughly 14 deaths across multiple incidents (5 in a march near Rawalakot, 9 in Poonch-area clashes on July 14). Authorities said some protesters attacked security personnel; organizers said force used against largely peaceful demonstrators was excessive. A JKJAAC leader called the Rawalakot events a \"massacre.\"", tag: "DOCUMENTED — DEATHS IN CLASHES", cls: "status-investigation", highlight: true },
     ],
     promises: [
-        { text: "Unlike elected officials, Munir has not campaigned on a public manifesto. Public speeches have emphasized defeating terrorism, economic stability, and national unity — goals rather than measurable pledges.", date: "2022–2026", status: "in-progress" }
+        { text: "Unlike elected officials, Munir has not campaigned on a public manifesto. Public speeches have emphasized defeating terrorism, economic stability, and national unity — goals rather than measurable pledges.", date: "2022–2026", status: "in-progress" },
     ],
     sources: [
         { name: "Wikipedia — Asim Munir (consolidated timeline, Siddiqui clarification, Fact Focus report)", link: "https://en.wikipedia.org/wiki/Asim_Munir" },
@@ -609,6 +613,90 @@ const people = [
         { name: "Dawn — Cipher case verdict and appeal", link: "https://www.dawn.com/news/1839771" },
         { name: "Al Jazeera / Reuters — May 9 arrests coverage", link: "https://www.aljazeera.com/news/liveblog/2023/5/9/imran-khan-arrested-live-former-pakistani-pm-under-arrest" },
         { name: "Human Rights Watch — arrest-bail-rearrest pattern documentation", link: "https://www.hrw.org/sites/default/files/report_pdf/pakistan0916_web.pdf" }
+    ],
+    cases: []
+},
+{
+    id: 13,
+    name: "Murtaza Wahab Siddiqui",
+    role: "Mayor of Karachi; PPP",
+    institution: "Karachi Metropolitan Corporation (KMC)",
+    tenure: "Mayor: 19 June 2023 – present; also served as KMC Administrator, Aug 2021 – Dec 2022",
+    status: "active",
+    photo: "images/murtaza-wahab.jpg",
+    summary: "Wahab won the 2023 mayoral election amid clashes and JI allegations of rigging. His tenure shows a recurring pattern during crises: when heavy rains kill residents or infrastructure fails, he has repeatedly opened press conferences by framing criticism itself as the problem — 'propaganda,' 'point-scoring,' 'panic' — often before addressing the deaths or damage in detail. He has faced SHC petitions over municipal tax collection and his own election. In 2026 his bicycle ambulance photo-op went viral and was widely mocked, seen by critics as symbolic of style over substance in emergency infrastructure.",
+    hisaabScore: {
+        officesHeld: 3,
+        investigations: 0,
+        courtCases: 3,
+        convictions: 0,
+        acquittals: 0,
+        ongoing: 3,
+        reportsMentioning: 10
+    },
+    statements: [
+        {
+            date: "Feb 5, 2024",
+            context: "Death toll from rain reached three, including a man who drowned in a stormwater drain",
+            quote: "There are difficulties and problems, but we are working",
+            note: "Also said the city was 'different for' opposition leaders criticizing him, and that officials were on the streets while opposition town chairmen 'were nowhere to be seen.'",
+            tag: "DEFLECTED TO OPPOSITION",
+            source: 18
+        },
+        {
+            date: "Aug 20, 2025",
+            context: "At least 16 dead across two days of rain",
+            quote: "When rainfall exceeds this amount, consequences become evident",
+            note: "Framed the deaths mainly as a drainage-capacity/climate issue while also saying criticism and 'political point-scoring' were worsening the situation.",
+            tag: "CLIMATE FRAMING",
+            source: 17
+        },
+        {
+            date: "Sept 8, 2025",
+            context: "Ongoing monsoon flooding, residents stranded in streets",
+            quote: "Please don't spread panic or misinformation — let us do our job",
+            note: "Said 'a few hours' of flooding after each downpour was inevitable in a 'city of 20 million,' pointing to high tides and limited drain capacity.",
+            tag: "DISMISSED CONCERNS AS PANIC",
+            source: 21
+        },
+        {
+            date: "Sept 15, 2025",
+            context: "Second wave of monsoon rain, at least 4 dead, 400+ rescued",
+            quote: "Our political opponents have launched negative propaganda",
+            note: "Disputed opposition claims that a canal had washed away, saying only a 20-meter section was damaged and it was fixed within 48 hours.",
+            tag: "CALLED IT PROPAGANDA",
+            source: 20
+        },
+        {
+            date: "Aug 23, 2025",
+            context: "Aftermath of a three-day rain spell and traffic gridlock on Sharea Faisal",
+            quote: "Even someone exceptionally capable wouldn't have been able to manage the situation",
+            note: "This was one of the rarer instances where he also directly admitted 'there was a lapse in traffic management, which we should have addressed.'",
+            tag: "MIXED: DEFLECTION + RARE ADMISSION",
+            source: 23
+        }
+    ],
+    record: [
+        { year: "2023", text: "Elected Karachi mayor 15 June amid clashes; JI alleged the vote was rigged and declared a nationwide 'Black Day.'", tag: "DISPUTED ELECTION", cls: "status-investigation", highlight: true },
+        { year: "Oct 2023", text: "SHC issued notices over a petition accusing him of abducting nominees and endorsers of a rival mayoral candidate.", tag: "PETITION FILED", cls: "status-investigation" },
+        { year: "Jul-Aug 2024", text: "JI filed SHC and contempt petitions alleging he outsourced municipal tax collection to K-Electric without proper council approval.", tag: "PETITION FILED", cls: "status-investigation", highlight: true },
+        { year: "Feb 2024", text: "During a rain crisis with a rising death toll, opened remarks by contrasting his critics rather than detailing relief efforts.", tag: "CRISIS DEFLECTION", cls: "status-pending", highlight: true },
+        { year: "Aug 2025", text: "16 dead in two days of rain; framed the disaster primarily around drain capacity and climate change.", tag: "CRISIS RESPONSE", cls: "status-pending", highlight: true },
+        { year: "Sept 2025", text: "Monsoon flooding stranded residents; told citizens not to 'spread panic or misinformation.'", tag: "CRISIS RESPONSE", cls: "status-pending", highlight: true },
+        { year: "2026", text: "Bicycle ambulance ride went viral, widely mocked as emblematic of underinvestment in emergency infrastructure.", tag: "PUBLIC BACKLASH", cls: "status-pending", highlight: true }
+    ],
+    promises: [
+        { text: "Rebuild Karachi with better roads, parks, and public services", status: "disputed — recurring monsoon deaths, drainage failures, and infrastructure complaints continue each year" }
+    ],
+    sources: [
+        { name: "Express Tribune — Rain death toll reaches three, mayor says roads clear", link: "https://tribune.com.pk/story/2455549/karachi-mayor-says-all-roads-cleared-of-water-as-rain-death-toll-reaches-three" },
+        { name: "Express Tribune — 16 dead in two days of rain", link: "https://tribune.com.pk/story/2562174/traffic-diversions-continue-as-karachi-reels-from-rain-aftermath" },
+        { name: "Express Tribune — Wahab blames rain damage on climate", link: "https://tribune.com.pk/story/2562195/wahab-pins-karachi-torrential-rain-damage-on-climate-change" },
+        { name: "Express Tribune — Wahab accuses JI of propaganda", link: "https://tribune.com.pk/story/2566955/murtaza-wahab-fires-back-at-ji-for-spreading-propaganda" },
+        { name: "Dawn — Mayor blames monsoon woes on tides, infrastructure", link: "https://www.dawn.com/news/1940585" },
+        { name: "Dawn — Wahab asks opposition to work together", link: "https://www.dawn.com/news/1934593/murtaza-wahab-asks-opposition-jis-town-chairmen-to-work-together-for-karachis-development" },
+        { name: "PakWheels — Bicycle ambulance backlash explainer", link: "https://www.pakwheels.com/blog/karachi-bicycle-ambulance-murtaza-wahab-backlash/" },
+        { name: "Wikipedia — Murtaza Wahab", link: "https://en.wikipedia.org/wiki/Murtaza_Wahab" }
     ],
     cases: []
 },
