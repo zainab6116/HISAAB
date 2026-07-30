@@ -820,4 +820,86 @@ const people = [
     ],
     cases: []
 },
+{
+    id: 17,
+    name: "Syed Yousaf Raza Gillani",
+    role: "Chairman of the Senate of Pakistan; Former Prime Minister",
+    institution: "Pakistan Peoples Party (PPP)",
+    tenure: "PM: 2008–2012; Speaker NA: 1993–1997; Chairman Senate: 2024–present",
+    status: "active",
+    photo: "images/yousaf-raza-gillani.jpg",
+    summary: "Gillani's defining case is his 2012 conviction for contempt of court — the Supreme Court found he unlawfully refused its order to ask Swiss authorities to reopen money-laundering cases against President Asif Ali Zardari, citing presidential immunity. The Court gave him a token sentence but ruled he had ceased to be PM from the date of conviction, ending his premiership. Long before that, in 2001, an accountability court under Musharraf convicted him of illegally appointing hundreds of people to government jobs as National Assembly Speaker, and he served over five years in prison — a case he always called political. He later faced multiple NAB/FIA references, including over an illegal Universal Service Fund (USF) advertising contract and the appointment of Tauqir Sadiq as OGRA chairman; the USF case has stalled repeatedly on jurisdiction. Separate TDAP trade-subsidy fraud cases ended in acquittal in 2025.",
+    hisaabScore: {
+        officesHeld: 3,
+        investigations: 4,
+        courtCases: 3,
+        convictions: 2,
+        acquittals: 1,
+        ongoing: 1,
+        reportsMentioning: 5
+    },
+    scoreNote: "Two convictions on record (1990s employment case, 2012 contempt), one full acquittal (TDAP), and one advertising-contract case still stuck on jurisdiction after years.",
+    record: [
+        { year: "2001", text: "Arrested by NAB under Musharraf's government, accused of illegally appointing roughly 600 people to government jobs as National Assembly Speaker, causing an estimated Rs 30 million annual loss to the state.", tag: "ARRESTED", cls: "status-investigation", highlight: true },
+        { year: "2001–06", text: "Convicted by an accountability court and served over five years in prison before release in 2006; he and supporters called the case politically motivated.", tag: "CONVICTED", cls: "status-convicted", highlight: true },
+        { year: "2009–12", text: "As Prime Minister, refused a Supreme Court order to ask Swiss authorities to reopen money-laundering cases against President Asif Ali Zardari, arguing the President held constitutional immunity.", tag: "REFUSED COURT ORDER", cls: "status-investigation", highlight: true },
+        { year: "2012", text: "Convicted of contempt of court by the Supreme Court for his refusal; given a symbolic sentence 'until rising of the court.'", tag: "CONVICTED — CONTEMPT", cls: "status-convicted", highlight: true },
+        { year: "2012", text: "Supreme Court ruled his contempt conviction meant he had ceased to be Prime Minister from the date of conviction, ending his premiership.", tag: "REMOVED FROM OFFICE", cls: "status-convicted", highlight: true },
+        { year: "2011–18", text: "NAB filed a reference alleging he, as then-PM and USF chairman, misused authority to award an illegal advertising campaign to Midas Pvt Ltd, bypassing proper procedure and causing a loss to the exchequer.", tag: "NAB REFERENCE", cls: "status-investigation" },
+        { year: "2011–14", text: "Also referred by the Supreme Court over the allegedly illegal appointment of Tauqir Sadiq as OGRA Chairman during his government; case has remained under trial for over a decade.", tag: "UNDER TRIAL", cls: "status-investigation" },
+        { year: "2019", text: "Summoned by NAB for questioning in a separate money-laundering probe alongside other senior PPP leaders.", tag: "SUMMONED", cls: "status-investigation" },
+        { year: "2022", text: "Accountability court returned the USF advertising reference to NAB, ruling it fell outside the court's jurisdiction under the amended NAB law — case left unresolved.", tag: "UNRESOLVED — JURISDICTION DISPUTE", cls: "status-investigation" },
+        { year: "2025", text: "Courts acquitted him in all FIA cases alleging fraudulent approval of TDAP trade subsidies, citing insufficient evidence.", tag: "ACQUITTED", cls: "status-acquitted" }
+    ],
+    promises: [],
+    sources: [
+        { name: "Supreme Court of Pakistan — detailed contempt verdict (2012, primary source PDF)", link: "https://i.dawn.com/2012/05/sc-detailed-verdict-pm-gilani-case.pdf" },
+        { name: "Wikipedia — Yousaf Raza Gillani", link: "https://en.wikipedia.org/wiki/Yousaf_Raza_Gillani" },
+        { name: "The News — NAB files USF advertising reference (2018)", link: "https://www.thenews.com.pk/latest/364797-nab-files-reference-against-ex-premier-yousuf-raza-gilani" },
+        { name: "Business Recorder — USF reference returned to NAB over jurisdiction (2022)", link: "https://www.brecorder.com/news/amp/40197787" },
+        { name: "The News — Gillani summoned by NAB in money-laundering case (2019)", link: "https://www.thenews.com.pk/latest/452521-yousuf-raza-gillani-summoned-by-nab-in-money-laundering-case" },
+        { name: "NAB — Mega Cases list, Tauqir Sadiq/OGRA reference (primary source PDF)", link: "https://nab.gov.pk/wp-content/uploads/2025/02/179_x_mega_cases.pdf" }
+    ],
+    cases: []
+},
+{
+    id: 18,
+    name: "Raja Pervaiz Ashraf",
+    role: "Former Prime Minister; Former Minister for Water & Power; PPP",
+    institution: "Executive",
+    tenure: "Prime Minister: 22 June 2012 – 25 March 2013; Minister for Water & Power: 2008–2011",
+    status: "former",
+    photo: "images/raja-pervaiz-ashraf.jpg",
+    summary: "Ashraf became widely known as 'Raja Rental' over the Rental Power Projects (RPP) scheme he oversaw as Water and Power Minister — a 2008–09 program to plug electricity shortfalls that NAB alleged involved massive kickbacks and misuse of authority, with the Karkey reference alone estimating Rs22 billion in corruption. The Supreme Court ordered his arrest over the scandal in January 2013, while he was sitting Prime Minister. Despite the scale of the allegations, the major cases did not end in conviction: after prolonged NAB investigations and NAB-law amendments narrowing the definition of 'misuse of authority,' courts progressively acquitted or discharged him across 2020 and again in April 2025, when the three biggest remaining references — Karkey, Bhakki, and Sharaqpur — were all dismissed for lack of proof. He was also criticized for nepotism over a son-in-law's appointment, and for prolonged nationwide load-shedding during his tenure as Water and Power Minister.",
+    hisaabScore: {
+        officesHeld: 2,
+        investigations: 9,
+        courtCases: 9,
+        convictions: 0,
+        acquittals: 9,
+        ongoing: 0,
+        reportsMentioning: 12
+    },
+    record: [
+        { year: "2008–09", text: "As Minister for Water and Power, oversaw the Rental Power Projects scheme intended to address an electricity shortfall.", tag: "POLICY DECISION", cls: "status-pending", highlight: true },
+        { year: "2012", text: "NAB accused him of misusing authority to secure ECC approval and financial benefits for nine rental power firms during contract awards.", tag: "ALLEGED", cls: "status-investigation", highlight: true },
+        { year: "Jan 2013", text: "Supreme Court ordered his arrest over the RPP scandal while he was serving as sitting Prime Minister — one of Pakistan's biggest political controversies of the period.", tag: "ARREST ORDERED", cls: "status-investigation", highlight: true },
+        { year: "2014", text: "NAB filed multiple references over individual RPP contracts, including Karkey, Bhakki, Sharaqpur, Reshma, Naudero, Satyana, Rattu Dero, Gulf, and Samundri.", tag: "CHARGED", cls: "status-investigation" },
+        { year: "2013", text: "Criticized for appointing his son-in-law to a World Bank-related post during his premiership.", tag: "NEPOTISM ALLEGATION", cls: "status-pending" },
+        { year: "2012–13", text: "Faced sustained criticism over nationwide load-shedding and repeated assurances the power crisis would soon ease.", tag: "POLICY CRITICISM", cls: "status-pending" },
+        { year: "2020", text: "Acquitted in the Pira Ghaib rental power plant reference; NAB found unable to prove corruption charges.", tag: "ACQUITTED", cls: "status-acquitted" },
+        { year: "2022", text: "Acquitted in the Sahiwal-Multan rental power reference under an amended definition of 'misuse of authority.'", tag: "ACQUITTED", cls: "status-acquitted" },
+        { year: "Apr 2025", text: "Discharged in the Karkey reference (Rs22bn alleged corruption) along with 10 co-accused, including a former WAPDA chairman.", tag: "DISCHARGED", cls: "status-acquitted", highlight: true },
+        { year: "Apr 2025", text: "Discharged/acquitted in the Bhakki (Rs96bn) and Sharaqpur references in the same judgment — closing the last of the three biggest RPP cases.", tag: "DISCHARGED / ACQUITTED", cls: "status-acquitted", highlight: true }
+    ],
+    promises: [],
+    sources: [
+        { name: "Dawn — Acquitted in Sahiwal Rental Power Project case", link: "https://www.dawn.com/news/1565158" },
+        { name: "The News — Acquitted in rental power plant reference (2020)", link: "https://www.thenews.com.pk/print/677749-pervaiz-ashraf-acquitted-in-rental-power-plant-reference" },
+        { name: "The News — Discharged in Karkey, Bhakki, Sharaqpur references", link: "https://www.thenews.com.pk/latest/1306370-court-discharges-raja-pervaiz-ashraf-others-in-rental-power-references" },
+        { name: "Express Tribune — Cleared in multiple NAB references", link: "https://tribune.com.pk/story/2543003/ex-pm-raja-pervaiz-ashraf-cleared-in-multiple-nab-references" },
+        { name: "Profit / Pakistan Today — Discharged in all three RPP cases", link: "https://profit.pakistantoday.com.pk/2025/04/30/raja-pervez-ashraf-others-discharged-in-all-three-rental-power-project-cases/" }
+    ],
+    cases: []
+},
 ];
