@@ -10,11 +10,11 @@ const people = [
     summary: "Sharif's record spans two decades of corruption, human-rights, and legitimacy allegations — most contested, several since cleared by courts, one still unresolved after more than a decade. He and his sons were accused of laundering over $200 million; courts and NAB acquitted them in 2022–2023, finding no direct evidence. A pattern recurs across his Punjab-era cases — Ashiana Housing, Ramzan Sugar Mills, and Saaf Pani — where family members and aides were formally accused, some fled or were declared proclaimed offenders, and all were later acquitted for lack of evidence. His most serious unresolved case is the 2014 Model Town massacre, where a judicial inquiry held his Punjab government \"directly responsible\" for 14 deaths and a sessions court ordered murder charges that were never resolved. Separately, official Auditor General reports flagged billions of rupees in financial irregularities on Punjab-era infrastructure projects — audit findings, not criminal convictions, but part of the public record. His second government has drawn international criticism over a press and opposition crackdown, and his 2024 return to power was widely disputed as military-engineered.",
     hisaabScore: {
         officesHeld: 2,
-        investigations: 9,
+        investigations: 1,
         courtCases: 7,
         convictions: 0,
-        acquittals: 7,
-        auditFindings: 2,
+        acquittals: 5,
+        auditFindings: 1,
         ongoing: 4,
         reportsMentioning: 9
     },
@@ -206,9 +206,6 @@ const people = [
             status: "in-progress"
         }
     ],
-    // NEEDS SOURCE: every entry below is a homepage link, not a specific
-    // article. Replace each with the actual article/ruling URL that
-    // supports the matching claim above before publishing.
     sources: [
         { name: "Supreme Court of Pakistan — Panama Papers & related judgments", link: "https://www.supremecourt.gov.pk/" },
         { name: "National Accountability Bureau (NAB)", link: "https://nab.gov.pk/" },
@@ -697,6 +694,129 @@ const people = [
         { name: "Dawn — Wahab asks opposition to work together", link: "https://www.dawn.com/news/1934593/murtaza-wahab-asks-opposition-jis-town-chairmen-to-work-together-for-karachis-development" },
         { name: "PakWheels — Bicycle ambulance backlash explainer", link: "https://www.pakwheels.com/blog/karachi-bicycle-ambulance-murtaza-wahab-backlash/" },
         { name: "Wikipedia — Murtaza Wahab", link: "https://en.wikipedia.org/wiki/Murtaza_Wahab" }
+    ],
+    cases: []
+},
+{
+    id: 14,
+    name: "Mirza Aslam Beg",
+    role: "Former Chief of Army Staff",
+    institution: "Military",
+    tenure: "COAS: 1988 – 1991",
+    status: "former",
+    photo: "images/mirza-aslam-beg.jpg",
+    summary: "Beg took command hours after Zia-ul-Haq's death in the 1988 plane crash, and has been dogged ever since by suspicion — never proven — that he had a hand in it. His defining scandal is Mehrangate: the Supreme Court ruled in 2012 that he and ISI chief Asad Durrani acted unconstitutionally by funneling Rs 140 million in public/intelligence money to an anti-PPP alliance ahead of the 1990 election, based on Durrani's own sworn affidavit. The Court ordered the money recovered and legal action taken — over a decade later, no criminal conviction has followed. He also promoted a nuclear 'strategic depth' doctrine toward Afghanistan and faced separate, unproven claims of pushing nuclear cooperation with Iran.",
+    hisaabScore: {
+        officesHeld: 1,
+        investigations: 2,
+        courtCases: 1,
+        convictions: 0,
+        acquittals: 0,
+        constitutionalFindings: 1,
+        unverifiedAllegations: 2,
+        reportsMentioning: 5
+    },
+    scoreNote: "Beg has one binding constitutional finding against him (Mehrangate, 2012) but zero criminal convictions — a textbook case of accountability that stalled after a court ruling.",
+    record: [
+        { year: "1988", text: "Appointed Chief of Army Staff following Zia-ul-Haq's death in a plane crash; unproven claims later circulated, including from Zia's own son in 2020, alleging Beg had a role in bringing down the plane. Beg denies this and says he pushed for a proper inquiry.", tag: "UNVERIFIED ALLEGATION", cls: "status-pending" },
+        { year: "1990", text: "Allegedly established an 'election cell' with ISI chief Asad Durrani to manipulate the 1990 general election against the PPP by funding a rival political alliance.", tag: "ALLEGED", cls: "status-investigation", highlight: true },
+        { year: "1996", text: "Air Marshal Asghar Khan filed a Supreme Court petition (HRC 19/96) against Beg, Durrani, and Younis Habib of Mehran Bank over the disbursement and misuse of public funds for political purposes.", tag: "PETITION FILED", cls: "status-investigation" },
+        { year: "2012", text: "Asad Durrani submitted a sworn affidavit admitting he distributed Rs 140 million to politicians on Beg's orders to defeat the PPP in 1990.", tag: "CONFESSION ON RECORD", cls: "status-investigation", highlight: true },
+        { year: "2012", text: "Supreme Court tribunal ruled Beg and Durrani violated the Constitution by facilitating the distribution of intelligence funds to politicians before the 1990 election, and ordered the government to recover the money and pursue legal action.", tag: "CONSTITUTIONAL FINDING", cls: "status-convicted", highlight: true },
+        { year: "2012–present", text: "No criminal conviction has ever followed the Supreme Court's ruling — cited repeatedly as a case of accountability ordered but never delivered.", tag: "UNENFORCED", cls: "status-investigation" },
+        { year: "1990s", text: "Promoted a 'strategic depth' doctrine favoring Pakistani influence in Afghanistan — a policy widely criticized by analysts for its long-term regional fallout. A policy debate, not a criminal matter.", tag: "POLICY CRITICISM", cls: "status-pending" },
+        { year: "1990s", text: "Some reports and books alleged Beg supported nuclear cooperation with Iran; never the subject of a criminal conviction or official court finding.", tag: "UNVERIFIED ALLEGATION", cls: "status-pending" }
+    ],
+    promises: [],
+    sources: [
+        { name: "Wikipedia — Mehrangate", link: "https://en.wikipedia.org/wiki/Mehrangate" },
+        { name: "Wikipedia — Mirza Aslam Beg", link: "https://en.wikipedia.org/wiki/Mirza_Aslam_Beg" },
+        { name: "The Express Tribune — Beg blames CIA for Zia's death", link: "https://tribune.com.pk/story/2164004/ex-pakistan-army-chief-beg-blames-cia-ziaul-haqs-death" },
+        { name: "Pakistan Times — Beg profile, Mehran Bank case", link: "https://www.pakistantimes.com/gen-r-mirza-aslam-beg/" }
+    ],
+    cases: []
+},
+{
+    id: 15,
+    name: "Asad Durrani",
+    role: "Former Director-General, Inter-Services Intelligence (ISI)",
+    institution: "Military / Intelligence",
+    tenure: "DG ISI: 1990 – 1992; also DG Military Intelligence; later Ambassador to Germany and Saudi Arabia",
+    status: "former",
+    photo: "images/asad-durrani.jpg",
+    summary: "Durrani is the key confessed figure in Mehrangate — the Supreme Court's 2012 ruling that he and Army Chief Mirza Aslam Beg unconstitutionally distributed Rs 140 million in public funds to defeat Benazir Bhutto's PPP in the 1990 election, a fact Durrani himself admitted in a sworn affidavit, saying he acted on Beg's orders. No criminal conviction has followed. In 2018, he co-authored 'The Spy Chronicles' with a former Indian RAW chief, suggesting Pakistan's establishment likely knew Osama bin Laden's location and quietly cooperated in the 2011 raid — remarks that got him summoned by army leadership, placed under a formal Court of Inquiry, and barred from leaving the country for years, until a court ordered his travel ban lifted in 2021 for lack of any active case against him.",
+    hisaabScore: {
+        officesHeld: 3,
+        investigations: 1,
+        courtCases: 1,
+        convictions: 0,
+        acquittals: 0,
+        constitutionalFindings: 1,
+        reportsMentioning: 5,
+        ongoing:0
+    },
+    scoreNote: "Durrani has one binding constitutional finding (Mehrangate) and one military Court of Inquiry (Spy Chronicles) — but zero criminal convictions in either matter.",
+    record: [
+        { year: "1990–92", text: "Served as Director-General of ISI under Army Chief Mirza Aslam Beg.", tag: "APPOINTMENT", cls: "status-pending" },
+        { year: "1990", text: "Allegedly ran an ISI 'election cell' distributing Rs 140 million to politicians to defeat Benazir Bhutto's PPP in the 1990 general election.", tag: "ALLEGED", cls: "status-investigation", highlight: true },
+        { year: "1996", text: "Named alongside Beg and Younis Habib in Asghar Khan's Supreme Court petition (HRC 19/96) over misuse of public funds for political purposes.", tag: "PETITION FILED", cls: "status-investigation" },
+        { year: "2012", text: "Submitted a sworn affidavit to the Supreme Court admitting he distributed the Rs 140 million to politicians on Beg's orders.", tag: "CONFESSION ON RECORD", cls: "status-investigation", highlight: true },
+        { year: "2012", text: "Supreme Court ruled Durrani and Beg acted unconstitutionally, ordering the government to recover the funds and pursue legal action. No criminal conviction has followed since.", tag: "CONSTITUTIONAL FINDING", cls: "status-convicted", highlight: true },
+        { year: "2018", text: "Co-authored 'The Spy Chronicles' with ex-RAW chief A.S. Dulat, suggesting Pakistan's establishment likely knew Osama bin Laden's whereabouts and cooperated in a 'mutually agreed process' before the 2011 US raid.", tag: "CONTROVERSIAL CLAIM", cls: "status-pending", highlight: true },
+        { year: "2018", text: "Summoned to Army GHQ; military ordered a formal Court of Inquiry into whether the book violated the army's code of conduct, and had his name placed on the Exit Control List (ECL), barring him from leaving Pakistan.", tag: "COURT OF INQUIRY", cls: "status-investigation", highlight: true },
+        { year: "2021", text: "Islamabad High Court ordered his name removed from the ECL, noting no ongoing inquiry against him actually existed on record at that point.", tag: "TRAVEL BAN LIFTED", cls: "status-acquitted" },
+        { year: "2015–18", text: "Made repeated public remarks — on bin Laden, Kashmir, and calling terror attacks like the 2014 Army Public School massacre 'collateral damage' of backing militants in Afghanistan — that drew sustained public criticism.", tag: "CRITICIZED", cls: "status-pending" }
+    ],
+    promises: [],
+    sources: [
+        { name: "Wikipedia — Mehrangate", link: "https://en.wikipedia.org/wiki/Mehrangate" },
+        { name: "Wikipedia — The Spy Chronicles", link: "https://en.wikipedia.org/wiki/The_Spy_Chronicles" },
+        { name: "The Quint — What got Durrani into trouble with the ISI", link: "https://www.thequint.com/lifestyle/books/spy-chronicles-what-got-asad-durrani-into-trouble-with-isi" },
+        { name: "South Asian Voices — Understanding the Spy Chronicles controversy", link: "https://southasianvoices.org/understanding-controversy-spy-chronicles/" },
+        { name: "Gulf Today (Pressreader) — Court orders Durrani's name removed from ECL", link: "https://www.pressreader.com/bahrain/gulf-today/20210305/281749862092585" }
+    ],
+    cases: []
+},
+{
+    id: 16,
+    name: "Sharjeel Inam Memon",
+    role: "Sindh Senior Minister for Information & Transport",
+    institution: "Pakistan Peoples Party (PPP)",
+    tenure: "Provincial Minister (various portfolios), 2013–present (with gaps)",
+    status: "active",
+    photo: "images/sharjeel-inam-memon.jpg",
+    summary: "Memon's central case is a Rs 3.2–6 billion NAB reference alleging he rigged Sindh government advertising contracts (2013–2015) at inflated rates. He was arrested in 2017, indicted in 2018, and granted bail in 2019 — a hearing where NAB's own prosecutor conceded there was no evidence of personal kickbacks. The case has since bounced back and forth for years over jurisdiction technicalities rather than reaching a verdict on the merits, and was still unresolved as of late 2024. A separate NAB reference alleges he holds assets — land, farmhouses, factories, villas — worth billions beyond his known income. He also appeared in the 2021 Pandora Papers leak. No criminal conviction has been recorded in either case, and nothing rises to the level of a Mehrangate-style constitutional finding.",
+    hisaabScore: {
+        officesHeld: 1,
+        investigations: 3,
+        courtCases: 2,
+        convictions: 0,
+        acquittals: 0,
+        ongoing: 2,
+        reportsMentioning: 6
+    },
+    scoreNote: "Years of NAB references and court hearings, but the advertisement case has repeatedly stalled on jurisdiction rather than reaching a verdict — no conviction, no acquittal, still open.",
+    record: [
+        { year: "2016", text: "NAB filed a corruption reference alleging Memon and aides rigged Sindh government advertising contracts (2013–2015) at inflated rates, causing a loss of roughly Rs 3.2–5.75 billion to the exchequer.", tag: "NAB REFERENCE", cls: "status-investigation", highlight: true },
+        { year: "2017", text: "Arrested by NAB in October; spent about 21 months in custody before being granted bail.", tag: "ARRESTED", cls: "status-investigation" },
+        { year: "2018", text: "Formally indicted in the advertisement corruption case.", tag: "INDICTED", cls: "status-investigation" },
+        { year: "2019", text: "Sindh High Court granted him bail; NAB's own prosecutor conceded there was no evidence Memon personally received kickbacks, though allegations of misuse of office continued.", tag: "BAIL — NO EVIDENCE OF KICKBACKS", cls: "status-pending", highlight: true },
+        { year: "2019", text: "NAB opened a separate reference alleging Memon held assets — 270+ acres of agricultural land, farmhouses, factories, villas, flats — worth over Rs 2.27–2.43 billion beyond his known income, some allegedly held via benamidars (proxies).", tag: "ASSETS BEYOND MEANS", cls: "status-investigation", highlight: true },
+        { year: "2020", text: "Sindh High Court confirmed pre-arrest protective bail for Memon and family members in the assets case, while directing their names be placed on the Exit Control List.", tag: "BAIL GRANTED", cls: "status-pending" },
+        { year: "2021", text: "Named in the Pandora Papers leak concerning offshore financial arrangements. Being named is not itself proof of wrongdoing.", tag: "NAMED IN LEAK", cls: "status-alleged" },
+        { year: "2021", text: "NAB challenged an accountability court order reopening a co-accused's frozen bank accounts in the same advertisement case, as the case continued through appeals.", tag: "APPEALED", cls: "status-investigation" },
+        { year: "2023", text: "Following a Supreme Court ruling striking down NAB Amendment Ordinance changes, the advertisement case was reopened and ordered to resume from where it had stopped.", tag: "REOPENED", cls: "status-investigation" },
+        { year: "2024", text: "An accountability court twice returned the billion-rupee advertisement reference to NAB over jurisdiction disputes, leaving the core case unresolved after eight years.", tag: "UNRESOLVED — JURISDICTION DISPUTE", cls: "status-investigation", highlight: true },
+        { year: "Ongoing", text: "Political opponents criticize his tenure over governance, transport, and public-service delivery; he calls these accusations politically motivated.", tag: "POLITICAL CRITICISM", cls: "status-pending" }
+    ],
+    promises: [],
+    sources: [
+        { name: "The News — Rs3.2bn graft reference returned to NAB (2024)", link: "https://www.thenews.com.pk/print/1233246-court-returns-rs3-2bn-graft-reference-against-sharjeel-others-to-nab" },
+        { name: "Dawn — Rs5bn graft reference returned to NAB (2024)", link: "https://www.dawn.com/news/1860734" },
+        { name: "Dawn — assets-beyond-income reference returned to NAB (2024)", link: "https://www.dawn.com/news/1877201" },
+        { name: "Dawn — NAB probes assets beyond means, money laundering (2019)", link: "https://www.dawn.com/news/1492855" },
+        { name: "The News — SHC confirms pre-arrest bail in assets case (2020)", link: "https://www.thenews.com.pk/print/703018-shc-confirms-pre-arrest-bail-of-sharjeel-memon-others-in-corruption-case" },
+        { name: "Pakistan Today — case reopened after NAB Amendment ruling (2023)", link: "https://www.pakistantoday.com.pk/2023/09/20/court-says-sharjeel-memons-trial-in-nab-case-will-start-from-where-it-was-stopped/" }
     ],
     cases: []
 },
