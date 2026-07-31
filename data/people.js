@@ -902,4 +902,76 @@ const people = [
     ],
     cases: []
 },
+{
+    id: 19,
+    name: "Hamza Shehbaz",
+    role: "Former Chief Minister of Punjab; Son of Shehbaz Sharif",
+    institution: "Executive",
+    tenure: "Punjab CM: April 2022 (election later overturned by Supreme Court)",
+    status: "former",
+    photo: "images/hamza-shahbaz.jpg",
+    summary: "Hamza Shehbaz — Shehbaz Sharif's son and Nawaz Sharif's nephew — has been investigated in nearly every major case tied to his family's business network, from a Rs16 billion money-laundering probe to the Ramzan Sugar Mills scandal. He spent time in NAB custody in 2019 over assets investigators said he couldn't explain. Every major criminal case against him has ended the same way: acquitted, for lack of evidence. His one shot at real power — a brief run as Punjab Chief Minister in 2022 — was itself thrown out by the Supreme Court, which found the vote had been rigged in his favor.",
+    hisaabScore: {
+        officesHeld: 1,
+        investigations: 4,
+        courtCases: 2,
+        convictions: 0,
+        acquittals: 2,
+        ongoing: 1,
+        reportsmentioning: 3
+    },
+    record: [
+        { year: "2019", text: "Arrested by NAB over assets beyond his known income; held in custody before being granted bail.", tag: "ARRESTED", cls: "status-investigation", highlight: true },
+        { year: "2019–22", text: "FIA accused him, alongside his father, of laundering roughly Rs16 billion through anonymous \"benami\" accounts and fake banking transactions.", tag: "MONEY LAUNDERING", cls: "status-investigation" },
+        { year: "Oct 2022", text: "Acquitted alongside Shehbaz Sharif in the Rs16 billion money-laundering case — a Lahore special court found insufficient basis to continue the trial.", tag: "ACQUITTED", cls: "status-acquitted" },
+        { year: "2022", text: "His election as Punjab Chief Minister was ruled unlawful by the Supreme Court, which found the deputy speaker had illegally rejected opposing votes; his cabinet appointments and orders were declared null and void.", tag: "ELECTION OVERTURNED", cls: "status-convicted", highlight: true },
+        { year: "2018–25", text: "NAB alleged around Rs200 million in public funds were used to build a bridge benefiting the family's Ramzan Sugar Mills, with laundered funds moved through employees' bank accounts. Acquitted alongside Shehbaz Sharif in 2025 after NAB found no evidence of corruption.", tag: "ACQUITTED", cls: "status-acquitted" },
+        { year: "2018–22", text: "NAB investigated whether he attended Punjab Saaf Pani Company board meetings and influenced contract awards despite not officially holding a board seat.", tag: "UNDER INQUIRY", cls: "status-investigation" }
+    ],
+    promises: [],
+    sources: [
+        { name: "Dawn — Rs16 billion money-laundering acquittal, 2022", link: "#" },
+        { name: "The News — Ramzan Sugar Mills acquittal, 2025", link: "#" },
+        { name: "Dawn — NAB arrest over assets beyond means, 2019", link: "#" },
+        { name: "The News — Punjab CM election overturned by Supreme Court, 2022", link: "#" }
+    ],
+    cases: []
+},
+{
+    id:20,
+    name: "Ishaq Dar",
+    role: "Deputy Prime Minister & Foreign Minister; Former Finance Minister (four terms)",
+    institution: "Executive",
+    tenure: "Finance Minister: 1998–99, 2008, 2013–17, 2022–23; Deputy PM & FM: 2024–present",
+    status: "active",
+    photo: "images/ishaq-dar.jpg",
+    summary: "Dar has served as Pakistan's Finance Minister four separate times, and for years his name has followed the Sharif family's biggest financial controversies. In 2000, while in NAB custody, he gave a statement implicating the Sharifs in the Hudaibiya Paper Mills case — then retracted it, saying it was made under pressure. After the 2017 Panama Papers ruling, NAB accused him of amassing assets far beyond his declared income; when he didn't return from medical treatment in London to face the charges, a court declared him a proclaimed offender and froze his Pakistani assets. He came back in 2022, had his warrants cancelled, and the case has not produced a conviction. He later won defamation cases in the UK after broadcasters couldn't back up money-laundering claims they had made about him.",
+    hisaabScore: {
+        officesHeld: 2,
+        investigations: 4,
+        courtCases: 1,
+        convictions: 0,
+        acquittals: 0,
+        ongoing: 1,
+        reportsmentioning: 3
+    },
+    record: [
+        { year: "2000", text: "While in NAB custody, gave a statement in the Hudaibiya Paper Mills case implicating the Sharif family's financial affairs — then retracted it, saying it was made under pressure.", tag: "RETRACTED STATEMENT", cls: "status-pending" },
+        { year: "2000s", text: "Named for years in the Hudaibiya Paper Mills probe; the case involved multiple people over many years and never produced a final conviction against him.", tag: "NO CONVICTION", cls: "status-acquitted" },
+        { year: "2017", text: "Following the Panama Papers ruling, NAB's JIT alleged his assets grew from about Rs9.1 million in the early 1980s to roughly Rs831.6 million by 2008 — far beyond his declared income. He was indicted.", tag: "INDICTED", cls: "status-investigation", highlight: true },
+        { year: "2017", text: "Declared a proclaimed offender after repeatedly failing to appear in court while in London for medical treatment; his assets in Pakistan were ordered attached.", tag: "PROCLAIMED OFFENDER", cls: "status-investigation", highlight: true },
+        { year: "2017", text: "NAB opened a separate inquiry into alleged irregularities in the award of Next Generation Mobile Services (4G spectrum) licenses; no conviction has been publicly reported.", tag: "INQUIRY — NO CONVICTION", cls: "status-investigation" },
+        { year: "2022", text: "Returned to Pakistan; his arrest warrants were cancelled and the assets-beyond-means case continued — it has not produced a conviction to date.", tag: "UNRESOLVED", cls: "status-pending" },
+        { year: "Undated", text: "Sued UK broadcasters for defamation over money-laundering claims they could not substantiate — won apologies and settlements.", tag: "WON — ALLEGATION WITHDRAWN", cls: "status-acquitted" },
+        { year: "1998–2023", text: "Criticized across his multiple terms as Finance Minister for heavy external borrowing, an artificially propped-up exchange rate, and delayed structural reforms — policy criticism, not a legal finding.", tag: "POLICY CRITICISM", cls: "status-pending" }
+    ],
+    promises: [],
+    sources: [
+        { name: "Dawn — assets-beyond-means reference and proclaimed offender status", link: "#" },
+        { name: "The News — return to Pakistan, warrants cancelled, 2022", link: "#" },
+        { name: "Reuters / BBC — UK defamation settlements", link: "#" },
+        { name: "Dawn — Hudaibiya Paper Mills case background", link: "#" }
+    ],
+    cases: []
+},
 ];
