@@ -934,4 +934,217 @@ hisaabNote:"Security protects a nation. Accountability protects the trust that g
 
   hisaabNote: "A police force exists to replace private vengeance with due process. When staged encounters, unregistered FIRs, and patronage-driven promotions become routine, the force stops protecting the law and starts substituting itself for it."
 },
+{
+    id: 7,
+    name: "Pakistan Rangers (Punjab)",
+    shortName: "Punjab Rangers",
+    image: "images/punjab-rangers.jpg",
+    logo: "images/punjab-rangers-logo.png",
+    category: "Paramilitary / Federal Law Enforcement (Provincial Deployment)",
+    status: "Active",
+    established: "1959 (Pakistan Rangers Act)",
+    headquarters: "Lahore, Pakistan",
+    jurisdiction: "Province of Punjab",
+
+    overview: "Pakistan Rangers (Punjab) is a paramilitary force under the Ministry of Interior, primarily tasked with border security and assisting civil authorities. Its most extensively documented controversy is the 2002–2004 Okara Military Farms dispute, where Human Rights Watch alleged a pattern of arbitrary arrests, torture, kidnappings, and unlawful killings against tenant farmers resisting new lease terms. Compared with Pakistan Rangers (Sindh), which has been heavily documented across decades of Karachi law-and-order operations, Punjab Rangers has a narrower — but still serious — public record.",
+
+    mission: [
+        "Secure Pakistan's borders.",
+        "Assist civil administration in maintaining law and order.",
+        "Support federal and provincial authorities during internal deployments."
+    ],
+
+    responsibilities: [
+        "Border security operations.",
+        "Assistance to civil power during unrest or emergencies.",
+        "Support for law enforcement in designated internal deployments."
+    ],
+
+    powers: [
+        "Arrest and detain under invoked legal authority.",
+        "Use of force during security operations.",
+        "Cordon and search operations.",
+        "Deployment alongside police and civil administration."
+    ],
+
+    majorControversies: [
+        "Okara Military Farms dispute (2002–2004): Human Rights Watch alleged Rangers personnel arbitrarily arrested, tortured, kidnapped, beat, and in some cases unlawfully killed tenant farmers resisting new lease terms on military-administered farmland.",
+        "HRW documented testimony describing unofficial \"torture cells\" and coercive interrogation used against detained farmers and organizers during the dispute.",
+        "Reports alleged the use of prolonged sieges — cutting electricity, water, and communications — to pressure entire farming communities into compliance.",
+        "Journalists covering the dispute reported restrictions on their access and reporting.",
+        "Human rights organizations, including Amnesty International and the U.S. State Department, have repeatedly raised concern that allegations against Rangers units are investigated through limited internal mechanisms rather than independent bodies."
+    ],
+
+    shortcomings: [
+        "Accountability for the Okara-era allegations has been limited, with no widely reported independent prosecution of implicated personnel.",
+        "Internal, rather than independent, investigation mechanisms remain the norm when allegations are raised.",
+        "Documentation of Punjab-specific incidents is far thinner than for Rangers operations in Sindh, making sustained public accountability harder to build."
+    ],
+
+    majorCases: [
+        "Okara Military Farms Tenant Dispute (2002–2004)"
+    ],
+
+    publicExpectations: [
+        "Independent investigation of allegations raised during the Okara dispute.",
+        "Prosecution of personnel where evidence supports misconduct.",
+        "Transparent reporting on any current or future internal deployments.",
+        "Protection of journalists and civilians during Rangers-led operations."
+    ],
+
+    timeline: [
+        { year: "1959", event: "Pakistan Rangers established under the Pakistan Rangers Act as part of the country's Civil Armed Forces." },
+        { year: "2002–2004", event: "Okara Military Farms dispute: Rangers deployed against tenant farmers resisting new lease terms; Human Rights Watch documents a pattern of arbitrary arrest, torture, and unlawful killing allegations." },
+        { year: "2004", event: "Human Rights Watch publishes a dedicated report on the Okara dispute, calling for independent investigation and withdrawal of Rangers from the area." }
+    ],
+
+    linkedInstitutions: [
+        "Pakistan Rangers (Sindh)",
+        "Punjab Police",
+        "Ministry of Interior",
+        "Human Rights Commission of Pakistan (HRCP)"
+    ],
+
+    statistics: [
+        "Okara dispute (2002–2004): documented in a full dedicated Human Rights Watch report.",
+        "Far fewer publicly documented controversies than Pakistan Rangers (Sindh), reflecting a narrower operational role."
+    ],
+
+    publicQuestions: [
+        "Was any Rangers personnel implicated in the Okara allegations ever independently investigated or prosecuted?",
+        "Why did an internal mechanism, rather than an independent body, handle allegations of torture and unlawful killing?",
+        "What became of Human Rights Watch's call to withdraw Rangers from the Okara dispute?",
+        "What oversight exists today to prevent a repeat of the tactics alleged during Okara — sieges, torture cells, coerced signatures?"
+    ],
+
+    reformsSuggested: [
+        "Independent, non-internal investigation of any future misconduct allegations.",
+        "Public accounting of what happened to the Okara-era allegations and any personnel implicated.",
+        "Clear rules of engagement for any future internal deployments involving civilians.",
+        "Protection for journalists covering Rangers-led operations."
+    ],
+
+    relatedPeople: [],
+
+    relatedCases: [],
+
+    sources: [
+        { name: "Human Rights Watch — Okara Military Farms report", link: "#" },
+        { name: "U.S. Department of State Human Rights Reports (Pakistan)", link: "https://www.state.gov/reports/2023-country-reports-on-human-rights-practices/pakistan/" },
+        { name: "Amnesty International — Pakistan reporting", link: "#" }
+    ],
+
+    hisaabNote: "A farmer signing away his land at gunpoint isn't consent — it's coercion with paperwork. When the force meant to secure Pakistan's borders is instead accused of running torture cells against its own tenant farmers, the question isn't just what happened at Okara. It's who was ever held accountable for it."
+},
+{
+    id: 8,
+    name: "Inter-Services Intelligence (ISI)",
+    shortName: "ISI",
+    image: "images/isi.jpg",
+    logo: "images/isi-logo.png",
+    category: "Military Intelligence Agency",
+    status: "Active",
+    established: "1948",
+    headquarters: "Islamabad, Pakistan",
+    jurisdiction: "National and international operations",
+
+    overview: "Pakistan's premier intelligence agency, run by serving military officers and answerable to the army chief rather than any independent civilian body. It is the country's most powerful and least visible institution — its actual operations are classified, but decades of court rulings, human rights reports, and journalist testimony describe a documented pattern: elections manipulated, judges pressured, journalists disappeared, and dissidents tortured, almost always without any independent body ever holding it to account.",
+
+    mission: [
+        "National security intelligence.",
+        "Counterintelligence and counterterrorism.",
+        "Foreign intelligence gathering."
+    ],
+
+    responsibilities: [
+        "Intelligence collection and analysis.",
+        "Counterterrorism and counterintelligence operations.",
+        "Coordination on national security matters."
+    ],
+
+    powers: [
+        "Surveillance and communications interception.",
+        "Detention in national security matters.",
+        "Operates largely outside civilian judicial oversight."
+    ],
+
+    majorControversies: [
+        "Mehrangate (1990–2012): Supreme Court ruled ISI chief Asad Durrani unconstitutionally distributed Rs 140 million to politicians to defeat a civilian party — confirmed by Durrani's own sworn affidavit. No one was ever criminally prosecuted.",
+        "Enforced disappearances: human rights groups, the US State Department, and UN bodies have repeatedly alleged ISI involvement in disappearing journalists, students, and political opponents, particularly in Balochistan and KP.",
+        "Torture and secret detention: rights organizations have documented allegations that people held in intelligence-linked custody were tortured or ill-treated.",
+        "Journalist intimidation: press freedom groups have documented a pattern of surveillance, threats, and abductions against journalists covering security matters.",
+        "2024 — six Islamabad High Court judges publicly alleged intimidation and surveillance by intelligence operatives in politically sensitive cases; the ISI denied it.",
+        "2024 — new legal authorization to intercept private communications drew criticism from civil liberties groups over the lack of independent oversight.",
+        "Long-running international allegations — from Kashmir to Afghanistan to the 2008 Mumbai attacks — that elements within the ISI maintained ties to militant groups as tools of regional strategy. Pakistan denies state-backed terrorism as policy.",
+        "Dawn Leaks (2016): a news report on internal civil-military tensions triggered a major public rift between the government and the military establishment."
+    ],
+
+    shortcomings: [
+        "No independent civilian body can investigate the agency — accountability, when it happens at all, is internal.",
+        "Court rulings against senior officers have gone unenforced for over a decade.",
+        "Journalists and rights defenders face real risk simply for reporting on the agency.",
+        "Judges themselves have alleged intimidation — the people meant to check power say they were pressured instead."
+    ],
+
+    majorCases: [
+        "Mehrangate / Asghar Khan Case",
+        "Balochistan Enforced Disappearances",
+        "Islamabad High Court Judges' Intimidation Allegations (2024)",
+        "Dawn Leaks (2016)"
+    ],
+
+    publicExpectations: [
+        "Independent, civilian oversight of intelligence operations.",
+        "Enforcement of existing court rulings.",
+        "An end to enforced disappearances and custodial abuse.",
+        "Protection for journalists and judges from intimidation."
+    ],
+
+    timeline: [
+        { year: "1948", event: "ISI established as Pakistan's premier intelligence agency." },
+        { year: "1990", event: "Alleged ISI-run 'election cell' distributes funds to defeat a civilian party." },
+        { year: "2012", event: "Supreme Court rules the fund distribution unconstitutional; no prosecution follows." },
+        { year: "2016", event: "Dawn Leaks controversy exposes civil-military friction over intelligence matters." },
+        { year: "2024", event: "IHC judges allege intimidation by intelligence operatives; new surveillance powers authorized amid criticism." }
+    ],
+
+    linkedInstitutions: [
+        "Pakistan Army",
+        "Ministry of Defence",
+        "Supreme Court of Pakistan",
+        "Islamabad High Court"
+    ],
+
+    statistics: [
+        "One documented, court-confirmed case of unconstitutional election interference (Mehrangate) with zero convictions in 30+ years.",
+        "Recurring annual reports from HRW, Amnesty, and the UN citing enforced disappearances linked to intelligence agencies."
+    ],
+
+    publicQuestions: [
+        "Why has a Supreme Court ruling against ISI leadership gone unenforced since 2012?",
+        "Who investigates the ISI when even High Court judges say they were intimidated by it?",
+        "What happens to people who disappear in intelligence-linked custody?",
+        "Can a country claim rule of law while its most powerful agency answers to no independent court?"
+    ],
+
+    reformsSuggested: [
+        "Independent parliamentary oversight committee with real investigative power.",
+        "Enforcement of existing court rulings against named officials.",
+        "Independent, transparent inquiry into every disappearance allegation.",
+        "Legal protection for journalists and judges facing intimidation."
+    ],
+
+    relatedPeople: ["Asad Durrani", "Mirza Aslam Beg"],
+    relatedCases: ["Mehrangate / Asghar Khan Case"],
+
+    sources: [
+        { name: "Supreme Court of Pakistan — Asghar Khan Case Judgment", link: "https://www.supremecourt.gov.pk/" },
+        { name: "Human Rights Watch — Pakistan", link: "https://www.hrw.org/asia/pakistan" },
+        { name: "US Department of State Human Rights Report", link: "https://www.state.gov/reports/2023-country-reports-on-human-rights-practices/pakistan/" },
+        { name: "Reporters Without Borders — Pakistan", link: "https://rsf.org/en/country/pakistan" },
+        { name: "Dawn News Archives", link: "https://www.dawn.com/" }
+    ],
+
+    hisaabNote: "An intelligence agency exists to protect the state from its enemies — not to become one the state's own citizens, judges, and journalists have to fear. A single enforced court ruling, thirteen years unenforced, says everything about who actually answers to whom."
+},
 ];
