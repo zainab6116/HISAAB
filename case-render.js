@@ -118,6 +118,34 @@ function autoBlock(label, val){
 // Reuses the same score-grid/score-cell styling as the person
 // profile page's Hisaab Score panel, so it stays visually consistent
 // without needing new CSS.
+// readable label/value snapshot — for fields like caseStatus where
+// values are often words ("Ongoing", "Supreme Court"), not numbers,
+// so it doesn't force everything into giant numeral-style digits
+function snapshotGrid(label, data){
+    if(!data) return "";
+    var pairs = [];
+
+    if(Array.isArray(data)){
+        pairs = data.map(function(d){
+            var v = d.value !== undefined ? d.value : (d.count !== undefined ? d.count : "");
+            return { label: d.label || d.name || "", value: v };
+        });
+    } else if(typeof data === "object"){
+        pairs = Object.keys(data).map(function(key){
+            return { label: humanizeKey(key), value: data[key] };
+        });
+    }
+
+    pairs = pairs.filter(function(p){ return p.value !== "" && p.value !== undefined && p.value !== null; });
+    if(!pairs.length) return "";
+
+    var cells = pairs.map(function(p){
+        return '<div class="status-snapshot-cell"><div class="l">' + p.label + '</div><div class="v">' + p.value + '</div></div>';
+    }).join("");
+
+    return block(label, '<div class="status-snapshot">' + cells + '</div>');
+}
+
 function statGrid(label, data){
     if(!data) return "";
     var pairs = [];
@@ -151,62 +179,6 @@ function statGrid(label, data){
 }
 
 /* ---------------------------------------------------------
-   CASE STATUS AT A GLANCE
-   `caseStatus` mixes three different shapes of data — short
-   facts (status/opened/lastUpdated/resolved), a list
-   (investigatingBodies), and long-form prose (currentState,
-   officialPosition, humanRightsPosition, convictions). Feeding
-   all of that through the numbers-in-a-box statGrid crams full
-   paragraphs into tiny stat cells, which is what was looking
-   broken — so this renders each shape appropriately instead.
---------------------------------------------------------- */
-
-function caseStatusBlock(){
-    var cs = thisCase.caseStatus;
-    if(!cs || typeof cs !== "object") return "";
-
-    var glanceFields = [
-        { label: "Status", value: cs.status },
-        { label: "Opened", value: cs.opened },
-        { label: "Resolved", value: cs.resolved === true ? "Yes" : cs.resolved === false ? "No" : cs.resolved },
-        { label: "Last Updated", value: cs.lastUpdated }
-    ].filter(function(f){ return f.value !== undefined && f.value !== null && f.value !== ""; });
-
-    var glanceHtml = glanceFields.length
-        ? '<div class="score-grid case-status-grid">' + glanceFields.map(function(f){
-            return '<div class="score-cell"><div class="n">' + f.value + '</div><div class="l">' + f.label + '</div></div>';
-        }).join("") + '</div>'
-        : "";
-
-    var bodiesHtml = "";
-    if(Array.isArray(cs.investigatingBodies) && cs.investigatingBodies.length){
-        bodiesHtml = '<p class="case-status-subhead">Investigating Bodies</p>' +
-            '<div class="case-status-tags">' +
-            cs.investigatingBodies.map(function(b){ return '<span class="case-status-tag">' + b + '</span>'; }).join("") +
-            '</div>';
-    }
-
-    var proseFields = [
-        { label: "Current State", value: cs.currentState },
-        { label: "Official Position", value: cs.officialPosition },
-        { label: "Human Rights Groups' Position", value: cs.humanRightsPosition },
-        { label: "Convictions / Accountability", value: cs.convictions }
-    ].filter(function(f){ return !!f.value; });
-
-    var proseHtml = proseFields.map(function(f){
-        return '<div class="case-status-row">' +
-            '<p class="case-status-row-label">' + f.label + '</p>' +
-            '<p class="case-text">' + f.value + '</p>' +
-        '</div>';
-    }).join("");
-
-    var inner = glanceHtml + bodiesHtml + proseHtml;
-    if(!inner) return "";
-
-    return block("Case Status At A Glance", '<div class="case-status-panel">' + inner + '</div>');
-}
-
-/* ---------------------------------------------------------
    HERO
 --------------------------------------------------------- */
 
@@ -216,14 +188,13 @@ function hero(){
 
     var metaParts = [thisCase.category, thisCase.institution, thisCase.dateRange].filter(Boolean);
 
-    var imageHtml = thisCase.image
-        ? '<div class="case-hero-photo"><img src="' + thisCase.image + '" alt="' + thisCase.title + '" ' +
-            'onerror="this.parentElement.style.display=\'none\'"></div>'
+    var photoHtml = thisCase.image
+        ? '<div class="case-hero-photo"><img src="' + thisCase.image + '" alt="' + thisCase.title + '" onerror="this.parentElement.style.display=\'none\'"></div>'
         : "";
 
     return '<section class="case-hero"><div class="case-hero-inner">' +
         '<a href="index.html" class="case-back">← Back To Archive</a>' +
-        imageHtml +
+        photoHtml +
         '<div class="case-ref">Case #' + String(thisCase.id).padStart(3, "0") + '</div>' +
         '<h1>' + thisCase.title + '</h1>' +
         (statusLabel ? '<div class="case-status-badge ' + statusCls + '">' + statusLabel + '</div>' : "") +
@@ -333,6 +304,10 @@ function render(){
 
             autoBlock("Major Investigations", thisCase.majorInvestigations) +
             autoBlock("Evidence Referenced", thisCase.evidence) +
+            autoBlock("The Criminal Economy", thisCase.criminalEconomy) +
+            autoBlock("Weapons Involved", thisCase.weapons) +
+            autoBlock("Major Figures", thisCase.majorFigures) +
+            autoBlock("Human Cost", thisCase.humanCost) +
 
             statGrid("By The Numbers", thisCase.statistics) +
 
@@ -345,7 +320,7 @@ function render(){
 
             figuresBlock() +
 
-            caseStatusBlock() +
+            snapshotGrid("Case Status At A Glance", thisCase.caseStatus) +
 
             autoBlock("Major Questions", thisCase.majorQuestions) +
             autoBlock("Questions That Remain", thisCase.questions) +

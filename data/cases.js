@@ -2112,4 +2112,252 @@ link:"https://www.youtube.com/watch?v=WAhiX4GyTzI"
 
 figures:[]
 },
+{
+    id: 13,
+    title: "The Lyari Gang War",
+    category: "Organized Crime & Political Patronage",
+    institution: "Sindh Police / Pakistan Rangers (Sindh) / Political Parties",
+    dateRange: "c. 1947 – 2016 (peak violence 2008–2013)",
+    status: "disputed",
+    image: "images/lyari-gang-wars.jpg",
+    figures: [4],
+
+    overview: "Lyari, one of Karachi's oldest and poorest neighborhoods, became the epicenter of one of Pakistan's longest-running criminal conflicts — a decades-long war between armed gangs for control of the drug trade, extortion networks, and territory, fought largely with the population trapped in the middle. What began as criminal rivalry eventually pulled in questions that go far beyond crime: which institutions and political actors benefited from these gangs' control of the streets, and why did it take nearly three decades for the state to seriously confront it?",
+
+    background: "Lyari predates Karachi's growth into a megacity — it was one of the city's original settlements, home for generations to Baloch, Kutchi, and other working-class communities employed around Karachi's port. Chronic state neglect left it with some of the city's worst infrastructure and poverty even as Karachi grew wealthy around it. Two forces reshaped it into a gang stronghold: the port's long history as a smuggling route, and the flood of weapons and heroin that moved through Pakistan during the 1980s Soviet-Afghan War, arming and financing criminal networks nationwide. Early gang structures in Lyari — associated with figures like Babu Dakait and Haji Lalu from the 1960s through the 1990s — grew directly out of this environment before the conflict escalated into the more organized, heavily armed war fought from the 2000s onward under Rehman Dakait, Arshad Pappu, and their successors.",
+
+    allegations: [
+        "Sections of the Pakistan Peoples Party (PPP) are alleged, in substantial public reporting and academic research, to have maintained political ties with the People's Aman Committee (PAC) — a group that grew out of Rehman Dakait's network and was later banned by the Sindh government. PPP leaders have denied wrongdoing and disputed these allegations.",
+        "Rival gangs and armed actors in Karachi's broader political violence are separately alleged to have had links to MQM — these claims are comparatively less substantiated in public reporting and remain politically contested; MQM's leadership has consistently denied institutional responsibility for gang violence.",
+        "Police in Lyari were repeatedly accused of being outgunned, under-resourced, or unwilling to act against gangs with alleged political cover.",
+        "Bori-band (body-in-a-sack) killings were a documented tactic during Karachi's broader period of political and criminal violence — public reporting attributes this method to multiple armed actors across the political spectrum, not to any single party or organization.",
+        "Officers and officials at various points were accused of taking payments to allow gang activity to continue undisturbed — allegations that were widely discussed in Pakistani media but rarely resulted in individual prosecutions."
+    ],
+
+    officialPosition: "Successive federal and provincial governments launched police and paramilitary operations against Lyari's gangs in 2008, 2012, and — at much larger scale — the Rangers-led Karachi Operation beginning in 2013. PPP and MQM leaderships have both denied institutional responsibility for gang or militant violence, while numerous individual members of various parties have faced investigation or prosecution over the years for specific incidents.",
+
+    criminalEconomy: [
+        "Bhatta (extortion): shopkeepers, transporters, and businesses across Lyari and adjoining areas paid regular protection money to whichever faction controlled their street — refusal typically meant violence or forced closure.",
+        "Drug trafficking: Lyari's location near the port and its role as a historic smuggling corridor made it a key node in Karachi's heroin and hashish trade, generating the primary income that funded gang arsenals.",
+        "Arms trafficking: weapons that flowed into Pakistan during the Soviet-Afghan War remained in circulation for decades afterward, supplying Lyari's gangs alongside further smuggled and stolen weapons.",
+        "Kidnapping for ransom: a secondary but significant revenue stream, targeting business owners and, at times, rival gang members' families.",
+        "Land grabbing (\"qabza\"): armed groups seized and controlled property, often reselling or renting it under threat, compounding the area's housing and poverty crisis.",
+        "Recruitment: gangs drew heavily on Lyari's own unemployed young men and boys, offering income, protection, and status in a neighborhood with few other paths — a pattern widely cited as central to why the conflict proved so difficult to end."
+    ],
+
+    weapons: [
+        "AK-47 assault rifles — the dominant weapon across most factions.",
+        "Pistols and locally-made small arms, widely available through Karachi's arms markets.",
+        "Rocket-propelled grenades (RPGs), reportedly used in some of the conflict's most intense clashes with police and Rangers.",
+        "Hand grenades, used in targeted attacks and clashes in dense residential streets.",
+        "Sniper positions were reported during some of the conflict's most severe standoffs, particularly during the 2012 operation."
+    ],
+
+    majorFigures: [
+        { title: "Rehman Dakait", description: "The dominant Lyari gang leader through the mid-to-late 2000s; killed in a police encounter in August 2009. His network later evolved into the People's Aman Committee under Uzair Baloch." },
+        { title: "Uzair Baloch", description: "Rose to lead the PAC after Dakait's death; arrested in December 2016 and later investigated over separate, serious allegations including contact with a foreign intelligence agency." },
+        { title: "Arshad Pappu", description: "A rival gang leader to Dakait's network for years, based in a competing faction; his rivalry with Dakait was one of the conflict's central fault lines." },
+        { title: "Haji Lalu", description: "An earlier-generation Lyari criminal figure whose network predates the Dakait–Pappu era, part of the neighborhood's longer gang history." },
+        { title: "Babu Dakait", description: "An early Lyari crime figure from an earlier generation of the conflict, often cited as part of the area's pre-2000s criminal lineage." },
+        { title: "Faisal Pathan / Yasir Pathan", description: "Named in public reporting as leaders of Lyari-adjacent armed factions during the conflict's later years; documentation on their specific roles is thinner than for Dakait or Baloch." }
+    ],
+
+    humanCost: [
+        "Families in contested streets fled their homes during periods of active conflict, particularly during police operations in 2012 and 2013.",
+        "Schools in affected areas closed repeatedly during periods of active fighting, disrupting a generation's education.",
+        "Lyari's football grounds — the neighborhood is one of Pakistan's historic football strongholds — were, at points, unusable due to nearby violence, a detail frequently cited by journalists as emblematic of the conflict's toll on ordinary life.",
+        "Businesses were burned or forced to close under extortion pressure or as a result of clashes between factions.",
+        "Police and Rangers personnel were killed in operations against the gangs, alongside civilian and gang casualties — public reporting does not offer a single agreed casualty figure for the conflict as a whole, and estimates vary by source and time period."
+    ],
+
+    majorInvestigations: [
+        { title: "Karachi Operation (2013–)", description: "The Rangers-led operation widely credited with dismantling large-scale gang and militant infrastructure across Karachi, including Lyari, through sustained arrests and intelligence-based operations over several years, with Rangers, police, and the Counter Terrorism Department (CTD) all involved." },
+        { title: "Uzair Baloch Case", description: "Following his 2016 arrest, Baloch faced investigation over both his criminal network and separate, serious allegations involving contact with a foreign intelligence agency — a case that drew national attention distinct from the original gang-war allegations." },
+        { title: "People's Aman Committee Ban Proceedings", description: "The Sindh government's 2011 decision to ban the PAC as a criminal organization, after years in which the group operated with what critics alleged was political cover." },
+        { title: "2012 Operation Lyari", description: "A police-led operation targeting Lyari's gangs directly; criticized after police reportedly withdrew from parts of the neighborhood amid intense armed resistance, and for the civilian displacement it caused." }
+    ],
+
+    evidence: [
+        "Field reporting and investigative journalism from Pakistani outlets (Dawn, Herald) documenting the gang war's evolution and its political dimensions.",
+        "Academic research on Karachi's criminal-political networks, including published work specifically examining Lyari's gang economy — notably Laurent Gayer's study of Karachi's \"ordered disorder.\"",
+        "Government notifications and court records related to the PAC ban.",
+        "Public statements and denials from PPP and MQM leaderships regarding alleged links to armed groups."
+    ],
+
+    institutions: [
+        "Sindh Police",
+        "Pakistan Rangers (Sindh)",
+        "Counter Terrorism Department (CTD)",
+        "Pakistan Peoples Party (PPP)",
+        "Muttahida Qaumi Movement (MQM)",
+        "People's Aman Committee (PAC) — banned",
+        "Sindh Home Department"
+    ],
+
+    majorCases: [
+        "Rehman Dakait Police Encounter (2009)",
+        "People's Aman Committee Ban (2011)",
+        "2012 Operation Lyari",
+        "Uzair Baloch Arrest & Foreign-Contact Allegations (2016–)"
+    ],
+
+    internationalAttention: "Karachi's overlapping gang, political, and militant violence — including the Lyari conflict — drew sustained coverage from major international outlets throughout the 2000s and 2010s as an example of urban conflict intertwined with political patronage in a megacity.",
+
+    statistics: [
+        "Conflict span: roughly three decades of gang activity, with the most intense violence concentrated in 2008–2013.",
+        "Karachi Operation (2013–): widely reported to have resulted in thousands of arrests and a documented decline in major gang activity over several years.",
+        "Most major Lyari gang leaders were dead, imprisoned, or had lost influence by 2016.",
+        "Precise figures for total casualties, displacement, and extortion income are not consistently reported across sources — treat any specific number you find elsewhere as an estimate, not a settled count."
+    ],
+
+    caseStatus: {
+        violence: "Largely subsided since 2016",
+        keyFigures: "Dead, imprisoned, or lost influence",
+        accountability: "Individual prosecutions occurred; institutional patronage allegations remain unresolved and politically contested",
+        pacStatus: "Banned (2011)"
+    },
+
+    majorQuestions: [
+        "Why was Lyari neglected for decades before the state seriously confronted the violence?",
+        "Could the conflict have been prevented with earlier, sustained investment and policing?",
+        "Did political patronage — from any party — enable criminal networks to operate for as long as they did?",
+        "Why did so many individual investigations fail to identify or convict everyone responsible?",
+        "How did police corruption and under-resourcing shape the conflict's length?",
+        "What happened to the families of Lyari's victims, and what support did they receive?",
+        "What has Pakistan actually changed in policing or oversight because of what happened in Lyari?"
+    ],
+
+    impact: "The Lyari Gang War killed and displaced residents of one of Karachi's oldest communities over nearly three decades, closed its schools and its football grounds at various points, and left the underlying questions about which institutions and political actors enabled it unresolved.",
+
+    whyItMatters: "Lyari is a case study in what happens when poverty, weak policing, and alleged political patronage compound over decades rather than being addressed early — and in how difficult it is to hold institutions, rather than just individual gunmen, accountable after the fact.",
+
+    legacy: "Large-scale gang warfare in Lyari has subsided since the 2013 Karachi Operation. Today the neighborhood is better known again for what it was always also known for — producing some of Pakistan's best footballers and boxers — even as it remains one of Karachi's poorest areas, still working through the long redevelopment and social recovery that follows any conflict of this length. The underlying questions about political patronage remain part of its story.",
+
+    timeline: [
+        { date: "1947 onward", title: "A Historic Settlement", description: "Lyari, one of Karachi's oldest neighborhoods, grows as a working-class Baloch and Kutchi community around the city's port, receiving little of the investment that transforms the rest of Karachi." },
+        { date: "1960s–1980s", title: "Early Gang Structures", description: "Figures including Babu Dakait and Haji Lalu lead early Lyari criminal networks, laying the groundwork for later, more organized gangs." },
+        { date: "1980s", title: "The Afghan War Pipeline", description: "Weapons and heroin flowing through Pakistan during the Soviet-Afghan War arm and finance criminal networks nationwide, including in Lyari." },
+        { date: "1990s–2000s", title: "Rehman Dakait's Rise", description: "Dakait consolidates control over a major Lyari faction, building the network that later becomes the People's Aman Committee." },
+        { date: "2000s", title: "Rivalry With Arshad Pappu", description: "A prolonged, violent rivalry between Dakait's and Pappu's factions becomes one of the conflict's central fault lines." },
+        { date: "2008", title: "First Major Operation", description: "Police launch an operation against Lyari's gangs; violence subsides temporarily before resuming." },
+        { date: "Aug 2009", title: "Rehman Dakait Killed", description: "Dakait is killed in a police encounter; his network fractures, and Uzair Baloch rises to lead what becomes the People's Aman Committee." },
+        { date: "2010", title: "PAC Consolidates", description: "The People's Aman Committee grows in influence, alleged by critics to operate with political cover during this period." },
+        { date: "2011", title: "PAC Banned", description: "The Sindh government bans the People's Aman Committee amid allegations it had become a criminal front operating under political cover — a reversal after years of alleged alignment." },
+        { date: "2012", title: "Operation Lyari", description: "Police launch a direct operation into Lyari; resistance is intense, police reportedly withdraw from parts of the area, and civilian displacement draws criticism of the operation's execution." },
+        { date: "2013", title: "The Karachi Operation Begins", description: "A large-scale, Rangers-led operation targets criminal networks, militant groups, and political violence across Karachi, including Lyari — widely credited with the eventual decline of large-scale gang warfare in the area." },
+        { date: "2013–2015", title: "Sustained Pressure", description: "Continued arrests and operations under the Karachi Operation steadily degrade the remaining gang networks' capacity to operate openly." },
+        { date: "Dec 2016", title: "Uzair Baloch Arrested", description: "Baloch is arrested; he is later investigated over allegations including links to a foreign intelligence agency, in addition to the earlier criminal allegations against his network." },
+        { date: "2016 onward", title: "Decline Of Large-Scale Violence", description: "Major gang leaders are dead, imprisoned, or have lost influence; large-scale armed conflict in Lyari subsides." },
+        { date: "Late 2010s", title: "Rebuilding Begins", description: "Lyari's football and boxing culture — long a source of local pride even during the conflict — regains visibility as violence recedes and normal life gradually returns." },
+        { date: "2020s", title: "Unresolved Questions Remain", description: "Despite the decline in violence, no independent, comprehensive institutional accounting of political patronage during the conflict has been publicly concluded." }
+    ],
+
+    sources: [
+        { name: "Human Rights Commission of Pakistan", link: "https://hrcp-web.org/" },
+        { name: "Dawn — Lyari and Karachi violence archives", link: "https://www.dawn.com/" },
+        { name: "Herald (Dawn) — investigative reporting on Lyari's gang economy", link: "#" },
+        { name: "Laurent Gayer — \"Karachi: Ordered Disorder and the Struggle for the City\" (academic source)", link: "#" },
+        { name: "Reporting on the Uzair Baloch case and foreign-contact allegations", link: "#" }
+    ],
+
+    hisaabNote: "A neighborhood doesn't arm itself for thirty years without someone finding it useful. The gangs are gone or in prison. Lyari's boys are back on its football pitches. The question of who benefited from those streets staying armed for as long as they did was never fully answered — and that gap is exactly what this record exists to keep open."
+},
+{
+    id: 14,
+    title: "The Army Public School (APS) Peshawar Attack",
+    category: "Terrorism / Security Failure / Accountability",
+    institution: "Pakistan Army / NACTA / Peshawar High Court Judicial Commission",
+    dateRange: "16 December 2014 (attack) — Judicial Commission report made public, 25 September 2020",
+    status: "disputed",
+    image: "images/aps-attack.jpg",
+    figures: [],
+
+    overview: "On 16 December 2014, seven militants linked to Tehrik-i-Taliban Pakistan (TTP) stormed the Army Public School in Peshawar, killing 147 people, including 132 children — the deadliest terrorist attack in Pakistan's history. A judicial commission, formed in 2018 after years of pressure from victims' parents, later found that a specific threat warning had been issued months before the attack and that security at the school was a documented \"fiasco.\" What the commission did not conclude — despite public speculation — is that the Army or any state institution had advance knowledge of this specific attack and deliberately allowed it to happen. This case exists to hold both things at once: real, documented failures, and the line between those failures and unproven claims of institutional complicity.",
+
+    background: "The attack came at the height of Pakistan's military operations against the TTP, particularly Zarb-e-Azb and Khyber-I in North Waziristan. TTP spokesman Maulana Fazlullah later said the school was targeted in direct retaliation, stating the group wanted the military to feel the same pain as TTP families affected by the operations. Parents of victims spent years demanding an independent inquiry, alleging that those responsible for security lapses had never been properly held accountable, and filed a petition to the Supreme Court in 2018 after also seeking the trial of former TTP spokesman Ehsanullah Ehsan, who had surrendered in 2017 but was never tried.",
+
+    allegations: [
+        "Parents and commentators have long asked whether security officials or the Army had specific advance knowledge of the attack and failed to act, or in the more serious framing circulating publicly, deliberately allowed it to happen. The judicial commission's public findings do not support the stronger version of this claim.",
+        "The commission itself found that NACTA issued a threat alert on 28 August 2014 — roughly four months before the attack — warning provincial and federal authorities that TTP was planning to target the Army Public School and other army-run educational institutions, specifically to kill children of army officers in revenge for military operations.",
+        "The commission described the school's security arrangements as a 'fiasco': too few static guards for the threat level, security concentrated at the front gate while the rear was left vulnerable, and guards who did not respond effectively once the attack began.",
+        "The report found that local residents had sheltered the attackers, without which the commission said the attack could not have succeeded — controversial because it shifted a portion of institutional scrutiny toward local facilitation rather than security-command failures."
+    ],
+
+    officialPosition: "The Peshawar High Court's Justice Mohammad Ibrahim Khan-led commission, formed in October 2018 on Supreme Court orders, took statements from 132 people over nearly 20 months, including 31 army and police officials. Its 525-page report was submitted to the Supreme Court in 2019 and made public (27 pages of it) in September 2020 after a further Supreme Court order. The commission noted that some individuals found guilty of negligence, including army personnel, had already been punished internally, but it explicitly characterized the NACTA warning as 'generic' in nature rather than a specific, actionable warning about this exact attack.",
+
+    timeline: [
+        { date: "28 Aug 2014", title: "NACTA Threat Alert", description: "NACTA formally warns federal and provincial authorities that TTP is planning attacks on army-run educational institutions, including specific intent to target children of army officers." },
+        { date: "16 Dec 2014", title: "The Attack", description: "Seven TTP-linked militants storm APS Peshawar. 147 people are killed, including 132 children, after using a burning vehicle to divert a security patrol and entering through the unguarded rear of the school." },
+        { date: "Dec 2014 – 2015", title: "National Action Plan", description: "The federal government launches the National Action Plan against terrorism; military courts are reintroduced via constitutional amendment." },
+        { date: "2017", title: "Ehsanullah Ehsan Surrenders", description: "Former TTP spokesman who claimed responsibility for the attack surrenders to security forces — but is never put on trial, a major grievance for victims' families." },
+        { date: "5 Oct 2018", title: "Judicial Commission Formed", description: "After years of pressure, then-Chief Justice Mian Saqib Nisar forms a one-member judicial commission led by Justice Mohammad Ibrahim Khan of the Peshawar High Court." },
+        { date: "2019", title: "Report Submitted", description: "The commission submits its 525-page report to the Supreme Court after nearly 20 months of proceedings and 132 witness statements." },
+        { date: "25 Sept 2020", title: "Report Made Public", description: "The Supreme Court orders the government to release the report; 27 of its roughly 525–3,000 pages (reporting varies) are made public, detailing the NACTA warning, the security 'fiasco,' and findings of local facilitation." }
+    ],
+
+    majorInvestigations: [
+        { title: "APS Judicial Commission (2018–2020)", description: "The primary official inquiry into the attack, led by Justice Mohammad Ibrahim Khan of the Peshawar High Court, examining security arrangements, the NACTA warning, the attackers' entry method, and the initial response." }
+    ],
+
+    evidence: [
+        "The judicial commission's report, portions of which were released publicly in September 2020.",
+        "NACTA's 28 August 2014 threat-alert letter to provincial and federal authorities, later confirmed by the commission and referenced in multiple news reports.",
+        "Witness statements from 132 people, including 31 army and police officials, recorded over the commission's nearly 20-month proceedings.",
+        "Contemporaneous reporting on the attack and its aftermath from Dawn, Express Tribune, and other Pakistani outlets."
+    ],
+
+    humanCost: [
+        "147 people killed, including 132 schoolchildren — the deadliest terrorist attack in Pakistan's history.",
+        "Survivors and families of the dead have lived with the aftermath for over a decade, many continuing to press for a full accounting of the security failures the commission itself documented.",
+        "The APS Martyrs Forum, formed by victims' parents, drove the years-long campaign that eventually forced the judicial commission's formation and the partial release of its findings."
+    ],
+
+    statistics: [
+        { label: "People Killed", value: "147" },
+        { label: "Children Killed", value: "132" },
+        { label: "Attackers", value: "7" },
+        { label: "Commission Report Length", value: "525 pages" },
+        { label: "Witnesses Interviewed", value: "132" },
+        { label: "Years Between Attack And Public Report", value: "~6" }
+    ],
+
+    institutions: [
+        "Pakistan Army",
+        "National Counter Terrorism Authority (NACTA)",
+        "Peshawar High Court",
+        "Supreme Court of Pakistan",
+        "Tehrik-i-Taliban Pakistan (TTP) — perpetrators"
+    ],
+
+    laws: [
+        "National Action Plan against terrorism (2014)",
+        "21st Constitutional Amendment — reintroduction of military courts"
+    ],
+
+    majorQuestions: [
+        "Why was a specific, four-months-advance threat warning not translated into stronger protective measures at APS?",
+        "Why was security concentrated at the front gate while the rear of the school was left vulnerable?",
+        "Why did static guards and the Askari Guard reportedly fail to respond effectively once the attack began?",
+        "Were all officials found responsible for these specific security failures held accountable, beyond the limited internal punishments the commission referenced?",
+        "Why did it take nearly six years of pressure from victims' families before any part of the judicial commission's report was made public?",
+        "Why was Ehsanullah Ehsan, who surrendered in 2017 and claimed responsibility for the attack, never put on trial?"
+    ],
+
+    impact: "The attack reshaped Pakistan's counter-terrorism policy, prompting the National Action Plan and the reintroduction of military courts. It remains the country's deadliest terrorist attack and a defining trauma for a generation of Pakistanis, especially in Peshawar.",
+
+    whyItMatters: "APS is a case study in the difference between a documented institutional failure and an unproven institutional conspiracy. The commission's own findings — a specific warning, an inadequate security posture, a slow response — are damning enough on their own terms and grounded in an official record. Stretching those findings into a claim of deliberate advance knowledge and intentional inaction is a different, much heavier claim that the public record does not support. HISAAB's job is to hold the first version accountable without asserting the second as fact.",
+
+    legacy: "Security protocols at army-run schools were reportedly reviewed and tightened after the attack, and National Action Plan measures reshaped counter-terrorism coordination nationally. But for many APS families, the underlying accountability question — who bears responsibility for a documented, warned-of security failure that cost 147 lives — remains, in their view, incompletely answered even after the commission's report became public.",
+
+    caseStatus: {
+        threatWarning: "Confirmed by commission — issued 28 Aug 2014",
+        securityFailure: "Confirmed by commission — described as a 'fiasco'",
+        institutionalComplicity: "Not established by the public inquiry",
+        perpetratorsIdentified: "Yes — TTP, claimed by Maulana Fazlullah",
+        ehsanullahEhsanTrial: "Never occurred despite 2017 surrender",
+        fullReportPublic: "No — only ~27 of 525 pages released"
+    },
+
+    hisaabNote: "There is a real, documented gap between the warning APS received and the security it was given — that gap is on the official record and it is not in dispute. Whether that gap was negligence or something worse is the question the commission was never asked to answer, and the one this record keeps open."
+},
 ];
