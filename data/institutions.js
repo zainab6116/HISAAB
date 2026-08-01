@@ -1147,4 +1147,375 @@ hisaabNote:"Security protects a nation. Accountability protects the trust that g
 
     hisaabNote: "An intelligence agency exists to protect the state from its enemies — not to become one the state's own citizens, judges, and journalists have to fear. A single enforced court ruling, thirteen years unenforced, says everything about who actually answers to whom."
 },
+{
+    id: 9,
+    name: "Provincial Labour Departments",
+    shortName: "Labour Departments",
+    image: "images/labour-department.jpg",
+    logo: "images/labour-department-logo.png",
+    category: "Labour Regulation / Worker Protection",
+    status: "Active",
+    established: "Provincial departments predate 2010, but became the primary enforcement body after the 18th Constitutional Amendment made labour a provincial subject",
+    headquarters: "Each Provincial Government (Punjab, Sindh, Khyber Pakhtunkhwa & Balochistan)",
+    jurisdiction: "Provincial — labour regulation within each province",
+
+    overview: "Provincial Labour Departments are the primary government institutions responsible for enforcing labour laws, protecting workers' rights, conducting workplace inspections, and preventing bonded and child labour. Pakistan has prohibited bonded labour since 1992, but labour rights organizations have repeatedly argued that weak enforcement, limited inspections, staff shortages, and inadequate rehabilitation have allowed exploitation to continue largely unchecked across brick kilns, agriculture, mining, and industrial sectors.",
+
+    mission: [
+        "Enforce provincial labour laws.",
+        "Protect workers from exploitation, including bonded and child labour.",
+        "Ensure safe and lawful working conditions across registered industries."
+    ],
+
+    responsibilities: [
+        "Inspect workplaces, factories, and brick kilns.",
+        "Monitor occupational health and safety standards.",
+        "Investigate labour law violations and worker complaints.",
+        "Register factories and industrial establishments.",
+        "Resolve labour disputes.",
+        "Promote workers' welfare."
+    ],
+
+    powers: [
+        "Conduct workplace inspections.",
+        "Identify and refer bonded-labour cases for rescue.",
+        "Coordinate with police during rescue operations.",
+        "Initiate legal proceedings against employers violating labour laws.",
+        "Enforce minimum wage and safety compliance."
+    ],
+
+    majorControversies: [
+        "Bonded labour has been documented by rights groups in brick kilns, agriculture, mining, and fisheries for decades after its 1992 legal abolition — raising the question of why enforcement hasn't matched the law.",
+        "Government and international reports have repeatedly found too few labour inspectors to meaningfully monitor thousands of factories, brick kilns, farms, and mines across each province.",
+        "Inspections are widely described as complaint-driven rather than proactive, allowing violations to continue for long periods before any intervention.",
+        "Some studies and reports have alleged that corruption or undue influence can affect inspection outcomes or enforcement decisions in individual cases.",
+        "Researchers and labour rights advocates have argued that politically influential employers can sometimes obstruct enforcement efforts."
+    ],
+
+    shortcomings: [
+        "Resource constraints — staff, transport, funding, and equipment shortages — are repeatedly cited as obstacles to effective enforcement.",
+        "Rescued bonded labourers often receive inadequate long-term rehabilitation, raising the risk of falling back into debt bondage.",
+        "Relatively few labour law violations result in criminal convictions relative to the scale of reported exploitation.",
+        "Enforcement remains fragmented across four provincial departments with uneven capacity and resourcing."
+    ],
+
+    majorCases: [
+        "Bonded Labour (Brick Kilns, Agriculture, Mining)",
+        "Child Labour",
+        "Baldia Factory Fire",
+        "Industrial Accidents / Minimum Wage Violations"
+    ],
+
+    publicExpectations: [
+        "A meaningful increase in the number of labour inspectors relative to registered workplaces.",
+        "Proactive rather than purely complaint-driven inspections.",
+        "Higher prosecution and conviction rates for documented labour law violations.",
+        "Long-term rehabilitation support for rescued bonded labourers, not just short-term rescue."
+    ],
+
+    timeline: [
+        { year: "1973", event: "Article 11 of the Constitution prohibits slavery, forced labour, and child labour." },
+        { year: "1992", event: "The Bonded Labour System (Abolition) Act abolishes bonded labour nationwide and legally extinguishes bonded debts." },
+        { year: "2010", event: "The 18th Constitutional Amendment devolves labour as primarily a provincial subject, expanding Provincial Labour Departments' role significantly." },
+        { year: "2010s", event: "Provinces begin adopting their own labour legislation following devolution." },
+        { year: "Present", event: "Bonded labour, child labour, and unsafe working conditions continue to be reported despite existing legal protections." }
+    ],
+
+    linkedInstitutions: [
+        "Provincial Governments",
+        "Provincial Police",
+        "District Administration",
+        "Labour Courts",
+        "Ministry of Human Rights",
+        "National Commission for Human Rights (NCHR)"
+    ],
+
+    statistics: [
+        "Bonded labour has been illegal in Pakistan since 1992 — over three decades — yet continues to be documented in multiple sectors.",
+        "Labour is a provincial subject since the 2010 18th Amendment, splitting enforcement across four separately resourced departments.",
+        "Inspection numbers relative to registered workplaces are not consistently published, making enforcement scale difficult to verify independently."
+    ],
+
+    publicQuestions: [
+        "If bonded labour has been illegal since 1992, why does it continue to be reported across Pakistan?",
+        "How many labour inspections are conducted annually compared with the number of registered workplaces?",
+        "How many inspections result in prosecutions or convictions?",
+        "What disciplinary action is taken when officials repeatedly fail to enforce labour laws?",
+        "Are sufficient resources allocated to labour inspection services in each province?"
+    ],
+
+    reformsSuggested: [
+        "Publish annual, province-by-province inspection and prosecution data.",
+        "Increase the ratio of labour inspectors to registered workplaces.",
+        "Fund long-term rehabilitation programs for rescued bonded labourers.",
+        "Shift toward proactive, risk-based inspection scheduling rather than complaint-only response."
+    ],
+
+    relatedPeople: [],
+    relatedCases: [],
+
+    sources: [
+        { name: "Constitution of Pakistan (Article 11)", link: "https://pakistancode.gov.pk/" },
+        { name: "Bonded Labour System (Abolition) Act, 1992", link: "https://pakistancode.gov.pk/" },
+        { name: "International Labour Organization (ILO) Pakistan", link: "https://www.ilo.org/" },
+        { name: "Ministry of Human Rights Pakistan", link: "https://mohr.gov.pk/" },
+        { name: "Human Rights Commission of Pakistan (HRCP)", link: "https://hrcp-web.org/" }
+    ],
+
+    hisaabNote: "Pakistan does not lack labour laws. It lacks consistent enforcement. Every year, public funds pay the salaries of institutions responsible for protecting workers from exploitation. When bonded labour, child labour, and unsafe working conditions continue despite decades of legal prohibition, accountability extends beyond those exploiting workers to the institutions whose legal duty is to prevent it."
+},
+{
+    id: 10,
+    name: "Supreme Court of Pakistan",
+    shortName: "Supreme Court",
+    image: "images/supreme-court-pakistan.jpg",
+    logo: "images/supreme-court-pakistan-logo.png",
+    category: "Judiciary — Apex Constitutional Court",
+    status: "Active",
+    established: "1956 (under Pakistan's first Constitution); re-established under the 1973 Constitution",
+    headquarters: "Islamabad, Pakistan",
+    jurisdiction: "National — final appellate authority and constitutional interpreter for all of Pakistan",
+
+    overview: "The Supreme Court is Pakistan's highest court, the final interpreter of the Constitution, and the last stop for nearly every major political, constitutional, corruption, and human rights case in the country. Its record is genuinely two-sided: it is the same institution whose early rulings legally validated military coups through the 'Doctrine of Necessity,' and the one whose 2007 Lawyers' Movement-era assertiveness later became a symbol of judicial independence. Nearly every institution HISAAB documents — the Army, ISI, NAB, FIA, police, Rangers, provincial departments, the Election Commission — eventually connects back to the Supreme Court, because it is the body that reviews the legality of state action across all of them.",
+
+    mission: [
+        "Serve as the final interpreter of the Constitution.",
+        "Act as the highest appellate court in Pakistan.",
+        "Protect fundamental rights guaranteed under the Constitution.",
+        "Exercise judicial review over legislative and executive action."
+    ],
+
+    responsibilities: [
+        "Hear constitutional petitions and appeals from High Courts.",
+        "Interpret the Constitution in disputes between citizens, government, and institutions.",
+        "Resolve disputes between the federal government and provinces.",
+        "Supervise the subordinate judiciary.",
+        "Exercise suo motu jurisdiction in certain circumstances under Article 184(3)."
+    ],
+
+    powers: [
+        "Judicial review of laws passed by Parliament and provincial assemblies.",
+        "Original jurisdiction over fundamental-rights matters of public importance (Article 184(3)).",
+        "Power to suspend or set aside executive and legislative action found unconstitutional.",
+        "Contempt of court powers over individuals and institutions, including government officials."
+    ],
+
+    majorControversies: [
+        "Doctrine of Necessity: the Court's most consequential and most criticized legacy. In State v. Dosso (1958), the Court — led by Chief Justice Muhammad Munir — used Hans Kelsen's theory of a 'successful revolution' to validate General Ayub Khan's 1958 martial law, reversing a High Court ruling that had gone the other way. The doctrine was invoked again in 1977 to validate General Zia-ul-Haq's martial law, before the Court began explicitly distancing itself from this reasoning in later decades, notably in the 1972 Asma Jilani case, which formally overruled Dosso.",
+        "Judicial activism debate: the Court's expanded use of suo motu jurisdiction, particularly from 2009 onward, has been praised by some as necessary rights protection and criticized by others as the judiciary overstepping into matters better left to Parliament or the executive.",
+        "Political bias allegations: successive governments and opposition parties, across different administrations, have accused the Court of selective or politically inflected justice at various points — these are political allegations, not judicial findings against the Court itself.",
+        "Selective suo motu: critics have long asked why some public-interest issues receive immediate Court attention while others, arguably as serious, wait years or are never taken up at all.",
+        "Enforcement problems: even landmark rulings — such as the 2012 Asghar Khan / Mehrangate judgment against ISI leadership — have gone unenforced for over a decade, with no clear mechanism to compel government or institutional compliance."
+    ],
+
+    shortcomings: [
+        "Case backlogs and years-long delays remain a persistent, widely documented problem, particularly for constitutional cases.",
+        "Litigation costs put access to the Court largely out of reach for ordinary citizens without resources.",
+        "No consistent, transparent standard exists for which issues qualify for suo motu attention.",
+        "Implementation of major judgments depends heavily on the willingness of the executive to comply, with no strong independent enforcement mechanism of its own."
+    ],
+
+    majorCases: [
+        "Moulvi Tamizuddin Khan Case (1955)",
+        "Dosso Case (1958)",
+        "Asma Jillani Case (1972)",
+        "Nusrat Bhutto Case (1977)",
+        "Zafar Ali Shah Case (2000)",
+        "Asghar Khan / Mehrangate Case",
+        "Panama Papers Case",
+        "Memogate",
+        "Article 63A Interpretation",
+        "Election-related constitutional cases"
+    ],
+
+    publicExpectations: [
+        "Consistent application of constitutional principle regardless of who holds power.",
+        "Faster resolution of constitutional and public-interest cases.",
+        "Transparent, consistent criteria for suo motu jurisdiction.",
+        "Real enforcement mechanisms so landmark judgments aren't left to executive discretion."
+    ],
+
+    timeline: [
+        { year: "1955", event: "The Federal Court's ruling in the Moulvi Tamizuddin Khan case — that the Governor-General's assent was required for constituent legislation — becomes one of Pakistan's most debated early constitutional judgments." },
+        { year: "1956", event: "The Supreme Court of Pakistan is established under the country's first Constitution." },
+        { year: "1958", event: "In State v. Dosso, the Court validates General Ayub Khan's martial law using the 'Doctrine of Necessity,' reversing a High Court ruling and setting a precedent later used to justify further military interventions." },
+        { year: "1972", event: "Asma Jilani v. Government of the Punjab formally overrules Dosso, rejecting the Doctrine of Necessity as a basis for validating martial law." },
+        { year: "1973", event: "Pakistan's new Constitution strengthens the Court's constitutional role and fundamental-rights jurisdiction." },
+        { year: "1977", event: "In the Nusrat Bhutto case, the Court again validates a military takeover, this time General Zia-ul-Haq's martial law, under the same doctrine." },
+        { year: "2000", event: "The Zafar Ali Shah case validates General Pervez Musharraf's 1999 coup, again invoking necessity-style reasoning." },
+        { year: "2007", event: "The Lawyers' Movement erupts after Chief Justice Iftikhar Muhammad Chaudhry is suspended, becoming a landmark moment for judicial independence in Pakistan." },
+        { year: "2009–present", event: "The Court significantly expands its use of judicial review and suo motu jurisdiction, sparking an ongoing debate over judicial activism versus restraint." },
+        { year: "2012", event: "The Court rules in the Asghar Khan / Mehrangate case that ISI leadership unconstitutionally distributed funds to influence a civilian election — a judgment that remains largely unenforced over a decade later." },
+        {year: "2024", event: "Six Islamabad High Court judges publicly alleged interference and intimidation by intelligence operatives, prompting Supreme Court proceedings on judicial independence and institutional interference."},
+      ],
+
+    linkedInstitutions: [
+        "Pakistan Army",
+        "Inter-Services Intelligence (ISI)",
+        "National Accountability Bureau (NAB)",
+        "Federal Investigation Agency (FIA)",
+        "Provincial Police",
+        "Pakistan Rangers",
+        "Provincial Labour Departments",
+        "Election Commission of Pakistan",
+        "Islamabad High Court",
+        "Provincial High Courts"
+    ],
+
+    statistics: [
+        "One documented, court-confirmed finding of unconstitutional election interference (Asghar Khan / Mehrangate case) with no enforcement in over a decade.",
+        "At least four major cases across Pakistan's history (Dosso, Nusrat Bhutto, Zafar Ali Shah, and earlier Tamizuddin-adjacent rulings) in which the Court validated military or extra-constitutional takeovers.",
+        "Case backlogs and multi-year delays are consistently cited across legal commentary as a defining structural problem."
+    ],
+
+    publicQuestions: [
+        "How should the Court balance judicial independence with judicial restraint?",
+        "Why do some constitutional judgments take years to conclude?",
+        "How effectively are Supreme Court judgments actually implemented once decided?",
+        "What reforms could reduce delays and improve access to justice for ordinary citizens?",
+        "How can public confidence in judicial impartiality be strengthened given decades of politically charged rulings?",
+        "Why does enforcement of major rulings, like the 2012 Mehrangate judgment, depend entirely on institutions with no independent compliance mechanism?"
+    ],
+
+    reformsSuggested: [
+        "Clear, published, and consistent criteria for invoking suo motu jurisdiction.",
+        "Structural reforms to reduce case backlog and shorten resolution timelines for constitutional matters.",
+        "An independent enforcement mechanism for landmark rulings that doesn't rely solely on executive cooperation.",
+        "Lower-cost access pathways for citizens without resources to pursue constitutional litigation."
+    ],
+
+    relatedPeople: ["Muhammad Munir", "Iftikhar Muhammad Chaudhry"],
+    relatedCases: [
+        "Panama Papers",
+        "Avenfield",
+        "Fake Accounts",
+        "Model Town",
+        "Army Public School (APS) Attack",
+        "Missing Persons / Enforced Disappearances",
+        "Bonded Labour",
+        "Baldia Factory Fire",
+        "Mehrangate / Asghar Khan Case"
+    ],
+
+    sources: [
+        { name: "Supreme Court of Pakistan — official site", link: "https://www.supremecourt.gov.pk/" },
+        { name: "Wikipedia — List of Supreme Court of Pakistan cases", link: "https://en.wikipedia.org/wiki/List_of_Supreme_Court_of_Pakistan_cases" },
+        { name: "Wikipedia — Dosso Case", link: "https://en.wikipedia.org/wiki/Dosso_case" },
+        { name: "Wikipedia — Doctrine of Necessity", link: "https://en.wikipedia.org/wiki/Doctrine_of_necessity" },
+        { name: "Human Rights Commission of Pakistan (HRCP)", link: "https://hrcp-web.org/" }
+    ],
+
+    hisaabNote: "The Supreme Court is the Constitution's final interpreter. Every judgment can strengthen the rule of law — or shape the course of Pakistan's political history, for better or worse. Its legacy isn't measured only by the cases it decides, but by the consistency, independence, and follow-through of those decisions once the cameras leave the courtroom."
+},
+{
+    id: 11,
+    name: "Military Intelligence (Pakistan)",
+    shortName: "MI",
+    image: "images/military-intelligence.jpg",
+    logo: "images/military-intelligence-logo.png",
+    category: "Military Intelligence Directorate — Pakistan Army",
+    status: "Active",
+    established: "1948",
+    headquarters: "Rawalpindi, Pakistan (General Headquarters)",
+    jurisdiction: "Internal to the armed forces — counter-espionage, internal security, and loyalty vetting within the military; broader domestic activity alleged but less publicly documented than ISI",
+
+    overview: "Military Intelligence (MI) is the Pakistan Army's own intelligence directorate — distinct from the tri-service Inter-Services Intelligence (ISI), though the two have historically operated alongside each other and are sometimes described as rivals. Unlike ISI, MI is staffed entirely by uniformed officers and reports directly to the Chief of Army Staff. Its declared mandate is counter-espionage, internal loyalty vetting, and identifying threats within the military itself, but it has repeatedly been named — alongside ISI — in allegations of domestic political surveillance and, in more recent reporting, enforced disappearances in regions including Balochistan. Because MI is more opaque and less externally documented than ISI, much of what's publicly known comes from historical episodes rather than sustained independent monitoring.",
+
+    mission: [
+        "Provide military intelligence and counter-espionage support to the Pakistan Army.",
+        "Identify and neutralize foreign agents, sleeper cells, and subversive elements within the armed forces.",
+        "Vet personnel for sensitive postings and promotions to protect operational integrity."
+    ],
+
+    responsibilities: [
+        "Counter-espionage operations within the military.",
+        "Investigation of suspected military espionage or leaks.",
+        "Internal loyalty vetting of army personnel.",
+        "Coordination with ISI and other intelligence bodies on matters of shared concern."
+    ],
+
+    powers: [
+        "Internal investigation and interrogation of military personnel.",
+        "Surveillance of individuals suspected of espionage or subversive activity.",
+        "Reported involvement in broader domestic surveillance operations, alongside ISI, though MI's specific role is less independently documented.",
+        "Operates under Army chain of command with minimal external or civilian oversight."
+    ],
+
+    majorControversies: [
+        "MI and ISI jointly placed opposition politicians, including Fatima Jinnah and other prominent figures from both West and East Pakistan, under intensive surveillance during the 1965 presidential election, a widely cited early example of military intelligence being used for domestic political purposes.",
+        "During General Zia-ul-Haq's martial law period, intelligence directorates including MI were expanded and used to monitor and undermine civilian political parties, particularly the Pakistan Peoples Party.",
+        "MI has been named, alongside ISI, in allegations of enforced disappearances targeting suspected insurgents and activists in Balochistan, as part of the broader pattern of enforced disappearances long documented by Pakistani and international human rights organizations in that region.",
+        "MI's internal loyalty-vetting role means its activities are almost never subject to independent civilian review, even when allegations of overreach arise.",
+        "Historical accounts describe MI leadership as personally involved in high-level political and military transitions, including periods of military rule — though the specifics of MI's institutional role, as opposed to individual officers' actions, are harder to independently verify than ISI's better-documented record."
+    ],
+
+    shortcomings: [
+        "Far less independently documented and monitored than ISI, making sustained public accountability difficult to establish.",
+        "No civilian oversight mechanism exists for an agency whose core function is internal military vetting and surveillance.",
+        "Allegations of involvement in enforced disappearances are part of a broader pattern attributed to security agencies collectively, making it difficult to attribute specific responsibility to MI versus other bodies.",
+        "Public reporting on MI often relies on older historical episodes (1960s–1980s) rather than current, verifiable documentation of ongoing activity."
+    ],
+
+    majorCases: [
+        "1965 Presidential Election Surveillance",
+        "Zia-ul-Haq Era Political Surveillance",
+        "Balochistan Enforced Disappearances (attributed to security agencies collectively, including MI)"
+    ],
+
+    publicExpectations: [
+        "Independent civilian oversight of intelligence activity extending beyond internal military matters.",
+        "Transparent accounting of any role in enforced disappearances or extrajudicial detention.",
+        "Clear boundaries between MI's internal military mandate and any domestic political surveillance activity.",
+        "Accountability mechanisms proportionate to those applied to other security institutions."
+    ],
+
+    timeline: [
+        { year: "1948", event: "Military Intelligence (MI) is established as the Pakistan Army's own intelligence directorate, shortly after independence." },
+        { year: "1950s", event: "MI's founding director, Major-General Robert Cawthom, later goes on to help establish the ISI, reflecting the close early relationship between the two agencies." },
+        { year: "1958", event: "Prior to Pakistan's first martial law, MI's Director-General reports directly to Commander-in-Chief Ayub Khan; MI and ISI are both used afterward to monitor political opposition under military rule." },
+        { year: "1965", event: "MI and ISI place opposition figures, including presidential candidate Fatima Jinnah, under intensive surveillance during a tightly contested election." },
+        { year: "1977", event: "Following General Zia-ul-Haq's coup, intelligence agencies including MI are expanded and directed to monitor civilian political parties, particularly the PPP." },
+        { year: "1999", event: "MI officers are reported to have played a role during the transition of power to General Pervez Musharraf, alongside other military and intelligence actors." },
+        { year: "2000s–present", event: "MI is named, alongside ISI, in ongoing human rights reporting on enforced disappearances in Balochistan and other regions, as part of a broader pattern attributed to security agencies collectively." }
+    ],
+
+    linkedInstitutions: [
+        "Pakistan Army",
+        "Inter-Services Intelligence (ISI)",
+        "Ministry of Defence",
+        "General Headquarters (GHQ), Rawalpindi"
+    ],
+
+    statistics: [
+        "One of at least three major Pakistani intelligence services (alongside ISI and the Intelligence Bureau), but the least independently documented in public reporting.",
+        "Named alongside ISI in multiple decades of political-surveillance allegations, from the 1960s through the present.",
+        "Enforced disappearance allegations in Balochistan are typically attributed to security agencies collectively, with specific MI involvement harder to independently verify than ISI's role."
+    ],
+
+    publicQuestions: [
+        "What civilian oversight, if any, exists over MI's domestic surveillance activities?",
+        "How is responsibility distinguished between MI, ISI, and other security agencies in enforced disappearance cases?",
+        "Why has MI's institutional accountability received so much less public and media scrutiny than ISI's?",
+        "What safeguards exist to prevent an internal military vetting body from being used for broader political surveillance, as documented historically?"
+    ],
+
+    reformsSuggested: [
+        "Extend parliamentary intelligence-oversight proposals to explicitly cover MI, not just ISI.",
+        "Independent investigation of enforced-disappearance allegations naming MI, with clear attribution of institutional responsibility.",
+        "Public clarification of the legal boundary between MI's internal-military mandate and any domestic surveillance role.",
+        "Historical declassification review of MI's role during past political surveillance episodes."
+    ],
+
+    relatedPeople: [],
+    relatedCases: ["Balochistan Enforced Disappearances"],
+
+    sources: [
+        { name: "EBSCO Research Starters — Directorate of Inter-Services Intelligence (ISI)", link: "https://www.ebsco.com/research-starters/politics-and-government/directorate-inter-services-intelligence-isi" },
+        { name: "Asian Human Rights Commission — Pakistan intelligence agencies background", link: "http://www.humanrights.asia/news/ahrc-news/AHRC-ART-034-2014/" },
+        { name: "Al Jazeera — Pakistan military and Pashtun Tahafuz Movement", link: "https://www.aljazeera.com/amp/news/2019/4/30/pakistan-military-warns-pashtun-rights-group-its-time-is-up" },
+        { name: "Human Rights Commission of Pakistan (HRCP)", link: "https://hrcp-web.org/" }
+    ],
+
+    hisaabNote: "MI was built to watch for threats inside the barracks. Decades of documented history show it — like ISI — was also turned outward, toward opposition politicians and civilians, with almost no independent body ever positioned to ask why. The less an institution is scrutinized, the less anyone can say for certain what it's actually doing — and that opacity is its own kind of accountability problem."
+},
 ];

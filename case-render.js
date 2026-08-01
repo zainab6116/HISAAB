@@ -188,18 +188,49 @@ function hero(){
 
     var metaParts = [thisCase.category, thisCase.institution, thisCase.dateRange].filter(Boolean);
 
-    var photoHtml = thisCase.image
-        ? '<div class="case-hero-photo"><img src="' + thisCase.image + '" alt="' + thisCase.title + '" onerror="this.parentElement.style.display=\'none\'"></div>'
-        : "";
-
     return '<section class="case-hero"><div class="case-hero-inner">' +
         '<a href="index.html" class="case-back">← Back To Archive</a>' +
-        photoHtml +
         '<div class="case-ref">Case #' + String(thisCase.id).padStart(3, "0") + '</div>' +
         '<h1>' + thisCase.title + '</h1>' +
         (statusLabel ? '<div class="case-status-badge ' + statusCls + '">' + statusLabel + '</div>' : "") +
         (metaParts.length ? '<p class="case-meta-line">' + metaParts.join(" \u00a0•\u00a0 ") + '</p>' : "") +
     '</div></section>';
+}
+
+function photoBand(){
+    if(!thisCase.image) return "";
+    return '<div class="case-photo-band">' +
+        '<span class="case-photo-tag">Documented Evidence</span>' +
+        '<img src="' + thisCase.image + '" alt="' + thisCase.title + '" onerror="this.parentElement.style.display=\'none\'">' +
+    '</div>';
+}
+
+function institutionalAccountabilityBlock(){
+    var ia = thisCase.institutionalAccountability;
+    if(!ia) return "";
+
+    var dutyCells = "";
+    if(ia.constitutionalDuty) dutyCells += '<div class="status-snapshot-cell"><div class="l">Constitutional Duty</div><div class="v">' + ia.constitutionalDuty + '</div></div>';
+    if(ia.legalDuty) dutyCells += '<div class="status-snapshot-cell"><div class="l">Legal Duty</div><div class="v">' + ia.legalDuty + '</div></div>';
+    var dutyGrid = dutyCells ? '<div class="status-snapshot" style="margin-bottom:24px;">' + dutyCells + '</div>' : "";
+
+    var subLabel = 'font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-soft);margin:22px 0 12px;';
+
+    var bodiesList = "";
+    if(ia.enforcementBodies && ia.enforcementBodies.length){
+        bodiesList = '<p style="' + subLabel + '">Enforcement Bodies</p><ul>' +
+            ia.enforcementBodies.map(function(b){ return '<li>' + b + '</li>'; }).join("") + '</ul>';
+    }
+
+    var questionsList = "";
+    if(ia.accountabilityQuestions && ia.accountabilityQuestions.length){
+        questionsList = '<p style="' + subLabel + '">Accountability Questions</p><ul>' +
+            ia.accountabilityQuestions.map(function(q){ return '<li>' + q + '</li>'; }).join("") + '</ul>';
+    }
+
+    var inner = dutyGrid + bodiesList + questionsList;
+    if(!inner) return "";
+    return block("Institutional Accountability", inner);
 }
 
 /* ---------------------------------------------------------
@@ -292,6 +323,7 @@ function ctaBlock(){
 function render(){
     container.innerHTML =
         hero() +
+        photoBand() +
         '<div class="case-body">' +
 
             textBlock("Overview", thisCase.overview) +
@@ -299,6 +331,8 @@ function render(){
 
             autoBlock("The Allegations", thisCase.allegations) +
             autoBlock("Official Position", thisCase.officialPosition) +
+            autoBlock("Industries Affected", thisCase.industries) +
+            institutionalAccountabilityBlock() +
 
             timelineBlock() +
 

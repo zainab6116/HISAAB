@@ -2360,4 +2360,139 @@ figures:[]
 
     hisaabNote: "There is a real, documented gap between the warning APS received and the security it was given — that gap is on the official record and it is not in dispute. Whether that gap was negligence or something worse is the question the commission was never asked to answer, and the one this record keeps open."
 },
+{
+    id: 15,
+    title: "Bonded Labor In Pakistan — A System The Law Already Banned",
+    category: "Systemic Accountability / Human Rights",
+    institution: "Provincial Labour Departments / Police / District Administration",
+    dateRange: "1992 – present (law in force); practice predates it by generations",
+    status: "investigation",
+    image: "images/bonded-labor.jpg",
+    figures: [],
+
+    overview: "Bonded labor — debt bondage, locally called \"peshgi\" — has been illegal in Pakistan since 1992. It persists anyway. A worker borrows a small sum, often to cover an emergency or a wedding, and is told the debt must be worked off. Interest accumulates faster than wages. The debt outlives the person who took it, passing to their children. This case isn't about one guilty employer — it's about why a system Parliament banned over three decades ago is still standing, and which institutions had the legal duty to tear it down.",
+
+    background: "Bonded labor in South Asia has roots stretching back through the colonial zamindari land system, where landlords controlled peasant labor through debt and custom rather than wages — a pattern that continued into Pakistan's independence, especially among Sindh's \"haris\" (sharecropper laborers) and in the brick kiln industry that expanded rapidly alongside urban construction. Pakistan's 1973 Constitution prohibits slavery and all forms of forced labor under Article 11. In 1992, Parliament passed the Bonded Labour System (Abolition) Act, which abolished the practice outright, extinguished existing bonded debts by law, and voided any agreement requiring bonded labor. After the 2010 Eighteenth Constitutional Amendment moved labor policy to the provinces, Sindh and Khyber Pakhtunkhwa each enacted their own bonded labor legislation — meaning the legal responsibility for enforcement now sits primarily with provincial governments, not the federal one.",
+
+    industries: [
+        "Brick kilns — the most widely documented sector, where advance payments (\"peshgi\") trap entire families across generations.",
+        "Agriculture — including cotton, sugarcane, and wheat farming, particularly in rural Sindh and Punjab.",
+        "Livestock and fisheries — documented in parts of Sindh, with entire families bound to a single landlord or contractor.",
+        "Carpet weaving — including reported cases of child labor tied to family debt.",
+        "Mining and stone crushing — physically hazardous work with documented debt-bondage arrangements.",
+        "Domestic work — less visible than the other sectors, but repeatedly documented by rights organizations."
+    ],
+
+    criminalEconomy: [
+        "The cycle: a poor family borrows a small sum (\"peshgi\") — often 15,000–30,000 rupees — to cover an emergency, illness, or wedding.",
+        "Interest is added at rates the family cannot realistically repay through normal wages.",
+        "The family is told they must work off the debt at the lender's kiln, farm, or business — often at wages set below market rate specifically so the debt cannot shrink.",
+        "Children are drawn into the labor to help pay down the debt faster, interrupting or ending their education.",
+        "The debt frequently outlives the original borrower, passing to their children — a bondage that can span generations without ever being legally enforceable, since the 1992 Act voided such debts outright.",
+        "Who benefits: kiln owners, landlords, and labor contractors who profit from labor priced below its real value, and middlemen who broker workers between employers."
+    ],
+
+    allegations: [
+        "Labour inspections are widely reported as infrequent, under-resourced, or in some documented instances influenced by bribery, allowing bonded labor arrangements to continue undisturbed.",
+        "Prosecutions under the 1992 Act remain rare compared to the scale of the problem reported by rights organizations — critics argue this reflects weak enforcement rather than the practice's actual disappearance.",
+        "Vigilance committees — bodies the law requires at the district level to monitor and report bonded labor — are frequently reported as inactive, under-resourced, or existing only on paper in many districts.",
+        "Rescued workers are often inadequately rehabilitated, with rights organizations documenting cases of people returning to bonded labor after release due to continued poverty and lack of alternative income.",
+        "Some rescue operations have been criticized for freeing workers without addressing the debt collectors or employers who held them, leaving the underlying system intact."
+    ],
+
+    officialPosition: "The federal and provincial governments point to the existence of the 1992 Bonded Labour System (Abolition) Act, subsequent provincial legislation in Sindh and Khyber Pakhtunkhwa, periodic rescue operations conducted by police and labour departments, and rehabilitation programs for freed workers as evidence of an active enforcement framework. Officials have at various points announced renewed inspection drives and district-level vigilance committee activations in response to public and international criticism.",
+
+    majorFigures: [
+        { title: "Iqbal Masih", description: "A Pakistani child bonded laborer who became an internationally known anti-child-labor activist after escaping bondage at a carpet factory in the early 1990s; he was murdered in 1995 at age 12, a killing that drew global attention to bonded child labor in Pakistan's carpet industry. His case remains one of the most cited in international reporting on the issue." },
+        { title: "Ehsan Ullah Khan", description: "Founder of the Bonded Labour Liberation Front (BLLF), a Pakistani organization that campaigned against bonded labor, particularly in the brick kiln sector, from the 1980s onward, helping bring international attention to the practice." }
+    ],
+
+    laws: [
+        "Constitution of Pakistan, Article 11 — prohibits slavery and all forms of forced labor.",
+        "Bonded Labour System (Abolition) Act, 1992 — abolishes bonded labor nationwide, extinguishes existing bonded debts, and voids agreements requiring bonded labor.",
+        "Provincial bonded labor legislation — enacted separately by Sindh and Khyber Pakhtunkhwa following the 2010 Eighteenth Amendment, which devolved labor policy to the provinces.",
+        "Pakistan's child labor legislation — relevant given the documented overlap between bonded labor and child labor in several industries.",
+        "ILO Forced Labour Convention and related instruments — Pakistan has ratified core International Labour Organization conventions addressing forced and bonded labor."
+    ],
+
+    internationalAttention: "Bonded labor in Pakistan has been documented and criticized by the International Labour Organization, the Walk Free Foundation's Global Slavery Index, Human Rights Watch, and Amnesty International, among others — consistently framed as a persistent gap between Pakistan's legal framework, which is comparatively strong on paper, and enforcement on the ground.",
+
+    statistics: [
+        "International monitors (including the Global Slavery Index) have published estimates of the number of people in bonded or forced labor conditions in Pakistan — these estimates vary significantly by methodology and are contested; no single figure should be treated as an exact count.",
+        "Prosecutions and convictions under the 1992 Act are consistently reported by rights organizations as low relative to the scale of documented cases, though comprehensive national conviction statistics are not consistently published."
+    ],
+
+    humanCost: [
+        "Entire families — not just individual workers — are frequently bound to a single employer through one member's original debt.",
+        "Children are born into debt they never personally incurred, and often begin working before receiving a full education.",
+        "Women in bonded households are documented in some cases as working without direct wages, their labor counted only against the family's collective debt.",
+        "Illegal confinement, restriction of movement, and intimidation have been documented in specific cases investigated by rights organizations and journalists.",
+        "Escape or rescue does not guarantee freedom from the underlying poverty that created the vulnerability to bondage in the first place — a pattern rights groups cite as the core reason some rescued workers return to bonded conditions."
+    ],
+
+    institutions: [
+        "Provincial Labour Departments — primary responsibility for inspections, rescue operations, and enforcement",
+        "Deputy Commissioners / District Administration — district-level enforcement and vigilance committee oversight",
+        "Provincial Police (Sindh Police, Punjab Police, etc.) — registering criminal cases, making arrests, protecting rescued workers",
+        "Provincial Governments — implementing labor laws, funding enforcement systems, rehabilitation",
+        "Supreme Court of Pakistan — constitutional oversight and public interest litigation",
+        "High Courts — writ petitions and human rights case rulings",
+        "Human Rights Commission of Pakistan (HRCP) — independent monitoring and reporting"
+    ],
+    institutionalAccountability: {
+    coreIssue:
+        "Pakistan already has laws prohibiting bonded labour. The central accountability question is not whether the law exists, but whether the institutions responsible for enforcing it are carrying out the duties for which they are publicly funded.",
+
+    responsibleInstitutions: [
+        "Provincial Labour Departments",
+        "District Administration",
+        "Provincial Police",
+        "Provincial Governments"
+    ],
+
+    accountabilityQuestions: [
+        "If bonded labour has been illegal since 1992, why does it continue to be documented across Pakistan?",
+        "How many inspections are carried out each year, and how many result in prosecutions?",
+        "What action is taken when officials repeatedly fail to enforce the law?",
+        "How is the performance of labour inspectors and other responsible authorities measured?",
+        "If public institutions are funded to prevent bonded labour, what accountability exists when they fail to perform those legal duties?"
+    ]
+},
+
+    majorQuestions: [
+        "Why does bonded labor still exist despite being outlawed for more than three decades?",
+        "Are labour inspections actually effective, or largely nominal?",
+        "Why are prosecutions relatively rare compared with the scale of the problem as reported by rights organizations?",
+        "Are rescued workers adequately rehabilitated, or do many return to bonded conditions?",
+        "Are district-level vigilance committees functioning as the law requires, or existing only on paper?",
+        "What role do poverty and weak enforcement play in sustaining the system, and which is the bigger obstacle to ending it?"
+    ],
+
+    impact: "Bonded labor traps an unknown but persistent number of Pakistani families in debt they can never legally be forced to repay — the 1992 Act already voided such debts — yet the system continues because the institutions with legal power to end it have not consistently done so.",
+
+    whyItMatters: "This case is different from a corruption reference against one official. Parliament passed the law. The Constitution prohibits forced labor. Provincial governments, labour departments, police, and district authorities all hold legal enforcement duties. If bonded labor persists, the accountability question isn't whether the law exists — it's where, specifically, enforcement is breaking down, and who is responsible for fixing it.",
+
+    legacy: "More than three decades after the Bonded Labour System (Abolition) Act, the practice continues to be documented across multiple industries and provinces. Incremental progress — periodic rescue operations, provincial legislation, NGO rehabilitation programs — coexists with the same core criticisms rights organizations have raised for years: weak inspection, rare prosecution, and inadequate rehabilitation.",
+
+    timeline: [
+        { date: "Colonial era", title: "The Zamindari Roots", description: "British-era land systems bind peasant labor, including Sindh's \"haris,\" to landlords through debt and custom — a precursor to modern bonded labor patterns." },
+        { date: "1947", title: "Independence", description: "Pakistan inherits agrarian labor structures, including debt-based bondage, from the colonial period." },
+        { date: "1973", title: "The Constitution", description: "Article 11 of Pakistan's Constitution explicitly prohibits slavery and all forms of forced labor." },
+        { date: "1992", title: "The Bonded Labour System (Abolition) Act", description: "Parliament abolishes bonded labor nationwide, extinguishes all existing bonded debts by law, and voids any agreement requiring bonded labor." },
+        { date: "1995", title: "Iqbal Masih's Murder", description: "The killing of child bonded-labor-turned-activist Iqbal Masih draws international attention to bonded child labor in Pakistan's carpet industry." },
+        { date: "2010", title: "The Eighteenth Amendment", description: "Labor policy is devolved to the provinces, shifting primary enforcement responsibility for bonded labor laws to provincial governments." },
+        { date: "2010s", title: "Provincial Legislation", description: "Sindh and Khyber Pakhtunkhwa enact their own bonded labor laws following devolution." },
+        { date: "Ongoing", title: "Rescue Operations Continue", description: "Periodic rescue operations by police and labour departments continue to free bonded workers, even as rights organizations report the underlying system remains largely intact in several sectors." }
+    ],
+
+    sources: [
+        { name: "Human Rights Commission of Pakistan", link: "https://hrcp-web.org/" },
+        { name: "International Labour Organization — Pakistan", link: "https://www.ilo.org/pakistan" },
+        { name: "Walk Free — Global Slavery Index", link: "https://www.walkfree.org/global-slavery-index/" },
+        { name: "Bonded Labour System (Abolition) Act, 1992 (full text)", link: "#" },
+        { name: "Supreme Court of Pakistan — relevant public interest litigation rulings", link: "#" }
+    ],
+
+    hisaabNote: "A law can abolish debt on paper. It cannot abolish fear, poverty, or exploitation unless it is enforced. More than three decades after Pakistan outlawed bonded labour, the continuing reports of workers trapped in debt raise a simple question: if the law exists, why does the system survive?"
+},
 ];
