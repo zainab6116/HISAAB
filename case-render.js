@@ -113,11 +113,6 @@ function autoBlock(label, val){
     return "";
 }
 
-// key/value snapshot grid — accepts either a plain object
-// ({ key: value, ... }) or an array of { label, value } objects.
-// Reuses the same score-grid/score-cell styling as the person
-// profile page's Hisaab Score panel, so it stays visually consistent
-// without needing new CSS.
 // readable label/value snapshot — for fields like caseStatus where
 // values are often words ("Ongoing", "Supreme Court"), not numbers,
 // so it doesn't force everything into giant numeral-style digits
@@ -146,6 +141,8 @@ function snapshotGrid(label, data){
     return block(label, '<div class="status-snapshot">' + cells + '</div>');
 }
 
+// key/value grid for actual numbers — reuses the score-grid/score-cell
+// styling from the person profile page's Hisaab Score panel
 function statGrid(label, data){
     if(!data) return "";
     var pairs = [];
@@ -179,7 +176,8 @@ function statGrid(label, data){
 }
 
 /* ---------------------------------------------------------
-   HERO
+   HERO — includes a small circular photo above the ref/title,
+   not a full-width band before the body content.
 --------------------------------------------------------- */
 
 function hero(){
@@ -188,21 +186,18 @@ function hero(){
 
     var metaParts = [thisCase.category, thisCase.institution, thisCase.dateRange].filter(Boolean);
 
+    var photoHtml = thisCase.image
+        ? '<div class="case-hero-photo"><img src="' + thisCase.image + '" alt="' + thisCase.title + '" onerror="this.parentElement.style.display=\'none\'"></div>'
+        : "";
+
     return '<section class="case-hero"><div class="case-hero-inner">' +
         '<a href="index.html" class="case-back">← Back To Archive</a>' +
+        photoHtml +
         '<div class="case-ref">Case #' + String(thisCase.id).padStart(3, "0") + '</div>' +
         '<h1>' + thisCase.title + '</h1>' +
         (statusLabel ? '<div class="case-status-badge ' + statusCls + '">' + statusLabel + '</div>' : "") +
         (metaParts.length ? '<p class="case-meta-line">' + metaParts.join(" \u00a0•\u00a0 ") + '</p>' : "") +
     '</div></section>';
-}
-
-function photoBand(){
-    if(!thisCase.image) return "";
-    return '<div class="case-photo-band">' +
-        '<span class="case-photo-tag">Documented Evidence</span>' +
-        '<img src="' + thisCase.image + '" alt="' + thisCase.title + '" onerror="this.parentElement.style.display=\'none\'">' +
-    '</div>';
 }
 
 function institutionalAccountabilityBlock(){
@@ -323,7 +318,6 @@ function ctaBlock(){
 function render(){
     container.innerHTML =
         hero() +
-        photoBand() +
         '<div class="case-body">' +
 
             textBlock("Overview", thisCase.overview) +

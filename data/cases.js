@@ -1,13 +1,3 @@
-/* ===========================================================
-   HISAAB — CASES.JS
-   ⚠️ PLACEHOLDER DATA ONLY.
-   All cases below are FICTIONAL, created only to prove the page
-   templates work before real, sourced entries are added.
-   Do NOT treat any entry here as a real documented event.
-   Replace every entry with verified, sourced content before
-   this goes live.
-=========================================================== */
-
 const hisaabCases = [
 {
     id: 1,
@@ -2494,5 +2484,78 @@ figures:[]
     ],
 
     hisaabNote: "A law can abolish debt on paper. It cannot abolish fear, poverty, or exploitation unless it is enforced. More than three decades after Pakistan outlawed bonded labour, the continuing reports of workers trapped in debt raise a simple question: if the law exists, why does the system survive?"
+},
+{
+    id: 16,
+    title: "Sahiwal CTD Killings",
+    category: "Police Violence / Counter-Terrorism / Accountability",
+    institution: "Punjab Police — Counter Terrorism Department (CTD) • Anti-Terrorism Court • Lahore High Court",
+    dateRange: "19 January 2019 – Present",
+    status: "disputed", // trial acquittal exists; government appeal unresolved — verify current status before publishing
+    image: "images/sahiwal-ctd-killings.jpg",
+    figures: [], // none of those involved appear in people.js — see note below
+
+    overview: "On 19 January 2019, Counter-Terrorism Department (CTD) personnel opened fire on a car near Sahiwal, killing Muhammad Khalil, his wife Nabeela, their 13-year-old daughter Areeba, and family friend Muhammad Zeeshan Javed, who was driving. Three younger children in the car survived with injuries. CTD initially described it as an encounter with terrorists. A Joint Investigation Team later found Khalil's family innocent while separately alleging Zeeshan had ties to a terrorist organization — a claim he was killed before any court could test. Six CTD personnel were tried and acquitted in 2019; the Punjab government has appealed.",
+
+    people: [
+        "Muhammad Khalil — killed; JIT found him innocent.",
+        "Nabeela — killed; JIT found her innocent.",
+        "Areeba — killed; 13-year-old daughter.",
+        "Muhammad Zeeshan Javed — killed; driver; JIT alleged terrorist-group affiliation, never tested in court.",
+        "Muhammad Umair, Muneeba, and a youngest sibling — surviving children, all minors at the time; Umair gave a statement to the JIT.",
+        "Safdar Hussain, Ahsan Khan, Muhammad Ramzan, Saifullah, Hasnain Akbar, Nasir Nawaz — the six CTD personnel charged; all acquitted."
+    ],
+
+    findings: {
+        confirmed: [
+            "Four people died when CTD personnel fired on their vehicle; three children survived.",
+            "The JIT found Khalil, Nabeela, and Areeba innocent.",
+            "Six CTD personnel were charged under PPC sections 302, 324, 337, 201 and ATA Section 7.",
+            "The Anti-Terrorism Court acquitted all six on 24 October 2019, citing insufficient identification and prosecution evidence after 49 witnesses testified.",
+            "The Punjab government appealed the acquittal to the Lahore High Court.",
+            "The JIT separately alleged evidence tampering and recommended action against two senior CTD officials, Jawwad Qamar and Asif Kamal, for negligence."
+        ],
+        alleged: [
+            "A CTD sub-inspector reportedly told investigators superiors were informed women and children were in the vehicle and ordered the operation to proceed anyway — a reported witness account, not a judicial finding.",
+            "The JIT alleged Zeeshan was affiliated with a terrorist organization; he was killed before any court tested this.",
+            "The family said they felt unsafe pursuing the case in Sahiwal, prompting a transfer of proceedings to Lahore."
+        ],
+        notEstablished: [
+            "That any specific senior officer ordered the killings.",
+            "Criminal guilt of the six acquitted officers.",
+            "That prosecution witnesses were bribed or coerced into resiling from their statements — reported as a pattern, not proven as a cause."
+        ]
+    },
+
+    timeline: [
+        { date: "19 Jan 2019", title: "The Shooting", description: "CTD personnel fire on a vehicle near Sahiwal, killing four; three children survive." },
+        { date: "Jan 2019", title: "Video Surfaces", description: "Footage of the incident circulates publicly, intensifying pressure for an independent investigation." },
+        { date: "2019", title: "JIT Formed", description: "A Joint Investigation Team is constituted to examine the operation and the CTD's account of it." },
+        { date: "2019", title: "Judicial Inquiry", description: "The Lahore High Court orders a separate judicial inquiry; Civil Judge Shakeel Goraya records statements from 49 people, including the surviving child." },
+        { date: "2019", title: "JIT Findings", description: "The JIT clears Khalil's family, separately alleges Zeeshan's terrorist affiliation, and reports evidence-tampering concerns." },
+        { date: "24 Oct 2019", title: "Acquittal", description: "The Anti-Terrorism Court in Lahore acquits all six accused CTD personnel, giving them benefit of the doubt." },
+        { date: "2019 onward", title: "Government Appeal", description: "The Punjab government challenges the acquittal in the Lahore High Court, arguing video, forensic, and JIT evidence were not properly weighed." }
+    ],
+
+    outcome: "No one has been convicted. The JIT cleared the Khalil family and flagged evidence-tampering and command-level questions; the criminal trial ended in acquittal for all six accused officers. The Punjab government's appeal remains the last open thread — its current status should be verified before this case is published.",
+
+    impact: "Sahiwal became a national flashpoint over CTD's use of lethal force and the reliability of 'encounter' narratives, and over whether internal command decisions — not just trigger-pullers — bear responsibility when civilians die in a security operation.",
+
+    questions: [
+        "What specific intelligence led CTD to treat this vehicle as a target?",
+        "Were commanders actually told women and children were inside, and did they order the operation to proceed regardless?",
+        "Why did a large share of prosecution witnesses change their statements?",
+        "What became of the Punjab government's appeal?",
+        "Were the two officials flagged for evidence tampering ever disciplined?"
+    ],
+
+    sources: [
+        // NEEDS SOURCE — replace with the specific article behind each claim, not homepages
+        { name: "Dawn — Sahiwal CTD case coverage", link: "https://www.dawn.com/" },
+        { name: "Lahore High Court", link: "#" },
+        { name: "Human Rights Commission of Pakistan", link: "https://hrcp-web.org/" }
+    ],
+
+    hisaabNote: "A finding and a conviction are not the same thing, and this case is the clearest proof of why that distinction has to hold: a JIT can clear a family and flag tampering, and a court can still acquit everyone, and both of those things can be true at once. What's left unanswered isn't whether four people died — it's who, further up the chain, decided the operation should go ahead."
 },
 ];
