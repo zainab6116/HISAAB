@@ -248,6 +248,9 @@ document.getElementById("report-form").addEventListener("submit", async function
     };
 
     try{
+        if(SB_URL.indexOf("YOUR-PROJECT") !== -1 || SB_KEY.indexOf("YOUR-ANON") !== -1){
+            throw new Error("The Supabase URL and key have not been pasted into submit.html yet.");
+        }
         var res = await fetch(SB_URL + "/rest/v1/submissions", {
             method: "POST",
             headers: {
@@ -258,12 +261,17 @@ document.getElementById("report-form").addEventListener("submit", async function
             },
             body: JSON.stringify(payload)
         });
-        if(!res.ok) throw new Error("HTTP " + res.status);
+        if(!res.ok){
+            var detail = "";
+            try{ var j = await res.json(); detail = j.message || j.hint || j.details || ""; }catch(x){}
+            throw new Error("Server said (" + res.status + "): " + (detail || "no details"));
+        }
         document.getElementById("report-form").classList.add("hidden");
         document.getElementById("confirm-state").classList.add("active");
     }catch(err){
         btn.disabled = false; btn.textContent = "Submit To The Record";
-        alert("Something went wrong and your submission was not sent. Please check your details (description needs at least 20 characters, sources at least 8) and try again.");
+        console.error(err);
+        alert("Your submission was not sent.\n\n" + err.message);
     }
 });
 </script>
