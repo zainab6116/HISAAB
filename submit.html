@@ -126,20 +126,26 @@
 <p class="hint">Leave this blank to submit anonymously. We never publish reporter identities.</p>
 </div>
 
+<!-- honeypot: real people never see or fill this; bots do -->
+<div style="position:absolute;left:-9999px;" aria-hidden="true">
+<label>Leave this empty</label>
+<input type="text" id="f-website" tabindex="-1" autocomplete="off">
+</div>
+
 <div class="consent">
 <input type="checkbox" id="f-consent" required>
 <label for="f-consent">I confirm this information is submitted in good faith, to the best of my knowledge, and I understand HISAAB will independently verify it before publishing.</label>
 </div>
 
 <button type="submit" class="submit-btn">Submit To The Record</button>
-<p class="submit-note">Your default mail app will open with this report pre-filled — nothing is sent automatically.</p>
+<p class="submit-note">Your submission goes straight to our review team.</p>
 
 </form>
 
 <div id="confirm-state" class="confirm">
 <div class="confirm-mark">&#10003;</div>
-<h3>Submission Ready To Send</h3>
-<p>Your mail app should now be open with this report pre-filled. Once you hit send, our review team will verify it against public records — thank you for helping keep this record honest.</p>
+<h3>Submission Received</h3>
+<p>Thank you. Our review team will verify it against public records before anything is published — thank you for helping keep this record honest.</p>
 </div>
 
 </div>
@@ -212,35 +218,53 @@ staggerReveal(".stagger-block", ".stagger-line", 220);
     document.getElementById("ref-number").textContent = "REF# " + year + "-" + rand;
 })();
 
-/* form submit -> mailto handoff */
-document.getElementById("report-form").addEventListener("submit", function(e){
+/* ===== CONFIG: paste your Supabase values (Project Settings > API) ===== */
+var SB_URL = "https://YOUR-PROJECT.supabase.co";
+var SB_KEY = "YOUR-ANON-PUBLIC-KEY";   /* anon key only, never the service_role key */
+
+/* form submit -> saved to the review queue */
+document.getElementById("report-form").addEventListener("submit", async function(e){
     e.preventDefault();
 
-    var type = document.getElementById("f-type").value;
-    var name = document.getElementById("f-name").value.trim();
-    var category = document.getElementById("f-category").value;
-    var year = document.getElementById("f-year").value.trim();
-    var institution = document.getElementById("f-institution").value.trim();
-    var description = document.getElementById("f-description").value.trim();
-    var sources = document.getElementById("f-sources").value.trim();
-    var contact = document.getElementById("f-contact").value.trim();
+    /* bots fill the hidden field; pretend success and send nothing */
+    if(document.getElementById("f-website").value){
+        document.getElementById("report-form").classList.add("hidden");
+        document.getElementById("confirm-state").classList.add("active");
+        return;
+    }
 
-    var subject = "HISAAB Submission: " + name + " (" + year + ")";
-    var body =
-        "RECORD TYPE: " + type + "\n" +
-        "NAME/TITLE: " + name + "\n" +
-        "CATEGORY: " + category + "\n" +
-        "YEAR/DATE RANGE: " + year + "\n" +
-        "INSTITUTION: " + (institution || "Not specified") + "\n\n" +
-        "WHAT HAPPENED:\n" + description + "\n\n" +
-        "SOURCES:\n" + sources + "\n\n" +
-        "REPORTER CONTACT: " + (contact || "Anonymous");
+    var btn = document.querySelector(".submit-btn");
+    btn.disabled = true; btn.textContent = "Sending…";
 
-    var mailto = "mailto:submissions@hisaab.example?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    window.location.href = mailto;
+    var payload = {
+        record_type: document.getElementById("f-type").value,
+        name:        document.getElementById("f-name").value.trim(),
+        category:    document.getElementById("f-category").value,
+        year_range:  document.getElementById("f-year").value.trim(),
+        institution: document.getElementById("f-institution").value.trim() || null,
+        description: document.getElementById("f-description").value.trim(),
+        sources:     document.getElementById("f-sources").value.trim(),
+        contact:     document.getElementById("f-contact").value.trim() || null
+    };
 
-    document.getElementById("report-form").classList.add("hidden");
-    document.getElementById("confirm-state").classList.add("active");
+    try{
+        var res = await fetch(SB_URL + "/rest/v1/submissions", {
+            method: "POST",
+            headers: {
+                apikey: SB_KEY,
+                Authorization: "Bearer " + SB_KEY,
+                "Content-Type": "application/json",
+                Prefer: "return=minimal"
+            },
+            body: JSON.stringify(payload)
+        });
+        if(!res.ok) throw new Error("HTTP " + res.status);
+        document.getElementById("report-form").classList.add("hidden");
+        document.getElementById("confirm-state").classList.add("active");
+    }catch(err){
+        btn.disabled = false; btn.textContent = "Submit To The Record";
+        alert("Something went wrong and your submission was not sent. Please check your details (description needs at least 20 characters, sources at least 8) and try again.");
+    }
 });
 </script>
 

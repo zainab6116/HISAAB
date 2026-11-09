@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Review Queue — HISAAB</title>
+<link rel="icon" type="image/png" href="images/hisaab-logo.png">
+<link rel="stylesheet" href="hisaab.css">
+<style>
+.admin-wrap{ max-width:820px; margin:0 auto; padding:150px 24px 100px; }
+.admin-tabs{ display:flex; gap:8px; margin-bottom:28px; flex-wrap:wrap; align-items:center; }
+.admin-tabs .spacer{ flex:1; }
+.sub-card{ margin-bottom:22px; }
+.sub-meta{ font-size:12px; color:var(--text-muted); margin-bottom:6px; }
+.sub-title{ font-family:var(--display); font-size:21px; font-weight:600; margin-bottom:14px; }
+.sub-label{ font-size:11px; letter-spacing:1.4px; text-transform:uppercase; color:var(--gold-soft); margin:16px 0 6px; }
+.sub-text{ font-size:14.5px; line-height:1.7; color:var(--text-secondary); white-space:pre-wrap; word-break:break-word; }
+.sub-text a{ color:var(--gold-soft); text-decoration:underline; }
+.sub-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+.sub-actions .btn{ padding:11px 22px; border-width:1px; border-style:solid; background:none; }
+.btn-approve{ background:var(--gold) !important; color:#0A0A0A; border-color:var(--gold); }
+.btn-reject{ color:var(--convicted); border-color:var(--convicted) !important; }
+.admin-msg{ color:var(--convicted); font-size:13px; margin-top:12px; min-height:18px; }
+.empty{ text-align:center; color:var(--text-muted); padding:60px 0; }
+</style>
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+<div class="logo" onclick="window.location.href='index.html'"><img src="images/hisaab-logo.png" alt="HISAAB logo">HIS<span>AAB</span></div>
+<div class="nav-icons"><button class="nav-icon-btn" id="themeToggle" aria-label="Toggle light and dark mode">&#127769;</button></div>
+</nav>
+
+<div class="admin-wrap">
+
+<div id="login-view" class="dossier" style="max-width:440px;">
+<div class="dossier-strip"><span class="label">Admin sign in</span></div>
+<div class="dossier-body">
+<div class="field"><label for="a-email">Email</label><input type="email" id="a-email" autocomplete="username"></div>
+<div class="field"><label for="a-pass">Password</label><input type="password" id="a-pass" autocomplete="current-password"></div>
+<button class="submit-btn" id="login-btn">Sign in</button>
+<p class="admin-msg" id="login-msg"></p>
+</div>
+</div>
+
+<div id="queue-view" style="display:none;">
+<div class="admin-tabs">
+<button class="record-tab active" data-status="pending">Pending <span id="count-pending"></span></button>
+<button class="record-tab" data-status="approved">Approved</button>
+<button class="record-tab" data-status="rejected">Rejected</button>
+<span class="spacer"></span>
+<button class="record-tab" id="logout-btn">Sign out</button>
+</div>
+<div id="list"></div>
+</div>
+
+</div>
+
+<script>
+/* ===== CONFIG: paste your Supabase project values (Project Settings > API) ===== */
+var SB_URL = "https://dtpjjqddnxyogplsmnqq.supabase.co/rest/v1/";
+var SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR0cGpqcWRkbnh5b2dwbHNtbnFxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQyMTc5MDQsImV4cCI6MjEwOTc5MzkwNH0.XlC-d41E29dw-KQlzil_ExPoW36KY_rM5xvY9EDGjqo";   /* the anon key is meant to be public; never paste the service_role key here */
+
+var token = null, currentStatus = "pending";
+try { token = sessionStorage.getItem("hisaab-admin-token"); } catch(e){}
+
+function $(id){ return document.getElementById(id); }
+
+async function api(path, opts){
+    opts = opts || {};
+    var res = await fetch(SB_URL + path, {
+        method: opts.method || "GET",
+        headers: Object.assign({ apikey: SB_KEY, Authorization: "Bearer " + (token || SB_KEY), "Content-Type": "application/json" }, opts.headers || {}),
+        body: opts.body ? JSON.stringify(opts.body) : undefined
+    });
+    if(res.status === 401){ logout(); throw new Error("Session expired. Sign in again."); }
+    if(!res.ok){ throw new Error((await res.text()) || res.statusText); }
+    return res.status === 204 ? null : res.json();
+}
+
+$("login-btn").addEventListener("click", async function(){
+    $("login-msg").textContent = "";
+    try{
+        var r = await fetch(SB_URL + "/auth/v1/token?grant_type=password", {
+            method: "POST",
+            headers: { apikey: SB_KEY, "Content-Type": "application/json" },
+            body: JSON.stringify({ email: $("a-email").value.trim(), password: $("a-pass").value })
+        });
+        var d = await r.json();
+        if(!r.ok || !d.access_token){ throw new Error("Wrong email or password."); }
+        token = d.access_token;
+        try { sessionStorage.setItem("hisaab-admin-token", token); } catch(e){}
+        showQueue();
+    }catch(err){ $("login-msg").textContent = err.message; }
+});
+
+function logout(){
+    token = null;
+    try { sessionStorage.removeItem("hisaab-admin-token"); } catch(e){}
+    $("queue-view").style.display = "none";
+    $("login-view").style.display = "block";
+}
+$("logout-btn").addEventListener("click", logout);
+
+document.querySelectorAll("[data-status]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+        document.querySelectorAll("[data-status]").forEach(function(b){ b.classList.remove("active"); });
+        btn.classList.add("active");
+        currentStatus = btn.dataset.status;
+        loadList();
+    });
+});
+
+function showQueue(){
+    $("login-view").style.display = "none";
+    $("queue-view").style.display = "block";
+    loadList();
+}
+
+/* build elements with textContent only, so submitted text can never run as HTML */
+function el(tag, cls, text){
+    var n = document.createElement(tag);
+    if(cls) n.className = cls;
+    if(text !== undefined) n.textContent = text;
+    return n;
+}
+
+function sourcesNode(text){
+    var wrap = el("div", "sub-text");
+    text.split("\n").forEach(function(line, i){
+        line = line.trim(); if(!line) return;
+        if(i) wrap.appendChild(document.createElement("br"));
+        if(/^https?:\/\//i.test(line)){
+            var a = el("a", "", line); a.href = line; a.target = "_blank"; a.rel = "noopener noreferrer nofollow";
+            wrap.appendChild(a);
+        } else { wrap.appendChild(document.createTextNode(line)); }
+    });
+    return wrap;
+}
+
+function card(s){
+    var c = el("div", "dossier sub-card");
+    var strip = el("div", "dossier-strip");
+    strip.appendChild(el("span", "label", s.record_type + " · " + s.category));
+    strip.appendChild(el("span", "ref", new Date(s.created_at).toLocaleDateString()));
+    var body = el("div", "dossier-body");
+    body.appendChild(el("div", "sub-title", s.name + " (" + s.year_range + ")"));
+    if(s.institution){ body.appendChild(el("div", "sub-label", "Institution")); body.appendChild(el("div", "sub-text", s.institution)); }
+    body.appendChild(el("div", "sub-label", "What happened")); body.appendChild(el("div", "sub-text", s.description));
+    body.appendChild(el("div", "sub-label", "Sources")); body.appendChild(sourcesNode(s.sources));
+    body.appendChild(el("div", "sub-label", "Reporter contact")); body.appendChild(el("div", "sub-text", s.contact || "Anonymous"));
+
+    body.appendChild(el("div", "sub-label", "Reviewer notes (private)"));
+    var notes = el("textarea"); notes.value = s.reviewer_notes || ""; notes.style.minHeight = "70px";
+    notes.style.width = "100%"; notes.style.padding = "10px"; notes.style.background = "var(--input-bg)";
+    notes.style.color = "var(--text-primary)"; notes.style.border = "1px solid var(--input-border)";
+    body.appendChild(notes);
+
+    var actions = el("div", "sub-actions");
+    function act(label, cls, status){
+        var b = el("button", "btn " + cls, label);
+        b.addEventListener("click", async function(){
+            b.disabled = true;
+            try{
+                await api("/rest/v1/submissions?id=eq." + s.id, { method: "PATCH", headers: { Prefer: "return=minimal" },
+                    body: { status: status, reviewer_notes: notes.value.trim() || null, reviewed_at: new Date().toISOString() } });
+                loadList();
+            }catch(err){ b.disabled = false; alert(err.message); }
+        });
+        actions.appendChild(b);
+    }
+    if(s.status !== "approved") act("Approve", "btn-approve", "approved");
+    if(s.status !== "rejected") act("Reject", "btn-reject", "rejected");
+    if(s.status !== "pending")  act("Move back to pending", "btn-outline", "pending");
+    body.appendChild(actions);
+
+    c.appendChild(strip); c.appendChild(body);
+    return c;
+}
+
+async function loadList(){
+    var list = $("list");
+    list.replaceChildren(el("p", "empty", "Loading…"));
+    try{
+        var rows = await api("/rest/v1/submissions?select=*&status=eq." + currentStatus + "&order=created_at.desc");
+        list.replaceChildren();
+        if(!rows.length){ list.appendChild(el("p", "empty", "Nothing in " + currentStatus + ".")); }
+        rows.forEach(function(r){ list.appendChild(card(r)); });
+        if(currentStatus === "pending"){ $("count-pending").textContent = rows.length ? "(" + rows.length + ")" : ""; }
+    }catch(err){ list.replaceChildren(el("p", "empty", err.message)); }
+}
+
+/* theme toggle (same as the other pages) */
+(function(){
+    var t = $("themeToggle"), saved = null;
+    try { saved = localStorage.getItem("hisaab-theme"); } catch(e){}
+    if(saved === "light"){ document.body.classList.add("light-mode"); t.innerHTML = "&#9728;&#65039;"; }
+    t.addEventListener("click", function(){
+        document.body.classList.toggle("light-mode");
+        var l = document.body.classList.contains("light-mode");
+        t.innerHTML = l ? "&#9728;&#65039;" : "&#127769;";
+        try { localStorage.setItem("hisaab-theme", l ? "light" : "dark"); } catch(e){}
+    });
+})();
+
+if(token){ showQueue(); }
+</script>
+</body>
+</html>
